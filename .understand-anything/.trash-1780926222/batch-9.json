@@ -1,0 +1,115 @@
+{
+  "batchIndex": 9,
+  "nodes": [
+    { "id": "file:src/renderer/src/App.tsx", "type": "file", "name": "App.tsx", "filePath": "src/renderer/src/App.tsx", "summary": "Root React component: manages app screen state machine (splash -> welcome -> install -> setup -> main) with connection mode detection, install verification, and gateway auto-start", "tags": ["renderer", "react", "root", "screen-router"], "language": "typescript", "complexity": "complex" },
+    { "id": "function:src/renderer/src/App.tsx:App", "type": "function", "name": "App", "filePath": "src/renderer/src/App.tsx", "summary": "Root component orchestrating the app's screen transitions and boot sequence", "tags": ["component", "root"], "language": "typescript", "complexity": "complex" },
+
+    { "id": "file:src/renderer/src/assets/icons/index.tsx", "type": "file", "name": "index.tsx", "filePath": "src/renderer/src/assets/icons/index.tsx", "summary": "SVG icon components library used across the renderer UI", "tags": ["renderer", "icons", "assets"], "language": "typescript", "complexity": "simple" },
+
+    { "id": "file:src/renderer/src/components/ConfigHealthBanner.test.tsx", "type": "file", "name": "ConfigHealthBanner.test.tsx", "filePath": "src/renderer/src/components/ConfigHealthBanner.test.tsx", "summary": "Tests for the ConfigHealthBanner component", "tags": ["test", "renderer", "config-health"], "language": "typescript", "complexity": "moderate" },
+
+    { "id": "file:src/renderer/src/components/ConfigHealthBanner.tsx", "type": "file", "name": "ConfigHealthBanner.tsx", "filePath": "src/renderer/src/components/ConfigHealthBanner.tsx", "summary": "Banner component displaying config health issues with expandable details and auto-fix buttons", "tags": ["renderer", "component", "config-health", "ui"], "language": "typescript", "complexity": "moderate" },
+
+    { "id": "file:src/renderer/src/components/ErrorBoundary.tsx", "type": "file", "name": "ErrorBoundary.tsx", "filePath": "src/renderer/src/components/ErrorBoundary.tsx", "summary": "React error boundary that catches render errors and displays a fallback UI", "tags": ["renderer", "component", "error-handling"], "language": "typescript", "complexity": "simple" },
+    { "id": "class:src/renderer/src/components/ErrorBoundary.tsx:ErrorBoundary", "type": "class", "name": "ErrorBoundary", "filePath": "src/renderer/src/components/ErrorBoundary.tsx", "summary": "React class component error boundary with fallback rendering", "tags": ["component", "error-handling"], "language": "typescript", "complexity": "simple" },
+
+    { "id": "file:src/renderer/src/components/FontProvider.tsx", "type": "file", "name": "FontProvider.tsx", "filePath": "src/renderer/src/components/FontProvider.tsx", "summary": "Applies custom font families from constants/theme to the app via CSS variables", "tags": ["renderer", "component", "theme", "fonts"], "language": "typescript", "complexity": "simple" },
+
+    { "id": "file:src/renderer/src/components/I18nContext.ts", "type": "file", "name": "I18nContext.ts", "filePath": "src/renderer/src/components/I18nContext.ts", "summary": "React context for i18n locale state, providing locale and setLocale to the component tree", "tags": ["renderer", "i18n", "context"], "language": "typescript", "complexity": "simple" },
+
+    { "id": "file:src/renderer/src/components/I18nProvider.test.tsx", "type": "file", "name": "I18nProvider.test.tsx", "filePath": "src/renderer/src/components/I18nProvider.test.tsx", "summary": "Tests for the I18nProvider component and locale switching", "tags": ["test", "renderer", "i18n"], "language": "typescript", "complexity": "moderate" },
+
+    { "id": "file:src/renderer/src/components/I18nProvider.tsx", "type": "file", "name": "I18nProvider.tsx", "filePath": "src/renderer/src/components/I18nProvider.tsx", "summary": "I18n provider component that initializes react-i18next, syncs locale with main process, and provides locale context to the app", "tags": ["renderer", "component", "i18n", "provider"], "language": "typescript", "complexity": "moderate" },
+
+    { "id": "file:src/renderer/src/components/OAuthLoginModal.tsx", "type": "file", "name": "OAuthLoginModal.tsx", "filePath": "src/renderer/src/components/OAuthLoginModal.tsx", "summary": "Modal dialog for OAuth device-code login flow, showing the verification URL and code to the user", "tags": ["renderer", "component", "auth", "oauth", "modal"], "language": "typescript", "complexity": "moderate" },
+
+    { "id": "file:src/renderer/src/components/RemoteNotice.tsx", "type": "file", "name": "RemoteNotice.tsx", "filePath": "src/renderer/src/components/RemoteNotice.tsx", "summary": "Small notice badge indicating the app is connected to a remote Hermes instance", "tags": ["renderer", "component", "remote", "ui"], "language": "typescript", "complexity": "simple" },
+
+    { "id": "file:src/renderer/src/components/ThemeProvider.tsx", "type": "file", "name": "ThemeProvider.tsx", "filePath": "src/renderer/src/components/ThemeProvider.tsx", "summary": "Theme provider component managing light/dark/system theme with CSS variable injection and persistence", "tags": ["renderer", "component", "theme", "provider"], "language": "typescript", "complexity": "moderate" },
+
+    { "id": "file:src/renderer/src/components/VerifyWarningBanner.tsx", "type": "file", "name": "VerifyWarningBanner.tsx", "filePath": "src/renderer/src/components/VerifyWarningBanner.tsx", "summary": "Dismissible warning banner shown when install verification fails but files exist", "tags": ["renderer", "component", "warning", "ui"], "language": "typescript", "complexity": "simple" },
+
+    { "id": "file:src/renderer/src/components/common/BrandLogo.tsx", "type": "file", "name": "BrandLogo.tsx", "filePath": "src/renderer/src/components/common/BrandLogo.tsx", "summary": "Brand logo component with provider-specific logos and fallback rendering", "tags": ["renderer", "component", "branding", "ui"], "language": "typescript", "complexity": "moderate" },
+
+    { "id": "file:src/renderer/src/components/common/HermesLogo.tsx", "type": "file", "name": "HermesLogo.tsx", "filePath": "src/renderer/src/components/common/HermesLogo.tsx", "summary": "Hermes application logo SVG component", "tags": ["renderer", "component", "branding"], "language": "typescript", "complexity": "simple" },
+
+    { "id": "file:src/renderer/src/components/useI18n.ts", "type": "file", "name": "useI18n.ts", "filePath": "src/renderer/src/components/useI18n.ts", "summary": "Custom React hook combining I18nContext with react-i18next useTranslation for locale, setLocale, and t() function access", "tags": ["renderer", "hook", "i18n"], "language": "typescript", "complexity": "simple" },
+    { "id": "function:src/renderer/src/components/useI18n.ts:useI18n", "type": "function", "name": "useI18n", "filePath": "src/renderer/src/components/useI18n.ts", "summary": "Hook providing locale state and translation function t()", "tags": ["export", "hook", "i18n"], "language": "typescript", "complexity": "simple" },
+
+    { "id": "file:src/renderer/src/constants.ts", "type": "file", "name": "constants.ts", "filePath": "src/renderer/src/constants.ts", "summary": "UI constants: provider list definitions, field/section schemas for settings forms, theme values, model defaults, and feature flags", "tags": ["renderer", "constants", "config"], "language": "typescript", "complexity": "moderate" },
+
+    { "id": "file:src/renderer/src/hooks/useDiscoveredModels.ts", "type": "file", "name": "useDiscoveredModels.ts", "filePath": "src/renderer/src/hooks/useDiscoveredModels.ts", "summary": "React hook for discovering and caching available AI models from configured providers via IPC", "tags": ["renderer", "hook", "models", "discovery"], "language": "typescript", "complexity": "moderate" },
+
+    { "id": "file:src/renderer/src/main.tsx", "type": "file", "name": "main.tsx", "filePath": "src/renderer/src/main.tsx", "summary": "Renderer entry point: initializes analytics, wraps App in I18nProvider, and mounts to DOM", "tags": ["renderer", "entry-point"], "language": "typescript", "complexity": "simple" },
+
+    { "id": "file:src/renderer/src/screens/Agents/Agents.test.tsx", "type": "file", "name": "Agents.test.tsx", "filePath": "src/renderer/src/screens/Agents/Agents.test.tsx", "summary": "Tests for the Agents screen component", "tags": ["test", "renderer", "agents"], "language": "typescript", "complexity": "moderate" },
+
+    { "id": "file:src/renderer/src/screens/Agents/Agents.tsx", "type": "file", "name": "Agents.tsx", "filePath": "src/renderer/src/screens/Agents/Agents.tsx", "summary": "Agents management screen: list, create, edit, and delete AI agent configurations", "tags": ["renderer", "screen", "agents"], "language": "typescript", "complexity": "moderate" },
+
+    { "id": "file:src/renderer/src/screens/Chat/FileViewer.tsx", "type": "file", "name": "FileViewer.tsx", "filePath": "src/renderer/src/screens/Chat/FileViewer.tsx", "summary": "File viewer panel in the chat screen showing file contents with syntax highlighting", "tags": ["renderer", "component", "chat", "file-viewer"], "language": "typescript", "complexity": "moderate" },
+
+    { "id": "file:src/renderer/src/screens/Chat/WorktreePanel.tsx", "type": "file", "name": "WorktreePanel.tsx", "filePath": "src/renderer/src/screens/Chat/WorktreePanel.tsx", "summary": "Worktree panel showing the file tree of the active chat context folder with file viewer integration", "tags": ["renderer", "component", "chat", "worktree"], "language": "typescript", "complexity": "moderate" },
+
+    { "id": "file:src/renderer/src/screens/Discover/Discover.tsx", "type": "file", "name": "Discover.tsx", "filePath": "src/renderer/src/screens/Discover/Discover.tsx", "summary": "Discover screen: browse and install community registry items (agents, skills, tools) with search and category filtering", "tags": ["renderer", "screen", "discover", "registry"], "language": "typescript", "complexity": "complex" },
+
+    { "id": "file:src/renderer/src/screens/Gateway/Gateway.test.tsx", "type": "file", "name": "Gateway.test.tsx", "filePath": "src/renderer/src/screens/Gateway/Gateway.test.tsx", "summary": "Tests for the Gateway management screen", "tags": ["test", "renderer", "gateway"], "language": "typescript", "complexity": "moderate" },
+
+    { "id": "file:src/renderer/src/screens/Gateway/Gateway.tsx", "type": "file", "name": "Gateway.tsx", "filePath": "src/renderer/src/screens/Gateway/Gateway.tsx", "summary": "Gateway management screen: start/stop gateway, view status/logs, configure connection mode (local/remote/SSH), manage API keys, and messaging platform integration", "tags": ["renderer", "screen", "gateway", "core"], "language": "typescript", "complexity": "complex" },
+
+    { "id": "file:src/renderer/src/screens/Install/Install.tsx", "type": "file", "name": "Install.tsx", "filePath": "src/renderer/src/screens/Install/Install.tsx", "summary": "Installation screen: guides users through Hermes agent installation with progress tracking and error handling", "tags": ["renderer", "screen", "install"], "language": "typescript", "complexity": "moderate" },
+
+    { "id": "file:src/renderer/src/screens/Kanban/Kanban.tsx", "type": "file", "name": "Kanban.tsx", "filePath": "src/renderer/src/screens/Kanban/Kanban.tsx", "summary": "Kanban board screen: drag-and-drop task management with board switching, task creation/editing, comments, and agent dispatch", "tags": ["renderer", "screen", "kanban", "task-management"], "language": "typescript", "complexity": "complex" },
+
+    { "id": "file:src/renderer/src/screens/Layout/Layout.tsx", "type": "file", "name": "Layout.tsx", "filePath": "src/renderer/src/screens/Layout/Layout.tsx", "summary": "Main layout shell: sidebar navigation, tab routing between all screens (Chat, Sessions, Agents, Discover, Gateway, Settings, etc.), profile switcher, and notification handling", "tags": ["renderer", "screen", "layout", "navigation", "core"], "language": "typescript", "complexity": "complex" }
+  ],
+  "edges": [
+    { "source": "file:src/renderer/src/App.tsx", "target": "file:src/renderer/src/components/ThemeProvider.tsx", "type": "imports", "weight": 0.7 },
+    { "source": "file:src/renderer/src/App.tsx", "target": "file:src/renderer/src/components/FontProvider.tsx", "type": "imports", "weight": 0.5 },
+    { "source": "file:src/renderer/src/App.tsx", "target": "file:src/renderer/src/components/ErrorBoundary.tsx", "type": "imports", "weight": 0.5 },
+    { "source": "file:src/renderer/src/App.tsx", "target": "file:src/renderer/src/screens/Install/Install.tsx", "type": "imports", "weight": 0.6 },
+    { "source": "file:src/renderer/src/App.tsx", "target": "file:src/renderer/src/screens/Layout/Layout.tsx", "type": "imports", "weight": 0.8 },
+    { "source": "file:src/renderer/src/components/ConfigHealthBanner.test.tsx", "target": "file:src/renderer/src/components/ConfigHealthBanner.tsx", "type": "imports", "weight": 0.9 },
+    { "source": "file:src/renderer/src/components/ConfigHealthBanner.tsx", "target": "file:src/renderer/src/components/useI18n.ts", "type": "imports", "weight": 0.6 },
+    { "source": "file:src/renderer/src/components/FontProvider.tsx", "target": "file:src/renderer/src/constants.ts", "type": "imports", "weight": 0.5 },
+    { "source": "file:src/renderer/src/components/I18nContext.ts", "target": "file:src/shared/i18n/index.ts", "type": "imports", "weight": 0.7 },
+    { "source": "file:src/renderer/src/components/I18nProvider.test.tsx", "target": "file:src/shared/i18n/index.ts", "type": "imports", "weight": 0.5 },
+    { "source": "file:src/renderer/src/components/I18nProvider.test.tsx", "target": "file:src/renderer/src/components/I18nProvider.tsx", "type": "imports", "weight": 0.8 },
+    { "source": "file:src/renderer/src/components/I18nProvider.test.tsx", "target": "file:src/renderer/src/components/useI18n.ts", "type": "imports", "weight": 0.6 },
+    { "source": "file:src/renderer/src/components/I18nProvider.tsx", "target": "file:src/shared/i18n/index.ts", "type": "imports", "weight": 0.8 },
+    { "source": "file:src/renderer/src/components/I18nProvider.tsx", "target": "file:src/renderer/src/components/I18nContext.ts", "type": "imports", "weight": 0.8 },
+    { "source": "file:src/renderer/src/components/OAuthLoginModal.tsx", "target": "file:src/renderer/src/assets/icons/index.tsx", "type": "imports", "weight": 0.4 },
+    { "source": "file:src/renderer/src/components/OAuthLoginModal.tsx", "target": "file:src/renderer/src/components/useI18n.ts", "type": "imports", "weight": 0.5 },
+    { "source": "file:src/renderer/src/components/RemoteNotice.tsx", "target": "file:src/renderer/src/assets/icons/index.tsx", "type": "imports", "weight": 0.4 },
+    { "source": "file:src/renderer/src/components/ThemeProvider.tsx", "target": "file:src/renderer/src/constants.ts", "type": "imports", "weight": 0.5 },
+    { "source": "file:src/renderer/src/components/VerifyWarningBanner.tsx", "target": "file:src/renderer/src/components/useI18n.ts", "type": "imports", "weight": 0.5 },
+    { "source": "file:src/renderer/src/components/common/BrandLogo.tsx", "target": "file:src/renderer/src/assets/icons/index.tsx", "type": "imports", "weight": 0.6 },
+    { "source": "file:src/renderer/src/components/useI18n.ts", "target": "file:src/shared/i18n/index.ts", "type": "imports", "weight": 0.7 },
+    { "source": "file:src/renderer/src/components/useI18n.ts", "target": "file:src/renderer/src/components/I18nContext.ts", "type": "imports", "weight": 0.8 },
+    { "source": "file:src/renderer/src/main.tsx", "target": "file:src/renderer/src/App.tsx", "type": "imports", "weight": 0.9 },
+    { "source": "file:src/renderer/src/main.tsx", "target": "file:src/renderer/src/components/I18nProvider.tsx", "type": "imports", "weight": 0.8 },
+    { "source": "file:src/renderer/src/screens/Agents/Agents.test.tsx", "target": "file:src/renderer/src/screens/Agents/Agents.tsx", "type": "imports", "weight": 0.9 },
+    { "source": "file:src/renderer/src/screens/Agents/Agents.tsx", "target": "file:src/renderer/src/assets/icons/index.tsx", "type": "imports", "weight": 0.4 },
+    { "source": "file:src/renderer/src/screens/Agents/Agents.tsx", "target": "file:src/renderer/src/components/common/HermesLogo.tsx", "type": "imports", "weight": 0.3 },
+    { "source": "file:src/renderer/src/screens/Agents/Agents.tsx", "target": "file:src/renderer/src/components/useI18n.ts", "type": "imports", "weight": 0.5 },
+    { "source": "file:src/renderer/src/screens/Chat/FileViewer.tsx", "target": "file:src/renderer/src/components/useI18n.ts", "type": "imports", "weight": 0.4 },
+    { "source": "file:src/renderer/src/screens/Chat/WorktreePanel.tsx", "target": "file:src/renderer/src/screens/Chat/FileViewer.tsx", "type": "imports", "weight": 0.8 },
+    { "source": "file:src/renderer/src/screens/Chat/WorktreePanel.tsx", "target": "file:src/renderer/src/components/useI18n.ts", "type": "imports", "weight": 0.4 },
+    { "source": "file:src/renderer/src/screens/Discover/Discover.tsx", "target": "file:src/renderer/src/assets/icons/index.tsx", "type": "imports", "weight": 0.4 },
+    { "source": "file:src/renderer/src/screens/Discover/Discover.tsx", "target": "file:src/renderer/src/components/useI18n.ts", "type": "imports", "weight": 0.5 },
+    { "source": "file:src/renderer/src/screens/Gateway/Gateway.test.tsx", "target": "file:src/renderer/src/screens/Gateway/Gateway.tsx", "type": "imports", "weight": 0.9 },
+    { "source": "file:src/renderer/src/screens/Gateway/Gateway.tsx", "target": "file:src/renderer/src/components/useI18n.ts", "type": "imports", "weight": 0.5 },
+    { "source": "file:src/renderer/src/screens/Gateway/Gateway.tsx", "target": "file:src/renderer/src/components/common/BrandLogo.tsx", "type": "imports", "weight": 0.4 },
+    { "source": "file:src/renderer/src/screens/Install/Install.tsx", "target": "file:src/renderer/src/assets/icons/index.tsx", "type": "imports", "weight": 0.4 },
+    { "source": "file:src/renderer/src/screens/Install/Install.tsx", "target": "file:src/renderer/src/components/useI18n.ts", "type": "imports", "weight": 0.5 },
+    { "source": "file:src/renderer/src/screens/Kanban/Kanban.tsx", "target": "file:src/renderer/src/assets/icons/index.tsx", "type": "imports", "weight": 0.4 },
+    { "source": "file:src/renderer/src/screens/Kanban/Kanban.tsx", "target": "file:src/renderer/src/components/useI18n.ts", "type": "imports", "weight": 0.5 },
+    { "source": "file:src/renderer/src/screens/Layout/Layout.tsx", "target": "file:src/renderer/src/screens/Agents/Agents.tsx", "type": "imports", "weight": 0.6 },
+    { "source": "file:src/renderer/src/screens/Layout/Layout.tsx", "target": "file:src/renderer/src/screens/Discover/Discover.tsx", "type": "imports", "weight": 0.6 },
+    { "source": "file:src/renderer/src/screens/Layout/Layout.tsx", "target": "file:src/renderer/src/screens/Gateway/Gateway.tsx", "type": "imports", "weight": 0.6 },
+    { "source": "file:src/renderer/src/screens/Layout/Layout.tsx", "target": "file:src/renderer/src/screens/Kanban/Kanban.tsx", "type": "imports", "weight": 0.6 },
+    { "source": "file:src/renderer/src/screens/Layout/Layout.tsx", "target": "file:src/renderer/src/components/RemoteNotice.tsx", "type": "imports", "weight": 0.4 },
+    { "source": "file:src/renderer/src/screens/Layout/Layout.tsx", "target": "file:src/renderer/src/components/VerifyWarningBanner.tsx", "type": "imports", "weight": 0.4 },
+    { "source": "file:src/renderer/src/screens/Layout/Layout.tsx", "target": "file:src/renderer/src/assets/icons/index.tsx", "type": "imports", "weight": 0.4 },
+    { "source": "file:src/renderer/src/screens/Layout/Layout.tsx", "target": "file:src/renderer/src/components/useI18n.ts", "type": "imports", "weight": 0.5 }
+  ]
+}

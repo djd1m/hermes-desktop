@@ -1,0 +1,359 @@
+{
+  "batchIndex": 15,
+  "nodes": [
+    {
+      "id": "file:src/main/run-stream.test.ts",
+      "type": "file",
+      "name": "run-stream.test.ts",
+      "filePath": "src/main/run-stream.test.ts",
+      "summary": "Tests run-stream utilities: capability detection, SSE block parsing, tool event conversion, usage extraction",
+      "tags": ["test", "streaming", "sse", "runs-api"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/main/run-stream.ts",
+      "type": "file",
+      "name": "run-stream.ts",
+      "filePath": "src/main/run-stream.ts",
+      "summary": "Hermes runs transport: checks API capabilities for /v1/runs endpoints, parses run SSE blocks, converts run events to ChatToolEvents and usage stats",
+      "tags": ["main", "streaming", "sse", "runs-api"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:supportsHermesRunsTransport",
+      "type": "function",
+      "name": "supportsHermesRunsTransport",
+      "filePath": "src/main/run-stream.ts",
+      "summary": "Checks if the Hermes API supports the runs transport by verifying required features and endpoint paths",
+      "tags": ["capability", "runs-api"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:chatToolEventFromRunEvent",
+      "type": "function",
+      "name": "chatToolEventFromRunEvent",
+      "filePath": "src/main/run-stream.ts",
+      "summary": "Converts a run SSE event (tool.started/completed/failed) to a ChatToolEvent for the renderer",
+      "tags": ["streaming", "tools"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:parseRunSseBlock",
+      "type": "function",
+      "name": "parseRunSseBlock",
+      "filePath": "src/main/run-stream.ts",
+      "summary": "Parses a raw SSE text block into eventType and data fields, handling multi-line data",
+      "tags": ["sse", "parsing"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/sse-parser.ts",
+      "type": "file",
+      "name": "sse-parser.ts",
+      "filePath": "src/main/sse-parser.ts",
+      "summary": "SSE stream parser: processes OpenAI-compatible SSE data payloads, custom hermes.tool.progress events, usage extraction, and error handling",
+      "tags": ["main", "sse", "parser", "streaming"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "function:processCustomEvent",
+      "type": "function",
+      "name": "processCustomEvent",
+      "filePath": "src/main/sse-parser.ts",
+      "summary": "Handles hermes.tool.progress SSE events by converting payloads to ChatToolEvents",
+      "tags": ["sse", "tools"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:processSseData",
+      "type": "function",
+      "name": "processSseData",
+      "filePath": "src/main/sse-parser.ts",
+      "summary": "Processes a single SSE data payload: extracts delta content, usage stats, errors, and detects [DONE] termination",
+      "tags": ["sse", "streaming"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:parseSseBlock",
+      "type": "function",
+      "name": "parseSseBlock",
+      "filePath": "src/main/sse-parser.ts",
+      "summary": "Parses a raw SSE block into event type and data line for downstream processing",
+      "tags": ["sse", "parsing"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/tui-gateway-stream.test.ts",
+      "type": "file",
+      "name": "tui-gateway-stream.test.ts",
+      "filePath": "src/main/tui-gateway-stream.test.ts",
+      "summary": "Tests TUI gateway stream event processing: tool events, reasoning, usage, and delta extraction",
+      "tags": ["test", "streaming", "tui", "gateway"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/main/tui-gateway-stream.ts",
+      "type": "file",
+      "name": "tui-gateway-stream.ts",
+      "filePath": "src/main/tui-gateway-stream.ts",
+      "summary": "TUI gateway stream processor: converts Hermes gateway SSE events (tool progress, reasoning, usage, delta) into structured typed events for the renderer",
+      "tags": ["main", "streaming", "tui", "gateway"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/preload/index.d.ts",
+      "type": "file",
+      "name": "index.d.ts",
+      "filePath": "src/preload/index.d.ts",
+      "summary": "TypeScript declarations for the Electron preload API: hermesAPI, electronAPI, and all IPC method signatures exposed to the renderer",
+      "tags": ["preload", "types", "ipc", "api-surface"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/preload/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/preload/index.ts",
+      "summary": "Electron preload bridge: exposes hermesAPI and electronAPI to renderer via contextBridge, wrapping IPC calls for all main-process operations",
+      "tags": ["preload", "electron", "ipc", "bridge"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/shared/chat-stream.ts",
+      "type": "file",
+      "name": "chat-stream.ts",
+      "filePath": "src/shared/chat-stream.ts",
+      "summary": "Shared ChatToolEvent interface and helpers: chatToolEventFromPayload converts raw SSE payloads to typed events, chatToolProgressLabel formats display text",
+      "tags": ["shared", "streaming", "types", "tools"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:chatToolEventFromPayload",
+      "type": "function",
+      "name": "chatToolEventFromPayload",
+      "filePath": "src/shared/chat-stream.ts",
+      "summary": "Converts a raw JSON payload from SSE into a typed ChatToolEvent with normalized callId, status, and metadata",
+      "tags": ["streaming", "tools"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:chatToolProgressLabel",
+      "type": "function",
+      "name": "chatToolProgressLabel",
+      "filePath": "src/shared/chat-stream.ts",
+      "summary": "Generates a human-readable label string from a ChatToolEvent (emoji + tool name)",
+      "tags": ["streaming", "display"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/config.ts",
+      "type": "file",
+      "name": "config.ts",
+      "filePath": "src/shared/i18n/config.ts",
+      "summary": "i18n locale configuration: defines source/fallback/default locales and the full list of supported locales (en, es, ja, zh-CN, etc.)",
+      "tags": ["shared", "i18n", "config", "locales"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/types.ts",
+      "type": "file",
+      "name": "types.ts",
+      "filePath": "src/shared/i18n/types.ts",
+      "summary": "Type definitions for i18n: AppLocale union type and TranslationTree recursive structure",
+      "tags": ["shared", "i18n", "types"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/messaging-platforms.test.ts",
+      "type": "file",
+      "name": "messaging-platforms.test.ts",
+      "filePath": "src/shared/messaging-platforms.test.ts",
+      "summary": "Tests for shared messaging platform types and helpers",
+      "tags": ["test", "shared", "messaging"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/shared/messaging-platforms.ts",
+      "type": "file",
+      "name": "messaging-platforms.ts",
+      "filePath": "src/shared/messaging-platforms.ts",
+      "summary": "Shared messaging platform types and API helpers: platform info, env vars, toolsets, state management, and IPC method signatures for Slack/Discord/Telegram integration",
+      "tags": ["shared", "messaging", "platforms", "types"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/shared/registry.ts",
+      "type": "file",
+      "name": "registry.ts",
+      "filePath": "src/shared/registry.ts",
+      "summary": "Shared types for the Discover community marketplace: RegistryItem, RegistryCatalog, InstalledRegistry, and RegistryDetail for skills/mcps/agents/workflows",
+      "tags": ["shared", "registry", "marketplace", "types"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/sse-parser.test.ts",
+      "type": "file",
+      "name": "sse-parser.test.ts",
+      "filePath": "tests/sse-parser.test.ts",
+      "summary": "Tests SSE parser: data processing, custom event handling, usage extraction, error forwarding, and [DONE] termination",
+      "tags": ["test", "sse", "parser", "streaming"],
+      "language": "typescript",
+      "complexity": "complex"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/main/run-stream.ts",
+      "target": "file:src/shared/chat-stream.ts",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/sse-parser.ts",
+      "target": "file:src/shared/chat-stream.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/main/tui-gateway-stream.ts",
+      "target": "file:src/shared/chat-stream.ts",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/preload/index.d.ts",
+      "target": "file:src/shared/i18n/types.ts",
+      "type": "imports",
+      "weight": 0.5
+    },
+    {
+      "source": "file:src/preload/index.d.ts",
+      "target": "file:src/shared/attachments.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/preload/index.d.ts",
+      "target": "file:src/shared/registry.ts",
+      "type": "imports",
+      "weight": 0.5
+    },
+    {
+      "source": "file:src/preload/index.d.ts",
+      "target": "file:src/shared/messaging-platforms.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/preload/index.d.ts",
+      "target": "file:src/shared/chat-stream.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/preload/index.ts",
+      "target": "file:src/shared/i18n/types.ts",
+      "type": "imports",
+      "weight": 0.5
+    },
+    {
+      "source": "file:src/preload/index.ts",
+      "target": "file:src/shared/attachments.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/preload/index.ts",
+      "target": "file:src/shared/messaging-platforms.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/preload/index.ts",
+      "target": "file:src/shared/chat-stream.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/shared/i18n/config.ts",
+      "target": "file:src/shared/i18n/types.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/main/run-stream.ts",
+      "target": "file:src/main/run-stream.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/main/tui-gateway-stream.ts",
+      "target": "file:src/main/tui-gateway-stream.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/main/sse-parser.ts",
+      "target": "file:tests/sse-parser.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/shared/messaging-platforms.ts",
+      "target": "file:src/shared/messaging-platforms.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/main/run-stream.test.ts",
+      "target": "file:src/main/run-stream.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/main/tui-gateway-stream.test.ts",
+      "target": "file:src/main/tui-gateway-stream.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/shared/messaging-platforms.test.ts",
+      "target": "file:src/shared/messaging-platforms.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/sse-parser.test.ts",
+      "target": "file:src/main/sse-parser.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/liveToolEvents.ts",
+      "target": "file:src/shared/chat-stream.ts",
+      "type": "imports",
+      "weight": 0.8
+    }
+  ]
+}

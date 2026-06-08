@@ -1,0 +1,1769 @@
+{
+  "batchIndex": 1,
+  "nodes": [
+    {
+      "id": "file:src/shared/i18n/index.test.ts",
+      "type": "file",
+      "name": "index.test.ts",
+      "filePath": "src/shared/i18n/index.test.ts",
+      "summary": "Unit tests for the i18n module. Verifies English default text, fallback behavior for missing keys, translations for zh-CN, zh-TW, es, id, pl locales, and interpolation placeholder handling.",
+      "tags": [
+        "i18n",
+        "test",
+        "vitest",
+        "unit-test"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/shared/i18n/index.ts",
+      "summary": "Core i18n module using i18next. Imports all locale files for 10 languages (en, es, id, ja, pl, pt-BR, pt-PT, tr, zh-CN, zh-TW) across 22 namespaces. Exports t() translation function, locale getters/setters, and resource bundle. Supports interpolation and fallback to English.",
+      "tags": [
+        "i18n",
+        "core",
+        "i18next",
+        "translation",
+        "module"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/en/agents.ts",
+      "type": "file",
+      "name": "agents.ts",
+      "filePath": "src/shared/i18n/locales/en/agents.ts",
+      "summary": "English (en) locale strings for the agents namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "en",
+        "agents"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/en/chat.ts",
+      "type": "file",
+      "name": "chat.ts",
+      "filePath": "src/shared/i18n/locales/en/chat.ts",
+      "summary": "English (en) locale strings for the chat namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "en",
+        "chat"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/en/common.ts",
+      "type": "file",
+      "name": "common.ts",
+      "filePath": "src/shared/i18n/locales/en/common.ts",
+      "summary": "English (en) locale strings for the common namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "en",
+        "common"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/en/constants.ts",
+      "type": "file",
+      "name": "constants.ts",
+      "filePath": "src/shared/i18n/locales/en/constants.ts",
+      "summary": "English (en) locale strings for the constants namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "en",
+        "constants"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/en/diagnose.ts",
+      "type": "file",
+      "name": "diagnose.ts",
+      "filePath": "src/shared/i18n/locales/en/diagnose.ts",
+      "summary": "English (en) locale strings for the diagnose namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "en",
+        "diagnose"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/en/discover.ts",
+      "type": "file",
+      "name": "discover.ts",
+      "filePath": "src/shared/i18n/locales/en/discover.ts",
+      "summary": "English (en) locale strings for the discover namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "en",
+        "discover"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/en/errors.ts",
+      "type": "file",
+      "name": "errors.ts",
+      "filePath": "src/shared/i18n/locales/en/errors.ts",
+      "summary": "English (en) locale strings for the errors namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "en",
+        "errors"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/en/gateway.ts",
+      "type": "file",
+      "name": "gateway.ts",
+      "filePath": "src/shared/i18n/locales/en/gateway.ts",
+      "summary": "English (en) locale strings for the gateway namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "en",
+        "gateway"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/en/install.ts",
+      "type": "file",
+      "name": "install.ts",
+      "filePath": "src/shared/i18n/locales/en/install.ts",
+      "summary": "English (en) locale strings for the install namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "en",
+        "install"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/en/kanban.ts",
+      "type": "file",
+      "name": "kanban.ts",
+      "filePath": "src/shared/i18n/locales/en/kanban.ts",
+      "summary": "English (en) locale strings for the kanban namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "en",
+        "kanban"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/en/memory.ts",
+      "type": "file",
+      "name": "memory.ts",
+      "filePath": "src/shared/i18n/locales/en/memory.ts",
+      "summary": "English (en) locale strings for the memory namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "en",
+        "memory"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/en/models.ts",
+      "type": "file",
+      "name": "models.ts",
+      "filePath": "src/shared/i18n/locales/en/models.ts",
+      "summary": "English (en) locale strings for the models namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "en",
+        "models"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/en/navigation.ts",
+      "type": "file",
+      "name": "navigation.ts",
+      "filePath": "src/shared/i18n/locales/en/navigation.ts",
+      "summary": "English (en) locale strings for the navigation namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "en",
+        "navigation"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/en/office.ts",
+      "type": "file",
+      "name": "office.ts",
+      "filePath": "src/shared/i18n/locales/en/office.ts",
+      "summary": "English (en) locale strings for the office namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "en",
+        "office"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/en/providers.ts",
+      "type": "file",
+      "name": "providers.ts",
+      "filePath": "src/shared/i18n/locales/en/providers.ts",
+      "summary": "English (en) locale strings for the providers namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "en",
+        "providers"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/en/schedules.ts",
+      "type": "file",
+      "name": "schedules.ts",
+      "filePath": "src/shared/i18n/locales/en/schedules.ts",
+      "summary": "English (en) locale strings for the schedules namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "en",
+        "schedules"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/en/sessions.ts",
+      "type": "file",
+      "name": "sessions.ts",
+      "filePath": "src/shared/i18n/locales/en/sessions.ts",
+      "summary": "English (en) locale strings for the sessions namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "en",
+        "sessions"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/en/settings.ts",
+      "type": "file",
+      "name": "settings.ts",
+      "filePath": "src/shared/i18n/locales/en/settings.ts",
+      "summary": "English (en) locale strings for the settings namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "en",
+        "settings"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/en/setup.ts",
+      "type": "file",
+      "name": "setup.ts",
+      "filePath": "src/shared/i18n/locales/en/setup.ts",
+      "summary": "English (en) locale strings for the setup namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "en",
+        "setup"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/en/skills.ts",
+      "type": "file",
+      "name": "skills.ts",
+      "filePath": "src/shared/i18n/locales/en/skills.ts",
+      "summary": "English (en) locale strings for the skills namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "en",
+        "skills"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/en/soul.ts",
+      "type": "file",
+      "name": "soul.ts",
+      "filePath": "src/shared/i18n/locales/en/soul.ts",
+      "summary": "English (en) locale strings for the soul namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "en",
+        "soul"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/en/tools.ts",
+      "type": "file",
+      "name": "tools.ts",
+      "filePath": "src/shared/i18n/locales/en/tools.ts",
+      "summary": "English (en) locale strings for the tools namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "en",
+        "tools"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/en/welcome.ts",
+      "type": "file",
+      "name": "welcome.ts",
+      "filePath": "src/shared/i18n/locales/en/welcome.ts",
+      "summary": "English (en) locale strings for the welcome namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "en",
+        "welcome"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/es/agents.ts",
+      "type": "file",
+      "name": "agents.ts",
+      "filePath": "src/shared/i18n/locales/es/agents.ts",
+      "summary": "Spanish (es) locale strings for the agents namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "es",
+        "agents"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/es/chat.ts",
+      "type": "file",
+      "name": "chat.ts",
+      "filePath": "src/shared/i18n/locales/es/chat.ts",
+      "summary": "Spanish (es) locale strings for the chat namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "es",
+        "chat"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/es/common.ts",
+      "type": "file",
+      "name": "common.ts",
+      "filePath": "src/shared/i18n/locales/es/common.ts",
+      "summary": "Spanish (es) locale strings for the common namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "es",
+        "common"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/es/constants.ts",
+      "type": "file",
+      "name": "constants.ts",
+      "filePath": "src/shared/i18n/locales/es/constants.ts",
+      "summary": "Spanish (es) locale strings for the constants namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "es",
+        "constants"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/es/diagnose.ts",
+      "type": "file",
+      "name": "diagnose.ts",
+      "filePath": "src/shared/i18n/locales/es/diagnose.ts",
+      "summary": "Spanish (es) locale strings for the diagnose namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "es",
+        "diagnose"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/es/errors.ts",
+      "type": "file",
+      "name": "errors.ts",
+      "filePath": "src/shared/i18n/locales/es/errors.ts",
+      "summary": "Spanish (es) locale strings for the errors namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "es",
+        "errors"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/shared/i18n/index.test.ts",
+      "target": "file:src/shared/i18n/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/config.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/en/common.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/en/navigation.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/en/discover.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/en/welcome.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/en/setup.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/en/chat.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/en/settings.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/en/tools.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/en/sessions.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/en/models.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/en/providers.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/en/office.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/en/errors.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/en/schedules.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/en/skills.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/en/gateway.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/en/agents.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/en/soul.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/en/memory.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/en/install.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/en/constants.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/en/kanban.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/en/diagnose.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pl/common.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pl/navigation.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pl/welcome.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pl/setup.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pl/chat.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pl/settings.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pl/tools.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pl/sessions.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pl/models.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pl/providers.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pl/office.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pl/errors.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pl/schedules.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pl/skills.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pl/gateway.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pl/agents.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pl/soul.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pl/memory.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pl/install.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pl/constants.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pl/kanban.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/es/common.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/es/navigation.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/es/welcome.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/es/setup.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/es/chat.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/es/settings.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/es/tools.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/es/sessions.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/es/models.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/es/providers.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/es/office.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/es/errors.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/es/schedules.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/es/skills.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/es/gateway.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/es/agents.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/es/soul.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/es/memory.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/es/install.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/es/constants.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/es/kanban.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/es/diagnose.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/id/common.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/id/navigation.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/id/welcome.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/id/setup.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/id/chat.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/id/settings.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/id/tools.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/id/sessions.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/id/models.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/id/providers.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/id/office.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/id/errors.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/id/schedules.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/id/skills.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/id/gateway.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/id/agents.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/id/soul.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/id/memory.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/id/install.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/id/constants.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-CN/common.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-CN/navigation.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-CN/welcome.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-CN/setup.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-CN/chat.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-CN/settings.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-CN/tools.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-CN/sessions.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-CN/models.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-CN/providers.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-CN/office.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-CN/errors.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-CN/schedules.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-CN/skills.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-CN/gateway.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-CN/agents.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-CN/soul.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-CN/memory.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-CN/install.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-CN/constants.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-CN/kanban.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-TW/common.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-TW/navigation.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-TW/welcome.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-TW/setup.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-TW/chat.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-TW/settings.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-TW/tools.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-TW/sessions.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-TW/models.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-TW/providers.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-TW/office.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-TW/errors.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-TW/schedules.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-TW/skills.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-TW/gateway.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-TW/agents.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-TW/soul.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-TW/memory.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-TW/install.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-TW/constants.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/zh-TW/kanban.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/ja/common.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/ja/navigation.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/ja/welcome.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/ja/setup.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/ja/chat.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/ja/settings.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/ja/tools.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/ja/sessions.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/ja/models.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/ja/providers.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/ja/office.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/ja/errors.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/ja/schedules.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/ja/skills.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/ja/gateway.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/ja/agents.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/ja/soul.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/ja/memory.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/ja/install.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/ja/constants.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-BR/common.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-BR/navigation.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-BR/welcome.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-BR/setup.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-BR/chat.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-BR/settings.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-BR/tools.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-BR/sessions.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-BR/models.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-BR/providers.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-BR/office.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-BR/errors.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-BR/schedules.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-BR/skills.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-BR/gateway.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-BR/agents.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-BR/soul.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-BR/memory.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-BR/install.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-BR/constants.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-PT/common.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-PT/navigation.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-PT/welcome.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-PT/setup.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-PT/chat.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-PT/settings.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-PT/tools.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-PT/sessions.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-PT/models.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-PT/providers.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-PT/office.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-PT/errors.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-PT/schedules.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-PT/skills.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-PT/gateway.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-PT/agents.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-PT/soul.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-PT/memory.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-PT/install.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-PT/constants.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-PT/kanban.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/pt-PT/diagnose.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/tr/common.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/tr/navigation.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/tr/discover.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/tr/welcome.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/tr/setup.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/tr/chat.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/tr/settings.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/tr/tools.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/tr/sessions.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/tr/models.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/tr/providers.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/tr/office.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/tr/errors.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/tr/schedules.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/tr/skills.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/tr/gateway.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/tr/agents.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/tr/soul.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/tr/memory.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/tr/install.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/tr/constants.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/tr/kanban.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/i18n/index.ts",
+      "target": "file:src/shared/i18n/locales/tr/diagnose.ts",
+      "type": "imports",
+      "weight": 0.7
+    }
+  ]
+}

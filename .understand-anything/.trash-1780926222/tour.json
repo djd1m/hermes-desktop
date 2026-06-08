@@ -1,0 +1,74 @@
+[
+  {
+    "order": 1,
+    "title": "Project Overview",
+    "description": "Start with the README to understand Hermes Desktop's purpose — a native Electron app for installing, configuring, and chatting with the Hermes AI agent. The package.json reveals v0.5.8 with Electron-Vite build tooling, 150+ IPC handlers, and vitest for testing. The contributing guide explains the fork-and-PR workflow.",
+    "nodeIds": ["document:README.md", "config:package.json", "document:CONTRIBUTING.md"]
+  },
+  {
+    "order": 2,
+    "title": "Electron Main Process",
+    "description": "The app boots from src/main/index.ts — the single Electron main-process entry point. It creates the BrowserWindow, registers 150+ IPC handlers covering every feature (chat, config, sessions, models, profiles, skills, tools, memory, kanban, gateway, SSH, office), sets up security hardening, and coordinates the gateway lifecycle. Security policies (URL allowlisting, webview hardening) are enforced in security.ts.",
+    "nodeIds": ["file:src/main/index.ts", "file:src/main/security.ts", "file:src/main/validation.ts", "file:src/main/utils.ts"]
+  },
+  {
+    "order": 3,
+    "title": "Configuration and Providers",
+    "description": "Configuration is centralized in config.ts, which manages desktop.json, .env files, config.yaml, connection settings, model config, and API key resolution across profiles. The provider-registry.ts maps provider names to canonical API base URLs. Model-discovery.ts auto-discovers available AI models from all configured providers with caching and parallel querying. The enterprise layer in enterprise/index.ts registers Cloud.ru and GigaChat providers without modifying upstream files.",
+    "nodeIds": ["file:src/main/config.ts", "file:src/main/provider-registry.ts", "file:src/main/model-discovery.ts", "file:src/main/enterprise/cloud-ru-provider.ts", "file:src/main/enterprise/index.ts"]
+  },
+  {
+    "order": 4,
+    "title": "Hermes Gateway",
+    "description": "The gateway is the core backend bridge. hermes.ts manages the gateway process lifecycle (start/stop/restart with recovery), health polling, chat message streaming with attachment support, audio transcription via Whisper, and remote connection testing. The SSE parser (sse-parser.ts) processes OpenAI-compatible streaming payloads, while tui-gateway-stream.ts and run-stream.ts handle tool progress events, reasoning deltas, and usage tracking from the Hermes CLI's streaming output.",
+    "nodeIds": ["file:src/main/hermes.ts", "file:src/main/sse-parser.ts", "file:src/main/tui-gateway-stream.ts", "file:src/main/run-stream.ts", "file:src/main/gateway-ports.ts"]
+  },
+  {
+    "order": 5,
+    "title": "Preload Bridge",
+    "description": "The preload layer is the security boundary between Electron's main process and the renderer. preload/index.ts uses contextBridge to expose hermesAPI and electronAPI objects with 150+ typed IPC methods — every renderer call to the main process flows through here. The type declarations in index.d.ts define the full API surface. A separate askpass preload handles the sudo password dialog for Linux installations.",
+    "nodeIds": ["file:src/preload/index.ts", "file:src/preload/index.d.ts", "file:src/preload/askpass.ts", "file:src/shared/askpass.ts"]
+  },
+  {
+    "order": 6,
+    "title": "React App Shell",
+    "description": "The renderer boots from main.tsx, which initializes analytics, wraps the app in I18nProvider, and mounts to the DOM. App.tsx is the root React component managing a screen state machine (splash -> welcome -> install -> setup -> main) with connection monitoring. Layout.tsx provides the main shell with sidebar navigation and tab routing between all screens. ThemeProvider handles light/dark/system themes with CSS variable injection, and I18nProvider supports 10 languages across 22 namespaces.",
+    "nodeIds": ["file:src/renderer/src/main.tsx", "file:src/renderer/src/App.tsx", "file:src/renderer/src/screens/Layout/Layout.tsx", "file:src/renderer/src/components/ThemeProvider.tsx", "file:src/renderer/src/components/I18nProvider.tsx"]
+  },
+  {
+    "order": 7,
+    "title": "Chat System",
+    "description": "The chat screen is the app's centerpiece. Chat.tsx orchestrates message display, input, model selection, streaming, and session management. The input component (ChatInput.tsx) supports auto-resize, slash command autocomplete, file attachments, and voice input. MessageList.tsx renders the scrollable conversation with MessageRow bubbles and HistoryRow tool/reasoning sections. Key hooks split concerns: useChatIPC handles streaming events, useChatActions manages send/stop/retry, useVoiceInput bridges speech recognition and Whisper transcription, and useLocalCommands handles slash commands.",
+    "nodeIds": ["file:src/renderer/src/screens/Chat/Chat.tsx", "file:src/renderer/src/screens/Chat/ChatInput.tsx", "file:src/renderer/src/screens/Chat/MessageList.tsx", "file:src/renderer/src/screens/Chat/MessageRow.tsx", "file:src/renderer/src/screens/Chat/hooks/useChatIPC.ts"]
+  },
+  {
+    "order": 8,
+    "title": "Session and Profile Management",
+    "description": "Sessions are the persistent record of conversations. sessions.ts provides data access to the Hermes SQLite database — listing, searching, deleting sessions, decoding message content, and parsing tool calls. session-cache.ts maintains an in-memory cache synchronized with SQLite for fast listing. Profiles (profiles.ts) allow multiple named Hermes configurations with list/create/delete/switch operations. Each profile has its own .env, config.yaml, soul file, and data directory, resolved through utils.ts path helpers.",
+    "nodeIds": ["file:src/main/sessions.ts", "file:src/main/session-cache.ts", "file:src/main/profiles.ts", "file:src/renderer/src/screens/Sessions/Sessions.tsx", "file:src/renderer/src/screens/Layout/ProfileSwitcher.tsx"]
+  },
+  {
+    "order": 9,
+    "title": "Skills, Tools, and MCP Servers",
+    "description": "The extensibility layer has three parts. Skills (skills.ts) are installable prompt/behavior packs — list installed, search available, install by name or URL. Tools (tools.ts) manage agent toolsets with enable/disable toggles and platform-specific sets. MCP servers (mcp-servers.ts) handle Model Context Protocol integrations — list, add, remove, enable/disable, test connections, and install from catalog. The renderer screens (Skills.tsx, Tools.tsx) provide the user-facing management UI with search and content preview.",
+    "nodeIds": ["file:src/main/skills.ts", "file:src/main/tools.ts", "file:src/main/mcp-servers.ts", "file:src/renderer/src/screens/Skills/Skills.tsx", "file:src/renderer/src/screens/Tools/Tools.tsx"]
+  },
+  {
+    "order": 10,
+    "title": "Messaging Gateways",
+    "description": "Hermes supports 16 messaging platform integrations (Discord, Telegram, Slack, WhatsApp, etc.). messaging-platforms.ts in the main process builds platform configs, reads/applies runtime states, tests connections, and proxies to remote platforms. The shared module (shared/messaging-platforms.ts) defines platform info, env vars, toolsets, state management types, and IPC method signatures. The Gateway screen (Gateway.tsx) provides the UI for starting/stopping the gateway, viewing logs, and configuring connection modes including local, remote, and SSH tunnel.",
+    "nodeIds": ["file:src/main/messaging-platforms.ts", "file:src/shared/messaging-platforms.ts", "file:src/renderer/src/screens/Gateway/Gateway.tsx", "file:src/main/ssh-tunnel.ts", "file:src/main/ssh-remote.ts"]
+  },
+  {
+    "order": 11,
+    "title": "3D Office",
+    "description": "The Office tab renders an interactive 3D office scene where each Hermes profile appears as an animated agent. Office.tsx manages the top-level screen with agent mapping and chat modals. Office3D.tsx is the core Three.js/react-three-fiber canvas with per-frame agent simulation, furniture, and camera controls. Agents are mapped from desktop profiles (agents.ts) with deterministic colors and avatar customization (profile.ts). The scene includes GLB-loaded rigged characters and furniture (desks, chairs, plants), a work-area/rest-room layout, and an in-office chat modal (OneChatModal.tsx).",
+    "nodeIds": ["file:src/renderer/src/screens/Office/Office.tsx", "file:src/renderer/src/screens/Office/office3d/Office3D.tsx", "file:src/renderer/src/screens/Office/office3d/agents.ts", "file:src/renderer/src/screens/Office/office3d/objects/agents.tsx", "file:src/renderer/src/screens/Office/OneChatModal.tsx"]
+  },
+  {
+    "order": 12,
+    "title": "Build, Testing, and Dev Tooling",
+    "description": "The project uses Electron-Vite for building three targets (main, preload, renderer) configured in electron.vite.config.ts. Electron Builder (electron-builder.yml) packages the app for Windows (NSIS), macOS (DMG/zip), and Linux (AppImage/deb/rpm) under appId com.nousresearch.hermes. Vitest (vitest.config.ts) runs tests in jsdom with globals enabled. The test suite covers unit tests for config, sessions, security, SSE parsing, SSH, providers, and more — over 40 test files in the tests/ directory plus co-located component tests.",
+    "nodeIds": ["config:electron.vite.config.ts", "config:electron-builder.yml", "config:vitest.config.ts", "file:tests/electron-security.test.ts", "file:tests/sessions-history-items.test.ts"]
+  }
+]

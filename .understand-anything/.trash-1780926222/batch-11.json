@@ -1,0 +1,669 @@
+{
+  "batchIndex": 11,
+  "nodes": [
+    {
+      "id": "file:tests/installer-platform.test.ts",
+      "type": "file",
+      "name": "installer-platform.test.ts",
+      "filePath": "tests/installer-platform.test.ts",
+      "summary": "Tests platform-specific installer wiring: enhanced PATH construction and CLI invocation args for Windows vs Unix",
+      "tags": ["test", "installer", "platform"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/installer-target.test.ts",
+      "type": "file",
+      "name": "installer-target.test.ts",
+      "filePath": "tests/installer-target.test.ts",
+      "summary": "Tests installer target resolution logic for determining correct install paths",
+      "tags": ["test", "installer"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/kanban-unsupported.test.ts",
+      "type": "file",
+      "name": "kanban-unsupported.test.ts",
+      "filePath": "tests/kanban-unsupported.test.ts",
+      "summary": "Tests kanban feature detection for unsupported scenarios",
+      "tags": ["test", "kanban"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/mcp-servers.test.ts",
+      "type": "file",
+      "name": "mcp-servers.test.ts",
+      "filePath": "tests/mcp-servers.test.ts",
+      "summary": "Tests MCP server config management: parsing catalog output, YAML config parsing, upsert/remove/enable operations",
+      "tags": ["test", "mcp", "config"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tests/media.test.ts",
+      "type": "file",
+      "name": "media.test.ts",
+      "filePath": "tests/media.test.ts",
+      "summary": "Tests media handling logic for file type detection and processing",
+      "tags": ["test", "media"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/messaging-platform-runtime-state.test.ts",
+      "type": "file",
+      "name": "messaging-platform-runtime-state.test.ts",
+      "filePath": "tests/messaging-platform-runtime-state.test.ts",
+      "summary": "Tests messaging platform runtime state tracking and transitions",
+      "tags": ["test", "messaging", "platform"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/oauth-model-discovery.test.ts",
+      "type": "file",
+      "name": "oauth-model-discovery.test.ts",
+      "filePath": "tests/oauth-model-discovery.test.ts",
+      "summary": "Tests OAuth-based model discovery flow for fetching available models from providers",
+      "tags": ["test", "oauth", "model-discovery"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/office-env.test.ts",
+      "type": "file",
+      "name": "office-env.test.ts",
+      "filePath": "tests/office-env.test.ts",
+      "summary": "Tests environment variable handling for the office/claw3d integration layer",
+      "tags": ["test", "office", "env"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tests/office-start.test.ts",
+      "type": "file",
+      "name": "office-start.test.ts",
+      "filePath": "tests/office-start.test.ts",
+      "summary": "Tests the office-start sequence including config loading and gateway startup coordination",
+      "tags": ["test", "office", "startup"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tests/process-options.test.ts",
+      "type": "file",
+      "name": "process-options.test.ts",
+      "filePath": "tests/process-options.test.ts",
+      "summary": "Tests process spawn option construction for child processes",
+      "tags": ["test", "process"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/profile-validation.test.ts",
+      "type": "file",
+      "name": "profile-validation.test.ts",
+      "filePath": "tests/profile-validation.test.ts",
+      "summary": "Tests profile name validation rules and edge cases",
+      "tags": ["test", "profile", "validation"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/profiles.test.ts",
+      "type": "file",
+      "name": "profiles.test.ts",
+      "filePath": "tests/profiles.test.ts",
+      "summary": "Tests profile CRUD operations: list, create, switch, delete profiles",
+      "tags": ["test", "profiles"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tests/provider-registry.test.ts",
+      "type": "file",
+      "name": "provider-registry.test.ts",
+      "filePath": "tests/provider-registry.test.ts",
+      "summary": "Tests provider registry lookup and matching logic",
+      "tags": ["test", "provider", "registry"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/providers.test.ts",
+      "type": "file",
+      "name": "providers.test.ts",
+      "filePath": "tests/providers.test.ts",
+      "summary": "Tests provider configuration and detection",
+      "tags": ["test", "providers"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/remote-mode-url-and-spawn.test.ts",
+      "type": "file",
+      "name": "remote-mode-url-and-spawn.test.ts",
+      "filePath": "tests/remote-mode-url-and-spawn.test.ts",
+      "summary": "Tests remote mode URL normalization and spawn behavior for SSH/remote connections",
+      "tags": ["test", "remote", "ssh", "spawn"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tests/safe-write-file.test.ts",
+      "type": "file",
+      "name": "safe-write-file.test.ts",
+      "filePath": "tests/safe-write-file.test.ts",
+      "summary": "Tests atomic safe file writing utility",
+      "tags": ["test", "utils", "file-io"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/session-cache-sync.test.ts",
+      "type": "file",
+      "name": "session-cache-sync.test.ts",
+      "filePath": "tests/session-cache-sync.test.ts",
+      "summary": "Tests session cache synchronization: writing, reading, invalidation, and concurrent access patterns",
+      "tags": ["test", "session", "cache", "sync"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tests/sessions-decode-content.test.ts",
+      "type": "file",
+      "name": "sessions-decode-content.test.ts",
+      "filePath": "tests/sessions-decode-content.test.ts",
+      "summary": "Tests session content decoding from the state database format",
+      "tags": ["test", "sessions", "decode"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/sessions-delete-session.test.ts",
+      "type": "file",
+      "name": "sessions-delete-session.test.ts",
+      "filePath": "tests/sessions-delete-session.test.ts",
+      "summary": "Tests session deletion including cascade cleanup of related data",
+      "tags": ["test", "sessions", "delete"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tests/sessions-history-items.test.ts",
+      "type": "file",
+      "name": "sessions-history-items.test.ts",
+      "filePath": "tests/sessions-history-items.test.ts",
+      "summary": "Tests session history item retrieval and ordering from the state database",
+      "tags": ["test", "sessions", "history"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tests/skills-cli-output.test.ts",
+      "type": "file",
+      "name": "skills-cli-output.test.ts",
+      "filePath": "tests/skills-cli-output.test.ts",
+      "summary": "Tests parsing of the hermes skills CLI output format",
+      "tags": ["test", "skills", "cli"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/skills-content-security.test.ts",
+      "type": "file",
+      "name": "skills-content-security.test.ts",
+      "filePath": "tests/skills-content-security.test.ts",
+      "summary": "Tests content security policy enforcement for skill content rendering",
+      "tags": ["test", "skills", "security"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/ssh-options.test.ts",
+      "type": "file",
+      "name": "ssh-options.test.ts",
+      "filePath": "tests/ssh-options.test.ts",
+      "summary": "Tests SSH connection option construction and validation",
+      "tags": ["test", "ssh"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/ssh-remote-paths.test.ts",
+      "type": "file",
+      "name": "ssh-remote-paths.test.ts",
+      "filePath": "tests/ssh-remote-paths.test.ts",
+      "summary": "Tests SSH remote path resolution and normalization",
+      "tags": ["test", "ssh", "paths"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/ssh-remote.test.ts",
+      "type": "file",
+      "name": "ssh-remote.test.ts",
+      "filePath": "tests/ssh-remote.test.ts",
+      "summary": "Tests SSH remote execution and tunnel management",
+      "tags": ["test", "ssh", "remote"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/terminal-launcher.test.ts",
+      "type": "file",
+      "name": "terminal-launcher.test.ts",
+      "filePath": "tests/terminal-launcher.test.ts",
+      "summary": "Tests terminal launcher command construction for various platforms and terminal emulators",
+      "tags": ["test", "terminal", "launcher"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tests/toolset-toggle.test.ts",
+      "type": "file",
+      "name": "toolset-toggle.test.ts",
+      "filePath": "tests/toolset-toggle.test.ts",
+      "summary": "Tests toolset enable/disable toggle logic in configuration",
+      "tags": ["test", "tools", "config"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tests/url-key-map.test.ts",
+      "type": "file",
+      "name": "url-key-map.test.ts",
+      "filePath": "tests/url-key-map.test.ts",
+      "summary": "Tests URL-to-key mapping utility for provider URL normalization",
+      "tags": ["test", "url", "mapping"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/yaml-path.test.ts",
+      "type": "file",
+      "name": "yaml-path.test.ts",
+      "filePath": "tests/yaml-path.test.ts",
+      "summary": "Tests YAML path getter/setter utility for nested config access",
+      "tags": ["test", "yaml", "config"],
+      "language": "typescript",
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/main/installer.ts",
+      "target": "file:tests/installer-platform.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/main/installer.ts",
+      "target": "file:tests/installer-target.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/main/kanban.ts",
+      "target": "file:tests/kanban-unsupported.test.ts",
+      "type": "tested_by",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/mcp-servers.ts",
+      "target": "file:tests/mcp-servers.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/main/media.ts",
+      "target": "file:tests/media.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/main/messaging-platforms.ts",
+      "target": "file:tests/messaging-platform-runtime-state.test.ts",
+      "type": "tested_by",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/model-discovery.ts",
+      "target": "file:tests/oauth-model-discovery.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/main/claw3d.ts",
+      "target": "file:tests/office-env.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/main/office-start.ts",
+      "target": "file:tests/office-start.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/main/config.ts",
+      "target": "file:tests/office-start.test.ts",
+      "type": "tested_by",
+      "weight": 0.5
+    },
+    {
+      "source": "file:src/main/process-options.ts",
+      "target": "file:tests/process-options.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/main/utils.ts",
+      "target": "file:tests/profile-validation.test.ts",
+      "type": "tested_by",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/profiles.ts",
+      "target": "file:tests/profiles.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/main/provider-registry.ts",
+      "target": "file:tests/provider-registry.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/main/providers.ts",
+      "target": "file:tests/providers.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/main/hermes.ts",
+      "target": "file:tests/remote-mode-url-and-spawn.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/main/utils.ts",
+      "target": "file:tests/safe-write-file.test.ts",
+      "type": "tested_by",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/session-cache.ts",
+      "target": "file:tests/session-cache-sync.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/main/sessions.ts",
+      "target": "file:tests/sessions-decode-content.test.ts",
+      "type": "tested_by",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/sessions.ts",
+      "target": "file:tests/sessions-delete-session.test.ts",
+      "type": "tested_by",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/sessions.ts",
+      "target": "file:tests/sessions-history-items.test.ts",
+      "type": "tested_by",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/skills.ts",
+      "target": "file:tests/skills-cli-output.test.ts",
+      "type": "tested_by",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/skills.ts",
+      "target": "file:tests/skills-content-security.test.ts",
+      "type": "tested_by",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/ssh-options.ts",
+      "target": "file:tests/ssh-options.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/main/ssh-remote.ts",
+      "target": "file:tests/ssh-remote-paths.test.ts",
+      "type": "tested_by",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/ssh-remote.ts",
+      "target": "file:tests/ssh-remote.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/main/ssh-tunnel.ts",
+      "target": "file:tests/ssh-remote.test.ts",
+      "type": "tested_by",
+      "weight": 0.5
+    },
+    {
+      "source": "file:src/main/terminal-launcher.ts",
+      "target": "file:tests/terminal-launcher.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/main/tools.ts",
+      "target": "file:tests/toolset-toggle.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/shared/url-key-map.ts",
+      "target": "file:tests/url-key-map.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/main/yaml-path.ts",
+      "target": "file:tests/yaml-path.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/installer-platform.test.ts",
+      "target": "file:src/main/installer.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/installer-target.test.ts",
+      "target": "file:src/main/installer.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/kanban-unsupported.test.ts",
+      "target": "file:src/main/kanban.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/mcp-servers.test.ts",
+      "target": "file:src/main/mcp-servers.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/media.test.ts",
+      "target": "file:src/main/media.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/messaging-platform-runtime-state.test.ts",
+      "target": "file:src/main/messaging-platforms.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/oauth-model-discovery.test.ts",
+      "target": "file:src/main/model-discovery.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/office-env.test.ts",
+      "target": "file:src/main/claw3d.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/office-start.test.ts",
+      "target": "file:src/main/office-start.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/office-start.test.ts",
+      "target": "file:src/main/config.ts",
+      "type": "imports",
+      "weight": 0.5
+    },
+    {
+      "source": "file:tests/process-options.test.ts",
+      "target": "file:src/main/process-options.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/profile-validation.test.ts",
+      "target": "file:src/main/utils.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/profiles.test.ts",
+      "target": "file:src/main/profiles.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/provider-registry.test.ts",
+      "target": "file:src/main/provider-registry.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/providers.test.ts",
+      "target": "file:src/main/providers.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/remote-mode-url-and-spawn.test.ts",
+      "target": "file:src/main/hermes.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/safe-write-file.test.ts",
+      "target": "file:src/main/utils.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/session-cache-sync.test.ts",
+      "target": "file:src/main/session-cache.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/sessions-decode-content.test.ts",
+      "target": "file:src/main/sessions.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/sessions-delete-session.test.ts",
+      "target": "file:src/main/sessions.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/sessions-history-items.test.ts",
+      "target": "file:src/main/sessions.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/skills-cli-output.test.ts",
+      "target": "file:src/main/skills.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/skills-content-security.test.ts",
+      "target": "file:src/main/skills.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/ssh-options.test.ts",
+      "target": "file:src/main/ssh-options.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/ssh-remote-paths.test.ts",
+      "target": "file:src/main/ssh-remote.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/ssh-remote.test.ts",
+      "target": "file:src/main/ssh-remote.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/ssh-remote.test.ts",
+      "target": "file:src/main/ssh-tunnel.ts",
+      "type": "imports",
+      "weight": 0.5
+    },
+    {
+      "source": "file:tests/terminal-launcher.test.ts",
+      "target": "file:src/main/terminal-launcher.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/toolset-toggle.test.ts",
+      "target": "file:src/main/tools.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/url-key-map.test.ts",
+      "target": "file:src/shared/url-key-map.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/yaml-path.test.ts",
+      "target": "file:src/main/yaml-path.ts",
+      "type": "imports",
+      "weight": 0.9
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "batchIndex": 19,
+  "nodes": [
+    {
+      "id": "config:build/winget/Installer.template.yaml",
+      "type": "config",
+      "name": "Installer.template.yaml",
+      "filePath": "build/winget/Installer.template.yaml",
+      "summary": "WinGet installer manifest template for NousResearch.HermesDesktop. Defines the NSIS installer metadata with placeholders (VERSION, RELEASE_DATE, INSTALLER_URL, INSTALLER_SHA256) that are replaced at build time by scripts/generate-winget-manifests.mjs. Targets x64 Windows 10 1809+ with user-scope install.",
+      "tags": ["config", "winget", "windows", "installer", "template", "distribution"],
+      "language": "yaml",
+      "complexity": "low"
+    },
+    {
+      "id": "config:build/winget/Locale.en-US.template.yaml",
+      "type": "config",
+      "name": "Locale.en-US.template.yaml",
+      "filePath": "build/winget/Locale.en-US.template.yaml",
+      "summary": "WinGet locale manifest template (en-US) for NousResearch.HermesDesktop. Contains package metadata: publisher (Nous Research), package name (Hermes One), MIT license, short/long descriptions, tags (ai, agent, desktop, electron, llm), and a RELEASE_NOTES_URL placeholder.",
+      "tags": ["config", "winget", "windows", "locale", "metadata", "template"],
+      "language": "yaml",
+      "complexity": "low"
+    },
+    {
+      "id": "config:build/winget/Version.template.yaml",
+      "type": "config",
+      "name": "Version.template.yaml",
+      "filePath": "build/winget/Version.template.yaml",
+      "summary": "WinGet version manifest template for NousResearch.HermesDesktop. Minimal file with PackageIdentifier, VERSION placeholder, and default locale (en-US).",
+      "tags": ["config", "winget", "windows", "version", "template"],
+      "language": "yaml",
+      "complexity": "trivial"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:build/winget/Installer.template.yaml",
+      "target": "config:build/winget/Version.template.yaml",
+      "relation": "co-located"
+    },
+    {
+      "source": "config:build/winget/Locale.en-US.template.yaml",
+      "target": "config:build/winget/Version.template.yaml",
+      "relation": "co-located"
+    },
+    {
+      "source": "config:build/winget/Installer.template.yaml",
+      "target": "config:electron-builder.yml",
+      "relation": "references"
+    }
+  ]
+}

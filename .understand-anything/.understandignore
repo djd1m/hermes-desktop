@@ -1,0 +1,41 @@
+# .understandignore
+# Syntax: same as .gitignore
+#
+# --- From .gitignore ---
+.DS_Store
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.env
+.env.*
+!.env.example
+.eslintcache
+release/
+.claude/worktrees
+**/src-tauri/target/
+**/src-tauri/gen/
+**/src-tauri/WixTools/
+/*.bat
+/*.ps1
+
+# --- Exclude non-code assets ---
+*.glb
+*.webp
+*.mp4
+*.icns
+*.ico
+previews/
+resources/
+
+# --- Exclude generated/lock files ---
+package-lock.json
+skills-lock.json
+
+# --- Exclude tooling state ---
+.ruvector/
+.agentic-qe/
+.dz/
+.claude/
+.understand-anything/

@@ -1,0 +1,357 @@
+{
+  "batchIndex": 20,
+  "nodes": [
+    {
+      "id": "scripts/README.md",
+      "type": "document",
+      "label": "README.md",
+      "filePath": "scripts/README.md",
+      "language": "markdown",
+      "description": "CDP-based E2E harness documentation for dev-only scripts that drive the running dev Electron over Chrome DevTools Protocol",
+      "tags": [
+        "docs"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "scripts/drive-nous-chat.js",
+      "type": "file",
+      "label": "drive-nous-chat.js",
+      "filePath": "scripts/drive-nous-chat.js",
+      "language": "javascript",
+      "description": "CDP script that drives a Nous Portal end-to-end chat round-trip: switches model to nous, sends chat, captures reply, restores config",
+      "tags": [
+        "script"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "scripts/drive-nous-oauth.js",
+      "type": "file",
+      "label": "drive-nous-oauth.js",
+      "filePath": "scripts/drive-nous-oauth.js",
+      "language": "javascript",
+      "description": "CDP script that drives Nous Portal OAuth sign-in flow: opens modal, streams log, watches for success/error, snapshots auth.json",
+      "tags": [
+        "script"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "scripts/e2e-attach.js",
+      "type": "file",
+      "label": "e2e-attach.js",
+      "filePath": "scripts/e2e-attach.js",
+      "language": "javascript",
+      "description": "Shared CDP harness module that attaches Playwright to a running dev Electron instance via remote-debugging-port for E2E scripting",
+      "tags": [
+        "script"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "scripts/generate-winget-manifests.mjs",
+      "type": "file",
+      "label": "generate-winget-manifests.mjs",
+      "filePath": "scripts/generate-winget-manifests.mjs",
+      "language": "javascript",
+      "description": "ESM script that fills YAML templates with version/SHA256/URL to generate Windows Package Manager (winget) manifest files for release",
+      "tags": [
+        "script"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "scripts/probe-chat-state.js",
+      "type": "file",
+      "label": "probe-chat-state.js",
+      "filePath": "scripts/probe-chat-state.js",
+      "language": "javascript",
+      "description": "Read-only CDP probe that dumps current chat DOM state including selector inventory and message counts",
+      "tags": [
+        "script"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "scripts/probe-models-list.js",
+      "type": "file",
+      "label": "probe-models-list.js",
+      "filePath": "scripts/probe-models-list.js",
+      "language": "javascript",
+      "description": "CDP probe that navigates to Models tab and inspects DOM elements containing a test model name",
+      "tags": [
+        "script"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "scripts/probe-nous-models.js",
+      "type": "file",
+      "label": "probe-nous-models.js",
+      "filePath": "scripts/probe-nous-models.js",
+      "language": "javascript",
+      "description": "CDP probe that queries Nous Portal /v1/models via the gateway to discover available free models",
+      "tags": [
+        "script"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "scripts/probe-selectors.js",
+      "type": "file",
+      "label": "probe-selectors.js",
+      "filePath": "scripts/probe-selectors.js",
+      "language": "javascript",
+      "description": "CDP probe that inventories renderer DOM selectors: textareas, send buttons, new-chat buttons, model picker, message count",
+      "tags": [
+        "script"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "scripts/probe-validation-and-banner.js",
+      "type": "file",
+      "label": "probe-validation-and-banner.js",
+      "filePath": "scripts/probe-validation-and-banner.js",
+      "language": "javascript",
+      "description": "CDP probe for pre-send validation and config-health banner, exercises happy and missing-key paths",
+      "tags": [
+        "script"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "scripts/probe-wsl-detection.js",
+      "type": "file",
+      "label": "probe-wsl-detection.js",
+      "filePath": "scripts/probe-wsl-detection.js",
+      "language": "javascript",
+      "description": "Standalone Node.js probe testing whether fs can access WSL paths (\\\\wsl$\\...) for cross-environment detection",
+      "tags": [
+        "script"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "scripts/repro-edit-model-emptykey.js",
+      "type": "file",
+      "label": "repro-edit-model-emptykey.js",
+      "filePath": "scripts/repro-edit-model-emptykey.js",
+      "language": "javascript",
+      "description": "CDP repro script for bug where Edit Model dialog API key field appears empty after save, verifying .env persistence",
+      "tags": [
+        "script"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "scripts/repro-gateway-restart-midchat.js",
+      "type": "file",
+      "label": "repro-gateway-restart-midchat.js",
+      "filePath": "scripts/repro-gateway-restart-midchat.js",
+      "language": "javascript",
+      "description": "CDP repro script testing session continuity when gateway is killed mid-conversation: detects session forking/proliferation",
+      "tags": [
+        "script"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "scripts/repro-gateway-restart-v2.js",
+      "type": "file",
+      "label": "repro-gateway-restart-v2.js",
+      "filePath": "scripts/repro-gateway-restart-v2.js",
+      "language": "javascript",
+      "description": "Improved gateway-restart repro with preflight health checks, error bubble detection, and more robust recovery verification",
+      "tags": [
+        "script"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "scripts/repro-long-conversation.js",
+      "type": "file",
+      "label": "repro-long-conversation.js",
+      "filePath": "scripts/repro-long-conversation.js",
+      "language": "javascript",
+      "description": "CDP stress test sending many turns with large payloads to force context compression and detect session proliferation",
+      "tags": [
+        "script"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "scripts/repro-nous-cards-schema-367.js",
+      "type": "file",
+      "label": "repro-nous-cards-schema-367.js",
+      "filePath": "scripts/repro-nous-cards-schema-367.js",
+      "language": "javascript",
+      "description": "CDP verification for issue #367: Nous Portal cards render correctly and credential pool entries use canonical engine schema",
+      "tags": [
+        "script"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "scripts/repro-nous-detection-367.js",
+      "type": "file",
+      "label": "repro-nous-detection-367.js",
+      "filePath": "scripts/repro-nous-detection-367.js",
+      "language": "javascript",
+      "description": "CDP verification for #367 Bug 4: validateChatReadiness and getConfigHealth correctly detect missing Nous credentials",
+      "tags": [
+        "script"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "scripts/repro-session-cont-error.js",
+      "type": "file",
+      "label": "repro-session-cont-error.js",
+      "filePath": "scripts/repro-session-cont-error.js",
+      "language": "javascript",
+      "description": "CDP repro for 'Session continuation requires API key authentication' error when API_SERVER_KEY is in wrong config location",
+      "tags": [
+        "script"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "scripts/repro-session-proliferation.js",
+      "type": "file",
+      "label": "repro-session-proliferation.js",
+      "filePath": "scripts/repro-session-proliferation.js",
+      "language": "javascript",
+      "description": "CDP repro for Marat's session proliferation bug: sends N turns in same conversation, checks state.db for multiple session rows",
+      "tags": [
+        "script"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "scripts/sync-upstream.sh",
+      "type": "file",
+      "label": "sync-upstream.sh",
+      "filePath": "scripts/sync-upstream.sh",
+      "language": "shell",
+      "description": "Shell script to sync fork with upstream fathah/hermes-desktop: fetch, merge (ff or regular), disable workflows, push",
+      "tags": [
+        "script"
+      ],
+      "exports": [],
+      "imports": []
+    }
+  ],
+  "edges": [
+    {
+      "source": "scripts/drive-nous-chat.js",
+      "target": "scripts/e2e-attach.js",
+      "type": "imports",
+      "label": "requires ./e2e-attach"
+    },
+    {
+      "source": "scripts/drive-nous-oauth.js",
+      "target": "scripts/e2e-attach.js",
+      "type": "imports",
+      "label": "requires ./e2e-attach"
+    },
+    {
+      "source": "scripts/probe-chat-state.js",
+      "target": "scripts/e2e-attach.js",
+      "type": "imports",
+      "label": "requires ./e2e-attach"
+    },
+    {
+      "source": "scripts/probe-models-list.js",
+      "target": "scripts/e2e-attach.js",
+      "type": "imports",
+      "label": "requires ./e2e-attach"
+    },
+    {
+      "source": "scripts/probe-nous-models.js",
+      "target": "scripts/e2e-attach.js",
+      "type": "imports",
+      "label": "requires ./e2e-attach"
+    },
+    {
+      "source": "scripts/probe-selectors.js",
+      "target": "scripts/e2e-attach.js",
+      "type": "imports",
+      "label": "requires ./e2e-attach"
+    },
+    {
+      "source": "scripts/probe-validation-and-banner.js",
+      "target": "scripts/e2e-attach.js",
+      "type": "imports",
+      "label": "requires ./e2e-attach"
+    },
+    {
+      "source": "scripts/repro-edit-model-emptykey.js",
+      "target": "scripts/e2e-attach.js",
+      "type": "imports",
+      "label": "requires ./e2e-attach"
+    },
+    {
+      "source": "scripts/repro-gateway-restart-midchat.js",
+      "target": "scripts/e2e-attach.js",
+      "type": "imports",
+      "label": "requires ./e2e-attach"
+    },
+    {
+      "source": "scripts/repro-gateway-restart-v2.js",
+      "target": "scripts/e2e-attach.js",
+      "type": "imports",
+      "label": "requires ./e2e-attach"
+    },
+    {
+      "source": "scripts/repro-long-conversation.js",
+      "target": "scripts/e2e-attach.js",
+      "type": "imports",
+      "label": "requires ./e2e-attach"
+    },
+    {
+      "source": "scripts/repro-nous-cards-schema-367.js",
+      "target": "scripts/e2e-attach.js",
+      "type": "imports",
+      "label": "requires ./e2e-attach"
+    },
+    {
+      "source": "scripts/repro-nous-detection-367.js",
+      "target": "scripts/e2e-attach.js",
+      "type": "imports",
+      "label": "requires ./e2e-attach"
+    },
+    {
+      "source": "scripts/repro-session-cont-error.js",
+      "target": "scripts/e2e-attach.js",
+      "type": "imports",
+      "label": "requires ./e2e-attach"
+    },
+    {
+      "source": "scripts/repro-session-proliferation.js",
+      "target": "scripts/e2e-attach.js",
+      "type": "imports",
+      "label": "requires ./e2e-attach"
+    }
+  ]
+}

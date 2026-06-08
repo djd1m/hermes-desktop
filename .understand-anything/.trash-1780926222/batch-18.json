@@ -1,0 +1,227 @@
+{
+  "batchIndex": 18,
+  "nodes": [
+    {
+      "id": "document:CONTRIBUTING.ja-JP.md",
+      "type": "document",
+      "name": "CONTRIBUTING.ja-JP.md",
+      "filePath": "CONTRIBUTING.ja-JP.md",
+      "summary": "Japanese translation of the contributing guide for Hermes Desktop. Covers forking, installing dependencies, making changes, linting/typechecking, and submitting pull requests.",
+      "tags": ["docs", "contributing", "japanese", "i18n"],
+      "language": "markdown",
+      "complexity": "low"
+    },
+    {
+      "id": "document:CONTRIBUTING.md",
+      "type": "document",
+      "name": "CONTRIBUTING.md",
+      "filePath": "CONTRIBUTING.md",
+      "summary": "English contributing guide for Hermes Desktop. Describes the fork-and-PR workflow: install deps with npm, run dev mode, create branches, lint/typecheck before submitting, write clear PR descriptions, and reference issues.",
+      "tags": ["docs", "contributing", "english"],
+      "language": "markdown",
+      "complexity": "low"
+    },
+    {
+      "id": "document:CONTRIBUTING.zh-CN.md",
+      "type": "document",
+      "name": "CONTRIBUTING.zh-CN.md",
+      "filePath": "CONTRIBUTING.zh-CN.md",
+      "summary": "Simplified Chinese translation of the contributing guide for Hermes Desktop.",
+      "tags": ["docs", "contributing", "chinese", "i18n"],
+      "language": "markdown",
+      "complexity": "low"
+    },
+    {
+      "id": "document:README.es-LATAM.md",
+      "type": "document",
+      "name": "README.es-LATAM.md",
+      "filePath": "README.es-LATAM.md",
+      "summary": "Latin American Spanish translation of the project README. Describes Hermes Desktop as a native desktop app for Hermes Agent with install instructions, features, and sponsor information.",
+      "tags": ["docs", "readme", "spanish", "i18n"],
+      "language": "markdown",
+      "complexity": "low"
+    },
+    {
+      "id": "document:README.ja-JP.md",
+      "type": "document",
+      "name": "README.ja-JP.md",
+      "filePath": "README.ja-JP.md",
+      "summary": "Japanese translation of the project README for Hermes Desktop.",
+      "tags": ["docs", "readme", "japanese", "i18n"],
+      "language": "markdown",
+      "complexity": "low"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Main project README. Describes Hermes Desktop as a native Electron app for installing, configuring, and chatting with Hermes Agent. Covers install instructions (Windows/macOS/Linux/WSL), features (chat, sessions, profiles, memory, skills, tools, scheduling, gateways), keyboard shortcuts, developer setup, and sponsor (Atlas Cloud). Version 0.5.8, MIT licensed, by Nous Research.",
+      "tags": ["docs", "readme", "english", "project-overview"],
+      "language": "markdown",
+      "complexity": "low"
+    },
+    {
+      "id": "document:README.zh-CN.md",
+      "type": "document",
+      "name": "README.zh-CN.md",
+      "filePath": "README.zh-CN.md",
+      "summary": "Simplified Chinese translation of the project README for Hermes Desktop.",
+      "tags": ["docs", "readme", "chinese", "i18n"],
+      "language": "markdown",
+      "complexity": "low"
+    },
+    {
+      "id": "config:dev-app-update.yml",
+      "type": "config",
+      "name": "dev-app-update.yml",
+      "filePath": "dev-app-update.yml",
+      "summary": "Development auto-update configuration for electron-updater. Points to the GitHub repo fathah/hermes-desktop with a custom updater cache directory name.",
+      "tags": ["config", "electron-updater", "auto-update", "dev"],
+      "language": "yaml",
+      "complexity": "trivial"
+    },
+    {
+      "id": "config:electron-builder.yml",
+      "type": "config",
+      "name": "electron-builder.yml",
+      "filePath": "electron-builder.yml",
+      "summary": "Electron Builder configuration for packaging Hermes One (appId: com.nousresearch.hermes). Defines build targets: Windows (NSIS + portable), macOS (notarized, hardened runtime, entitlements for camera/mic/docs/downloads), Linux (AppImage, snap, deb, rpm with SUID chrome-sandbox fix). Excludes source files from dist, unpacks better-sqlite3 native module. Publishes to GitHub.",
+      "tags": ["config", "electron-builder", "packaging", "cross-platform", "distribution"],
+      "language": "yaml",
+      "complexity": "medium"
+    },
+    {
+      "id": "config:electron.vite.config.ts",
+      "type": "config",
+      "name": "electron.vite.config.ts",
+      "filePath": "electron.vite.config.ts",
+      "summary": "Electron-Vite build configuration. Configures three build targets: main (externalizes better-sqlite3), preload (two entry points: index.ts and askpass.ts), renderer (path aliases, Three.js deduplication, Tailwind CSS and React plugins).",
+      "tags": ["config", "vite", "electron-vite", "build", "bundler"],
+      "language": "typescript",
+      "complexity": "low"
+    },
+    {
+      "id": "config:eslint.config.mjs",
+      "type": "config",
+      "name": "eslint.config.mjs",
+      "filePath": "eslint.config.mjs",
+      "summary": "ESLint flat config. Uses @electron-toolkit presets for TS and Prettier. Configures React, react-hooks, and react-refresh plugins. Ignores build artifacts, scripts, and .claude directory. Disables react/no-unknown-property for the office3d directory (Three.js intrinsic elements) and relaxes return type annotations there.",
+      "tags": ["config", "eslint", "linting", "code-quality"],
+      "language": "javascript",
+      "complexity": "low"
+    },
+    {
+      "id": "config:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "Project manifest for hermes-desktop v0.5.8. Scripts: dev, build (with typecheck), lint, test (vitest), platform-specific builds. Key dependencies: Electron 39, React 19, Three.js 0.183, @react-three/fiber 9, better-sqlite3, i18next, react-markdown, electron-updater, posthog-js, Tailwind CSS 4, TypeScript 5.9, Vitest 4.",
+      "tags": ["config", "package", "npm", "dependencies", "scripts"],
+      "language": "json",
+      "complexity": "low"
+    },
+    {
+      "id": "config:tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "tsconfig.json",
+      "summary": "Root TypeScript config. Contains no files of its own; references tsconfig.node.json and tsconfig.web.json as composite project references.",
+      "tags": ["config", "typescript", "project-references"],
+      "language": "json",
+      "complexity": "trivial"
+    },
+    {
+      "id": "config:tsconfig.node.json",
+      "type": "config",
+      "name": "tsconfig.node.json",
+      "filePath": "tsconfig.node.json",
+      "summary": "TypeScript config for Electron main/preload/shared code. Extends @electron-toolkit/tsconfig for Node. Includes main process, preload scripts, shared modules, and the electron-vite config file. Composite build with electron-vite/node types.",
+      "tags": ["config", "typescript", "electron-main", "node"],
+      "language": "json",
+      "complexity": "trivial"
+    },
+    {
+      "id": "config:tsconfig.web.json",
+      "type": "config",
+      "name": "tsconfig.web.json",
+      "filePath": "tsconfig.web.json",
+      "summary": "TypeScript config for the renderer (web) code. Extends @electron-toolkit/tsconfig for web. Includes renderer source, shared modules, preload type declarations. Uses react-jsx transform, vitest globals, and path alias @renderer -> ./src/renderer/src.",
+      "tags": ["config", "typescript", "renderer", "web", "react"],
+      "language": "json",
+      "complexity": "trivial"
+    },
+    {
+      "id": "config:vitest.config.ts",
+      "type": "config",
+      "name": "vitest.config.ts",
+      "filePath": "vitest.config.ts",
+      "summary": "Vitest test runner configuration. Uses jsdom environment, enables globals, passes with no tests, sets up @renderer and @shared path aliases, includes test files from src/ and tests/ directories, and uses a setup file at src/renderer/src/test/setup.ts.",
+      "tags": ["config", "vitest", "testing", "test-runner"],
+      "language": "typescript",
+      "complexity": "trivial"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:CONTRIBUTING.ja-JP.md",
+      "target": "document:CONTRIBUTING.md",
+      "relation": "translates"
+    },
+    {
+      "source": "document:CONTRIBUTING.zh-CN.md",
+      "target": "document:CONTRIBUTING.md",
+      "relation": "translates"
+    },
+    {
+      "source": "document:README.es-LATAM.md",
+      "target": "document:README.md",
+      "relation": "translates"
+    },
+    {
+      "source": "document:README.ja-JP.md",
+      "target": "document:README.md",
+      "relation": "translates"
+    },
+    {
+      "source": "document:README.zh-CN.md",
+      "target": "document:README.md",
+      "relation": "translates"
+    },
+    {
+      "source": "config:tsconfig.json",
+      "target": "config:tsconfig.node.json",
+      "relation": "references"
+    },
+    {
+      "source": "config:tsconfig.json",
+      "target": "config:tsconfig.web.json",
+      "relation": "references"
+    },
+    {
+      "source": "config:electron-builder.yml",
+      "target": "config:package.json",
+      "relation": "references"
+    },
+    {
+      "source": "config:dev-app-update.yml",
+      "target": "config:electron-builder.yml",
+      "relation": "configures"
+    },
+    {
+      "source": "config:electron.vite.config.ts",
+      "target": "config:tsconfig.node.json",
+      "relation": "configures"
+    },
+    {
+      "source": "config:electron.vite.config.ts",
+      "target": "config:tsconfig.web.json",
+      "relation": "configures"
+    },
+    {
+      "source": "config:vitest.config.ts",
+      "target": "config:tsconfig.web.json",
+      "relation": "configures"
+    }
+  ]
+}

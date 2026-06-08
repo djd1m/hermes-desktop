@@ -1,0 +1,731 @@
+{
+  "batchIndex": 13,
+  "nodes": [
+    {
+      "id": "file:src/renderer/src/components/AgentMarkdown.tsx",
+      "type": "file",
+      "name": "AgentMarkdown.tsx",
+      "filePath": "src/renderer/src/components/AgentMarkdown.tsx",
+      "summary": "Renders agent markdown responses with code highlighting, media embedding, and sanitized HTML output",
+      "tags": ["renderer", "component", "markdown", "media"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/renderer/src/components/AttachmentChip.tsx",
+      "type": "file",
+      "name": "AttachmentChip.tsx",
+      "filePath": "src/renderer/src/components/AttachmentChip.tsx",
+      "summary": "Compact chip component displaying attachment info (name, size, type) with remove button and image preview thumbnail",
+      "tags": ["renderer", "component", "attachment", "ui"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/renderer/src/components/MediaImage.tsx",
+      "type": "file",
+      "name": "MediaImage.tsx",
+      "filePath": "src/renderer/src/components/MediaImage.tsx",
+      "summary": "Image/media display component with lazy loading, download chip, and media segment rendering for agent-delivered content",
+      "tags": ["renderer", "component", "media", "image"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/Chat.tsx",
+      "type": "file",
+      "name": "Chat.tsx",
+      "filePath": "src/renderer/src/screens/Chat/Chat.tsx",
+      "summary": "Main Chat screen component: orchestrates message display, input, model selection, streaming, and session management via composed hooks",
+      "tags": ["renderer", "ui", "chat", "screen"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Chat",
+      "type": "function",
+      "name": "Chat",
+      "filePath": "src/renderer/src/screens/Chat/Chat.tsx",
+      "summary": "Root chat component composing ChatInput, MessageList, ModelPicker, ReasoningEffortPicker, and IPC hooks for the conversational UI",
+      "tags": ["component", "chat"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/ChatEmptyState.tsx",
+      "type": "file",
+      "name": "ChatEmptyState.tsx",
+      "filePath": "src/renderer/src/screens/Chat/ChatEmptyState.tsx",
+      "summary": "Empty state placeholder shown when no messages exist, with greeting and prompt suggestions",
+      "tags": ["renderer", "ui", "chat"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/ChatHeader.tsx",
+      "type": "file",
+      "name": "ChatHeader.tsx",
+      "filePath": "src/renderer/src/screens/Chat/ChatHeader.tsx",
+      "summary": "Chat header bar showing session title, model info, and action buttons (new chat, copy transcript)",
+      "tags": ["renderer", "ui", "chat", "header"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/ChatInput.test.tsx",
+      "type": "file",
+      "name": "ChatInput.test.tsx",
+      "filePath": "src/renderer/src/screens/Chat/ChatInput.test.tsx",
+      "summary": "Tests for the ChatInput component: submission, keyboard shortcuts, and attachment handling",
+      "tags": ["test", "renderer", "chat", "input"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/ChatInput.tsx",
+      "type": "file",
+      "name": "ChatInput.tsx",
+      "filePath": "src/renderer/src/screens/Chat/ChatInput.tsx",
+      "summary": "Chat input textarea with auto-resize, slash command autocomplete, file attachment handling, voice input, and keyboard shortcuts",
+      "tags": ["renderer", "ui", "chat", "input", "autocomplete"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "function:ChatInput",
+      "type": "function",
+      "name": "ChatInput",
+      "filePath": "src/renderer/src/screens/Chat/ChatInput.tsx",
+      "summary": "Multiline input with slash commands, voice recording, attachments, and context gauge integration",
+      "tags": ["component", "chat", "input"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/ContextFolderChip.tsx",
+      "type": "file",
+      "name": "ContextFolderChip.tsx",
+      "filePath": "src/renderer/src/screens/Chat/ContextFolderChip.tsx",
+      "summary": "Chip showing the active context folder path with tooltip and click-to-change action",
+      "tags": ["renderer", "ui", "chat", "context"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/ContextGauge.tsx",
+      "type": "file",
+      "name": "ContextGauge.tsx",
+      "filePath": "src/renderer/src/screens/Chat/ContextGauge.tsx",
+      "summary": "Visual gauge showing context window usage percentage with color-coded levels and cache hit/write indicators",
+      "tags": ["renderer", "ui", "chat", "context-window"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/HistoryRow.tsx",
+      "type": "file",
+      "name": "HistoryRow.tsx",
+      "filePath": "src/renderer/src/screens/Chat/HistoryRow.tsx",
+      "summary": "Renders reasoning steps and tool activity groups within the chat transcript as collapsible sections",
+      "tags": ["renderer", "ui", "chat", "history", "reasoning"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "function:toolActivityGroupTitle",
+      "type": "function",
+      "name": "toolActivityGroupTitle",
+      "filePath": "src/renderer/src/screens/Chat/HistoryRow.tsx",
+      "summary": "Generates descriptive titles for grouped tool activities (e.g. 'Read 3 files', 'Ran terminal command')",
+      "tags": ["chat", "tools", "display"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/MessageList.tsx",
+      "type": "file",
+      "name": "MessageList.tsx",
+      "filePath": "src/renderer/src/screens/Chat/MessageList.tsx",
+      "summary": "Scrollable message list rendering ChatMessage array as MessageRow and HistoryRow components with auto-scroll",
+      "tags": ["renderer", "ui", "chat", "messages"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/MessageRow.tsx",
+      "type": "file",
+      "name": "MessageRow.tsx",
+      "filePath": "src/renderer/src/screens/Chat/MessageRow.tsx",
+      "summary": "Individual chat message bubble: renders user/assistant messages with avatar, markdown content, attachments, and media",
+      "tags": ["renderer", "ui", "chat", "message-bubble"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/ModelPicker.tsx",
+      "type": "file",
+      "name": "ModelPicker.tsx",
+      "filePath": "src/renderer/src/screens/Chat/ModelPicker.tsx",
+      "summary": "Dropdown selector for choosing the active AI model grouped by provider",
+      "tags": ["renderer", "ui", "chat", "model-selection"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/ReasoningEffortPicker.tsx",
+      "type": "file",
+      "name": "ReasoningEffortPicker.tsx",
+      "filePath": "src/renderer/src/screens/Chat/ReasoningEffortPicker.tsx",
+      "summary": "Slider/dropdown for selecting reasoning effort level (low/medium/high) passed to the AI model",
+      "tags": ["renderer", "ui", "chat", "reasoning"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/attachmentUtils.test.ts",
+      "type": "file",
+      "name": "attachmentUtils.test.ts",
+      "filePath": "src/renderer/src/screens/Chat/attachmentUtils.test.ts",
+      "summary": "Tests for attachment processing: image compression, file type detection, clipboard handling",
+      "tags": ["test", "renderer", "chat", "attachments"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/attachmentUtils.ts",
+      "type": "file",
+      "name": "attachmentUtils.ts",
+      "filePath": "src/renderer/src/screens/Chat/attachmentUtils.ts",
+      "summary": "Attachment processing utilities: image compression to fit gateway limits, file-to-attachment conversion, clipboard paste handling",
+      "tags": ["renderer", "chat", "attachments", "image-processing"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "function:compressImageToFit",
+      "type": "function",
+      "name": "compressImageToFit",
+      "filePath": "src/renderer/src/screens/Chat/attachmentUtils.ts",
+      "summary": "Progressively compresses an image blob via canvas until it fits under the gateway size limit",
+      "tags": ["attachment", "compression", "image"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/contextWindows.test.ts",
+      "type": "file",
+      "name": "contextWindows.test.ts",
+      "filePath": "src/renderer/src/screens/Chat/contextWindows.test.ts",
+      "summary": "Tests for context window size lookup by model name",
+      "tags": ["test", "renderer", "chat", "context-window"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/contextWindows.ts",
+      "type": "file",
+      "name": "contextWindows.ts",
+      "filePath": "src/renderer/src/screens/Chat/contextWindows.ts",
+      "summary": "Maps AI model names to context window sizes (in tokens) via regex patterns; used by the context gauge",
+      "tags": ["renderer", "chat", "context-window", "models"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "function:contextWindowForModel",
+      "type": "function",
+      "name": "contextWindowForModel",
+      "filePath": "src/renderer/src/screens/Chat/contextWindows.ts",
+      "summary": "Returns the context window token count for a given model name, falling back to 131072",
+      "tags": ["context-window", "model"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/hooks/useChatActions.ts",
+      "type": "file",
+      "name": "useChatActions.ts",
+      "filePath": "src/renderer/src/screens/Chat/hooks/useChatActions.ts",
+      "summary": "Hook providing chat action handlers: send message, stop generation, approve tool use, and retry",
+      "tags": ["renderer", "hook", "chat", "actions"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/hooks/useChatIPC.ts",
+      "type": "file",
+      "name": "useChatIPC.ts",
+      "filePath": "src/renderer/src/screens/Chat/hooks/useChatIPC.ts",
+      "summary": "Hook managing IPC event listeners for streaming chunks, tool events, reasoning events, usage updates, and session lifecycle",
+      "tags": ["renderer", "hook", "chat", "ipc", "streaming"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/hooks/useChatScroll.ts",
+      "type": "file",
+      "name": "useChatScroll.ts",
+      "filePath": "src/renderer/src/screens/Chat/hooks/useChatScroll.ts",
+      "summary": "Hook for auto-scrolling the chat message list to bottom on new messages with smart scroll-lock",
+      "tags": ["renderer", "hook", "chat", "scroll"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/hooks/useFastMode.ts",
+      "type": "file",
+      "name": "useFastMode.ts",
+      "filePath": "src/renderer/src/screens/Chat/hooks/useFastMode.ts",
+      "summary": "Hook managing fast mode toggle that switches to a lighter/faster model for quick responses",
+      "tags": ["renderer", "hook", "chat", "fast-mode"],
+      "language": "typescript",
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/renderer/src/components/AgentMarkdown.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/components/AgentMarkdown.tsx",
+      "target": "file:src/renderer/src/components/MediaImage.tsx",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/components/AgentMarkdown.tsx",
+      "target": "file:src/renderer/src/screens/Chat/mediaUtils.ts",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/components/AttachmentChip.tsx",
+      "target": "file:src/shared/attachments.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/components/AttachmentChip.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/components/MediaImage.tsx",
+      "target": "file:src/renderer/src/screens/Chat/mediaUtils.ts",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/components/MediaImage.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/Chat.tsx",
+      "target": "file:src/renderer/src/screens/Chat/ChatInput.tsx",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/Chat.tsx",
+      "target": "file:src/renderer/src/screens/Chat/ChatHeader.tsx",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/Chat.tsx",
+      "target": "file:src/renderer/src/screens/Chat/ChatEmptyState.tsx",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/Chat.tsx",
+      "target": "file:src/renderer/src/screens/Chat/MessageList.tsx",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/Chat.tsx",
+      "target": "file:src/renderer/src/screens/Chat/ModelPicker.tsx",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/Chat.tsx",
+      "target": "file:src/renderer/src/screens/Chat/ReasoningEffortPicker.tsx",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/Chat.tsx",
+      "target": "file:src/renderer/src/screens/Chat/ContextFolderChip.tsx",
+      "type": "imports",
+      "weight": 0.5
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/Chat.tsx",
+      "target": "file:src/renderer/src/screens/Chat/hooks/useChatScroll.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/Chat.tsx",
+      "target": "file:src/renderer/src/screens/Chat/hooks/useChatIPC.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/Chat.tsx",
+      "target": "file:src/renderer/src/screens/Chat/hooks/useChatActions.ts",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/Chat.tsx",
+      "target": "file:src/renderer/src/screens/Chat/hooks/useModelConfig.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/Chat.tsx",
+      "target": "file:src/renderer/src/screens/Chat/hooks/useFastMode.ts",
+      "type": "imports",
+      "weight": 0.5
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/Chat.tsx",
+      "target": "file:src/renderer/src/screens/Chat/hooks/useReasoningEffort.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/Chat.tsx",
+      "target": "file:src/renderer/src/screens/Chat/hooks/useLocalCommands.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/Chat.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.5
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/Chat.tsx",
+      "target": "file:src/renderer/src/screens/Chat/transcriptUtils.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/Chat.tsx",
+      "target": "file:src/renderer/src/components/ConfigHealthBanner.tsx",
+      "type": "imports",
+      "weight": 0.4
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/Chat.tsx",
+      "target": "file:src/shared/attachments.ts",
+      "type": "imports",
+      "weight": 0.5
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/Chat.tsx",
+      "target": "file:src/renderer/src/screens/Chat/types.ts",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/Chat.tsx",
+      "target": "file:src/renderer/src/screens/Chat/ContextGauge.tsx",
+      "type": "imports",
+      "weight": 0.5
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/Chat.tsx",
+      "target": "file:src/renderer/src/screens/Chat/contextWindows.ts",
+      "type": "imports",
+      "weight": 0.5
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/ChatEmptyState.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/ChatHeader.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/ChatHeader.tsx",
+      "target": "file:src/renderer/src/screens/Chat/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/ChatInput.tsx",
+      "target": "file:src/renderer/src/screens/Chat/keyboard.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/ChatInput.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/ChatInput.tsx",
+      "target": "file:src/renderer/src/screens/Chat/slashCommands.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/ChatInput.tsx",
+      "target": "file:src/renderer/src/screens/Chat/hooks/useInputHistory.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/ChatInput.tsx",
+      "target": "file:src/renderer/src/screens/Chat/hooks/useVoiceInput.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/ChatInput.tsx",
+      "target": "file:src/renderer/src/screens/Chat/attachmentUtils.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/ChatInput.tsx",
+      "target": "file:src/renderer/src/components/AttachmentChip.tsx",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/ChatInput.tsx",
+      "target": "file:src/renderer/src/screens/Chat/ContextGauge.tsx",
+      "type": "imports",
+      "weight": 0.5
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/ChatInput.tsx",
+      "target": "file:src/shared/attachments.ts",
+      "type": "imports",
+      "weight": 0.5
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/ContextFolderChip.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/ContextGauge.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/HistoryRow.tsx",
+      "target": "file:src/renderer/src/assets/icons/index.tsx",
+      "type": "imports",
+      "weight": 0.4
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/HistoryRow.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/HistoryRow.tsx",
+      "target": "file:src/renderer/src/components/AttachmentChip.tsx",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/HistoryRow.tsx",
+      "target": "file:src/renderer/src/screens/Chat/MessageRow.tsx",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/HistoryRow.tsx",
+      "target": "file:src/renderer/src/screens/Chat/types.ts",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/MessageList.tsx",
+      "target": "file:src/renderer/src/screens/Chat/MessageRow.tsx",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/MessageList.tsx",
+      "target": "file:src/renderer/src/screens/Chat/HistoryRow.tsx",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/MessageList.tsx",
+      "target": "file:src/renderer/src/screens/Chat/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/MessageRow.tsx",
+      "target": "file:src/renderer/src/components/AgentMarkdown.tsx",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/MessageRow.tsx",
+      "target": "file:src/renderer/src/components/AttachmentChip.tsx",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/MessageRow.tsx",
+      "target": "file:src/renderer/src/components/MediaImage.tsx",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/MessageRow.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.5
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/MessageRow.tsx",
+      "target": "file:src/renderer/src/screens/Chat/mediaUtils.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/MessageRow.tsx",
+      "target": "file:src/renderer/src/screens/Chat/types.ts",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/ModelPicker.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/ModelPicker.tsx",
+      "target": "file:src/renderer/src/screens/Chat/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/ReasoningEffortPicker.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/ReasoningEffortPicker.tsx",
+      "target": "file:src/renderer/src/screens/Chat/hooks/useReasoningEffort.ts",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/attachmentUtils.ts",
+      "target": "file:src/shared/attachments.ts",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/hooks/useChatActions.ts",
+      "target": "file:src/renderer/src/screens/Chat/ChatInput.tsx",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/hooks/useChatActions.ts",
+      "target": "file:src/renderer/src/screens/Chat/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/hooks/useChatIPC.ts",
+      "target": "file:src/renderer/src/screens/Chat/types.ts",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/hooks/useChatIPC.ts",
+      "target": "file:src/renderer/src/screens/Chat/sessionHistory.ts",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/hooks/useChatIPC.ts",
+      "target": "file:src/renderer/src/screens/Chat/liveToolEvents.ts",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/hooks/useChatIPC.ts",
+      "target": "file:src/renderer/src/screens/Chat/liveReasoningEvents.ts",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/hooks/useChatScroll.ts",
+      "target": "file:src/renderer/src/screens/Chat/types.ts",
+      "type": "imports",
+      "weight": 0.5
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/ChatInput.tsx",
+      "target": "file:src/renderer/src/screens/Chat/ChatInput.test.tsx",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/attachmentUtils.ts",
+      "target": "file:src/renderer/src/screens/Chat/attachmentUtils.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/contextWindows.ts",
+      "target": "file:src/renderer/src/screens/Chat/contextWindows.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/ChatInput.test.tsx",
+      "target": "file:src/renderer/src/screens/Chat/ChatInput.tsx",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/attachmentUtils.test.ts",
+      "target": "file:src/renderer/src/screens/Chat/attachmentUtils.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/contextWindows.test.ts",
+      "target": "file:src/renderer/src/screens/Chat/contextWindows.ts",
+      "type": "imports",
+      "weight": 0.9
+    }
+  ]
+}

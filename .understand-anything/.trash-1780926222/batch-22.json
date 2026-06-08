@@ -1,0 +1,359 @@
+{
+  "batchIndex": 22,
+  "nodes": [
+    {
+      "id": ".agents/skills/electron-pro/SKILL.md",
+      "type": "document",
+      "label": "SKILL.md",
+      "filePath": ".agents/skills/electron-pro/SKILL.md",
+      "language": "markdown",
+      "description": "Agent skill document for Electron desktop development expertise: IPC patterns, security model, performance optimization",
+      "tags": [
+        "docs"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": ".agents/skills/hermes-agent/SKILL.md",
+      "type": "document",
+      "label": "SKILL.md",
+      "filePath": ".agents/skills/hermes-agent/SKILL.md",
+      "language": "markdown",
+      "description": "Comprehensive A-Z project guide for the Hermes Agent: architecture, tools, gateway, CLI, skills, memory, providers, and 26 sections",
+      "tags": [
+        "docs"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": ".agents/skills/typescript-expert/references/tsconfig-strict.json",
+      "type": "file",
+      "label": "tsconfig-strict.json",
+      "filePath": ".agents/skills/typescript-expert/references/tsconfig-strict.json",
+      "language": "json",
+      "description": "Reference strict TypeScript 5.x tsconfig with maximum type safety, ESM modules, bundler resolution, and path aliases",
+      "tags": [
+        "config"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": ".agents/skills/typescript-expert/references/typescript-cheatsheet.md",
+      "type": "document",
+      "label": "typescript-cheatsheet.md",
+      "filePath": ".agents/skills/typescript-expert/references/typescript-cheatsheet.md",
+      "language": "markdown",
+      "description": "TypeScript cheatsheet covering type basics, aliases, interfaces, generics, utility types, and common patterns",
+      "tags": [
+        "docs"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": ".agents/skills/typescript-expert/references/utility-types.ts",
+      "type": "file",
+      "label": "utility-types.ts",
+      "filePath": ".agents/skills/typescript-expert/references/utility-types.ts",
+      "language": "typescript",
+      "description": "TypeScript utility types library: branded types, Result/Option types, deep partial/readonly, and type-safe patterns",
+      "tags": [
+        "code"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": ".agents/skills/typescript-expert/SKILL.md",
+      "type": "document",
+      "label": "SKILL.md",
+      "filePath": ".agents/skills/typescript-expert/SKILL.md",
+      "language": "markdown",
+      "description": "Agent skill for TypeScript expert: type-level programming, performance optimization, monorepo management, migration strategies",
+      "tags": [
+        "docs"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": ".github/bck-workflows/ci.yml",
+      "type": "file",
+      "label": "ci.yml",
+      "filePath": ".github/bck-workflows/ci.yml",
+      "language": "yaml",
+      "description": "Disabled upstream CI workflow: typecheck + test suite on PRs and pushes to main, Node 22, lint as informational",
+      "tags": [
+        "infra"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": ".github/bck-workflows/release.yml",
+      "type": "file",
+      "label": "release.yml",
+      "filePath": ".github/bck-workflows/release.yml",
+      "language": "yaml",
+      "description": "Disabled upstream release workflow: multi-platform electron-builder with dry-run support, version from package.json",
+      "tags": [
+        "infra"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "build/afterPack.js",
+      "type": "file",
+      "label": "afterPack.js",
+      "filePath": "build/afterPack.js",
+      "language": "javascript",
+      "description": "Electron-builder afterPack hook for macOS: ad-hoc re-signs dylibs, frameworks, XPC services, and the outer .app bundle",
+      "tags": [
+        "infra"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "build/linux-after-install.sh",
+      "type": "file",
+      "label": "linux-after-install.sh",
+      "filePath": "build/linux-after-install.sh",
+      "language": "shell",
+      "description": "Linux .deb/.rpm post-install hook: sets SUID root bit on chrome-sandbox for Electron sandbox support on hardened kernels",
+      "tags": [
+        "infra"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "changelogs/0.4.5.md",
+      "type": "document",
+      "label": "0.4.5.md",
+      "filePath": "changelogs/0.4.5.md",
+      "language": "markdown",
+      "description": "Changelog v0.4.3 to v0.4.5: chat attachments, session deletion, OpenAI Codex provider, model auto-detect, i18n additions",
+      "tags": [
+        "docs"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "changelogs/0.5.0.md",
+      "type": "document",
+      "label": "0.5.0.md",
+      "filePath": "changelogs/0.5.0.md",
+      "language": "markdown",
+      "description": "Changelog v0.4.5 to v0.5.0: per-conversation context folders, tool call history display, OAuth sign-in, model discovery autocomplete",
+      "tags": [
+        "docs"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "docs/SSH-TUNNEL-VPS.md",
+      "type": "document",
+      "label": "SSH-TUNNEL-VPS.md",
+      "filePath": "docs/SSH-TUNNEL-VPS.md",
+      "language": "markdown",
+      "description": "Guide for connecting Hermes Desktop to a remote VPS over SSH tunnel for full functionality parity across all screens",
+      "tags": [
+        "docs"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "docs/superpowers/plans/2026-04-30-windows-winget-fedora-rpm-release.md",
+      "type": "document",
+      "label": "2026-04-30-windows-winget-fedora-rpm-release.md",
+      "filePath": "docs/superpowers/plans/2026-04-30-windows-winget-fedora-rpm-release.md",
+      "language": "markdown",
+      "description": "Release plan for Windows winget and Fedora RPM packaging support",
+      "tags": [
+        "docs"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "docs/superpowers/specs/2026-04-30-windows-winget-fedora-rpm-release-design.md",
+      "type": "document",
+      "label": "2026-04-30-windows-winget-fedora-rpm-release-design.md",
+      "filePath": "docs/superpowers/specs/2026-04-30-windows-winget-fedora-rpm-release-design.md",
+      "language": "markdown",
+      "description": "Design spec for Windows winget manifests and Fedora RPM release pipeline",
+      "tags": [
+        "docs"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "src/main/enterprise/README.md",
+      "type": "document",
+      "label": "README.md",
+      "filePath": "src/main/enterprise/README.md",
+      "language": "markdown",
+      "description": "Enterprise extension layer docs: architecture for custom features under src/main/enterprise/ with minimal upstream diff",
+      "tags": [
+        "docs"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "src/main/ws.d.ts",
+      "type": "file",
+      "label": "ws.d.ts",
+      "filePath": "src/main/ws.d.ts",
+      "language": "typescript",
+      "description": "Ambient type declarations for the ws WebSocket module: Data type, constructor, event methods, send/close/terminate",
+      "tags": [
+        "code"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "src/renderer/index.html",
+      "type": "file",
+      "label": "index.html",
+      "filePath": "src/renderer/index.html",
+      "language": "html",
+      "description": "Renderer entry HTML: CSP headers, root div, module script entry point for the React SPA",
+      "tags": [
+        "markup"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "src/renderer/src/assets/base.css",
+      "type": "file",
+      "label": "base.css",
+      "filePath": "src/renderer/src/assets/base.css",
+      "language": "css",
+      "description": "Base CSS reset and typography: Tailwind import, box-sizing reset, Manrope font family, full viewport height",
+      "tags": [
+        "markup"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "src/renderer/src/assets/main.css",
+      "type": "file",
+      "label": "main.css",
+      "filePath": "src/renderer/src/assets/main.css",
+      "language": "css",
+      "description": "Main design system CSS: dark/light theme variables, component styles for chat, sidebar, modals, settings across 9700+ lines",
+      "tags": [
+        "markup"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "src/renderer/src/components/Versions.tsx",
+      "type": "file",
+      "label": "Versions.tsx",
+      "filePath": "src/renderer/src/components/Versions.tsx",
+      "language": "typescript",
+      "description": "React component displaying Electron, Chromium, and Node version numbers from the electron process",
+      "tags": [
+        "code"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "src/renderer/src/env.d.ts",
+      "type": "file",
+      "label": "env.d.ts",
+      "filePath": "src/renderer/src/env.d.ts",
+      "language": "typescript",
+      "description": "Vite client type declarations with ImportMetaEnv for VITE_POSTHOG_KEY and VITE_POSTHOG_HOST",
+      "tags": [
+        "code"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "src/renderer/src/screens/Office/office3d/troika-three-text.d.ts",
+      "type": "file",
+      "label": "troika-three-text.d.ts",
+      "filePath": "src/renderer/src/screens/Office/office3d/troika-three-text.d.ts",
+      "language": "typescript",
+      "description": "Ambient type declarations for troika-three-text package: configureTextBuilder function signature",
+      "tags": [
+        "code"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "src/renderer/src/screens/Office/officeUrl.ts",
+      "type": "file",
+      "label": "officeUrl.ts",
+      "filePath": "src/renderer/src/screens/Office/officeUrl.ts",
+      "language": "typescript",
+      "description": "URL utilities for Office webview: withOfficePath adds /office path, buildOfficeWebviewUrl resolves local or remote base URL",
+      "tags": [
+        "code"
+      ],
+      "exports": [
+        "withOfficePath",
+        "buildOfficeWebviewUrl"
+      ],
+      "imports": []
+    },
+    {
+      "id": "src/renderer/src/test/setup.ts",
+      "type": "file",
+      "label": "setup.ts",
+      "filePath": "src/renderer/src/test/setup.ts",
+      "language": "typescript",
+      "description": "Vitest test setup: imports jest-dom matchers, registers afterEach cleanup for React Testing Library",
+      "tags": [
+        "code"
+      ],
+      "exports": [],
+      "imports": []
+    }
+  ],
+  "edges": [
+    {
+      "source": ".agents/skills/typescript-expert/SKILL.md",
+      "target": ".agents/skills/typescript-expert/references/tsconfig-strict.json",
+      "type": "references",
+      "label": "reference config"
+    },
+    {
+      "source": ".agents/skills/typescript-expert/SKILL.md",
+      "target": ".agents/skills/typescript-expert/references/typescript-cheatsheet.md",
+      "type": "references",
+      "label": "reference doc"
+    },
+    {
+      "source": ".agents/skills/typescript-expert/SKILL.md",
+      "target": ".agents/skills/typescript-expert/references/utility-types.ts",
+      "type": "references",
+      "label": "reference types"
+    },
+    {
+      "source": "src/renderer/src/assets/main.css",
+      "target": "src/renderer/src/main.tsx",
+      "type": "imported_by",
+      "label": "imported by main.tsx"
+    }
+  ]
+}

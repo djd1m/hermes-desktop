@@ -1,0 +1,759 @@
+{
+  "batchIndex": 12,
+  "nodes": [
+    {
+      "id": "file:src/renderer/src/screens/Layout/ProfileSwitcher.tsx",
+      "type": "file",
+      "name": "ProfileSwitcher.tsx",
+      "filePath": "src/renderer/src/screens/Layout/ProfileSwitcher.tsx",
+      "summary": "React component for switching between Hermes profiles in the sidebar; lists profiles with create/edit/delete actions",
+      "tags": ["renderer", "ui", "profile", "sidebar"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Memory/CapacityBar.tsx",
+      "type": "file",
+      "name": "CapacityBar.tsx",
+      "filePath": "src/renderer/src/screens/Memory/CapacityBar.tsx",
+      "summary": "Simple progress bar component showing memory capacity usage as a percentage",
+      "tags": ["renderer", "ui", "memory"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Memory/CapacityCards.tsx",
+      "type": "file",
+      "name": "CapacityCards.tsx",
+      "filePath": "src/renderer/src/screens/Memory/CapacityCards.tsx",
+      "summary": "Card grid showing memory capacity stats (entries count, size) using CapacityBar subcomponent",
+      "tags": ["renderer", "ui", "memory"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Memory/Memory.tsx",
+      "type": "file",
+      "name": "Memory.tsx",
+      "filePath": "src/renderer/src/screens/Memory/Memory.tsx",
+      "summary": "Main Memory screen: loads memory data, providers, and profile; renders tabbed view with entries, profile, and provider management",
+      "tags": ["renderer", "ui", "memory", "screen"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Memory",
+      "type": "function",
+      "name": "Memory",
+      "filePath": "src/renderer/src/screens/Memory/Memory.tsx",
+      "summary": "React component orchestrating memory management UI with tabs for entries, profile, and providers",
+      "tags": ["component", "memory"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Memory/MemoryEntries.tsx",
+      "type": "file",
+      "name": "MemoryEntries.tsx",
+      "filePath": "src/renderer/src/screens/Memory/MemoryEntries.tsx",
+      "summary": "Displays and manages individual memory entries with add/edit/delete operations and search filtering",
+      "tags": ["renderer", "ui", "memory", "crud"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Memory/MemoryProfile.tsx",
+      "type": "file",
+      "name": "MemoryProfile.tsx",
+      "filePath": "src/renderer/src/screens/Memory/MemoryProfile.tsx",
+      "summary": "Displays and edits the user profile stored in memory (name, preferences, etc.)",
+      "tags": ["renderer", "ui", "memory", "profile"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Memory/MemoryProviders.tsx",
+      "type": "file",
+      "name": "MemoryProviders.tsx",
+      "filePath": "src/renderer/src/screens/Memory/MemoryProviders.tsx",
+      "summary": "Lists and configures memory storage providers (local, vector, etc.) with enable/disable toggles",
+      "tags": ["renderer", "ui", "memory", "providers"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Memory/MemoryTabs.tsx",
+      "type": "file",
+      "name": "MemoryTabs.tsx",
+      "filePath": "src/renderer/src/screens/Memory/MemoryTabs.tsx",
+      "summary": "Tab bar component for switching between memory sub-views (entries, profile, providers)",
+      "tags": ["renderer", "ui", "memory", "tabs"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Memory/types.ts",
+      "type": "file",
+      "name": "types.ts",
+      "filePath": "src/renderer/src/screens/Memory/types.ts",
+      "summary": "Type definitions for Memory screen: MemoryData, MemoryTab, MemoryProviderInfo interfaces",
+      "tags": ["renderer", "types", "memory"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Models/Models.test.tsx",
+      "type": "file",
+      "name": "Models.test.tsx",
+      "filePath": "src/renderer/src/screens/Models/Models.test.tsx",
+      "summary": "Tests for the Models screen component rendering and interaction",
+      "tags": ["test", "renderer", "models"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Models/Models.tsx",
+      "type": "file",
+      "name": "Models.tsx",
+      "filePath": "src/renderer/src/screens/Models/Models.tsx",
+      "summary": "Models screen: displays available AI models grouped by provider with search, provider detection, and model configuration",
+      "tags": ["renderer", "ui", "models", "screen"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Models/detect-provider.ts",
+      "type": "file",
+      "name": "detect-provider.ts",
+      "filePath": "src/renderer/src/screens/Models/detect-provider.ts",
+      "summary": "Heuristic detection of AI provider from a base URL (OpenAI, Anthropic, Groq, etc.)",
+      "tags": ["renderer", "models", "provider-detection"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Providers/Providers.tsx",
+      "type": "file",
+      "name": "Providers.tsx",
+      "filePath": "src/renderer/src/screens/Providers/Providers.tsx",
+      "summary": "Providers screen: configures AI provider connections (API keys, base URLs, OAuth), supports add/edit/delete with validation",
+      "tags": ["renderer", "ui", "providers", "screen", "oauth"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Schedules/Schedules.tsx",
+      "type": "file",
+      "name": "Schedules.tsx",
+      "filePath": "src/renderer/src/screens/Schedules/Schedules.tsx",
+      "summary": "Schedules screen: manages scheduled/automated agent tasks with CRUD operations and cron expressions",
+      "tags": ["renderer", "ui", "schedules", "screen"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Sessions/Sessions.test.tsx",
+      "type": "file",
+      "name": "Sessions.test.tsx",
+      "filePath": "src/renderer/src/screens/Sessions/Sessions.test.tsx",
+      "summary": "Tests for Sessions screen: listing, search, deletion, and resume behaviors",
+      "tags": ["test", "renderer", "sessions"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Sessions/Sessions.tsx",
+      "type": "file",
+      "name": "Sessions.tsx",
+      "filePath": "src/renderer/src/screens/Sessions/Sessions.tsx",
+      "summary": "Sessions screen: lists chat sessions with search, pagination, bulk delete, and session resume; the main session management UI",
+      "tags": ["renderer", "ui", "sessions", "screen"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Settings/ConfigHealth.tsx",
+      "type": "file",
+      "name": "ConfigHealth.tsx",
+      "filePath": "src/renderer/src/screens/Settings/ConfigHealth.tsx",
+      "summary": "Configuration health diagnostics panel: checks gateway status, provider connectivity, and config validity",
+      "tags": ["renderer", "ui", "settings", "health"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Settings/Settings.tsx",
+      "type": "file",
+      "name": "Settings.tsx",
+      "filePath": "src/renderer/src/screens/Settings/Settings.tsx",
+      "summary": "Main Settings screen: theme, font, language, gateway config, remote mode, SSH, environment variables, and diagnostic tools",
+      "tags": ["renderer", "ui", "settings", "screen"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Setup/Setup.tsx",
+      "type": "file",
+      "name": "Setup.tsx",
+      "filePath": "src/renderer/src/screens/Setup/Setup.tsx",
+      "summary": "First-run setup wizard: guides user through provider configuration, API key entry, and installation verification",
+      "tags": ["renderer", "ui", "setup", "wizard", "screen"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Skills/Skills.test.tsx",
+      "type": "file",
+      "name": "Skills.test.tsx",
+      "filePath": "src/renderer/src/screens/Skills/Skills.test.tsx",
+      "summary": "Tests for Skills screen: listing, install/uninstall, and content rendering",
+      "tags": ["test", "renderer", "skills"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Skills/Skills.tsx",
+      "type": "file",
+      "name": "Skills.tsx",
+      "filePath": "src/renderer/src/screens/Skills/Skills.tsx",
+      "summary": "Skills screen: lists installed and available skills with install/uninstall, content preview, and search",
+      "tags": ["renderer", "ui", "skills", "screen"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Soul/Soul.tsx",
+      "type": "file",
+      "name": "Soul.tsx",
+      "filePath": "src/renderer/src/screens/Soul/Soul.tsx",
+      "summary": "Soul editor: displays and edits the agent's system prompt / soul personality configuration",
+      "tags": ["renderer", "ui", "soul", "system-prompt"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/renderer/src/screens/SplashScreen/SplashScreen.tsx",
+      "type": "file",
+      "name": "SplashScreen.tsx",
+      "filePath": "src/renderer/src/screens/SplashScreen/SplashScreen.tsx",
+      "summary": "Loading splash screen shown during app initialization with spinner and status text",
+      "tags": ["renderer", "ui", "splash"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Tools/Tools.tsx",
+      "type": "file",
+      "name": "Tools.tsx",
+      "filePath": "src/renderer/src/screens/Tools/Tools.tsx",
+      "summary": "Tools screen: manages agent toolsets and MCP servers with enable/disable toggles, server config, and catalog browsing",
+      "tags": ["renderer", "ui", "tools", "mcp", "screen"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Welcome/Welcome.tsx",
+      "type": "file",
+      "name": "Welcome.tsx",
+      "filePath": "src/renderer/src/screens/Welcome/Welcome.tsx",
+      "summary": "Welcome screen: onboarding landing page with feature highlights, quick-start actions, and installation status",
+      "tags": ["renderer", "ui", "welcome", "screen"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/renderer/src/utils/analytics.ts",
+      "type": "file",
+      "name": "analytics.ts",
+      "filePath": "src/renderer/src/utils/analytics.ts",
+      "summary": "PostHog analytics integration: consent management, anonymous ID generation, event tracking, and opt-in/out controls",
+      "tags": ["renderer", "analytics", "posthog", "telemetry"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/constants.test.ts",
+      "type": "file",
+      "name": "constants.test.ts",
+      "filePath": "tests/constants.test.ts",
+      "summary": "Tests for renderer constants: provider definitions, theme options, install commands, and gateway configuration",
+      "tags": ["test", "renderer", "constants"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tests/detect-provider.test.ts",
+      "type": "file",
+      "name": "detect-provider.test.ts",
+      "filePath": "tests/detect-provider.test.ts",
+      "summary": "Tests provider detection heuristic from base URLs for known AI providers",
+      "tags": ["test", "renderer", "provider-detection"],
+      "language": "typescript",
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/renderer/src/screens/Layout/ProfileSwitcher.tsx",
+      "target": "file:src/renderer/src/assets/icons/index.tsx",
+      "type": "imports",
+      "weight": 0.5
+    },
+    {
+      "source": "file:src/renderer/src/screens/Layout/ProfileSwitcher.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Memory/CapacityCards.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Memory/CapacityCards.tsx",
+      "target": "file:src/renderer/src/screens/Memory/CapacityBar.tsx",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/screens/Memory/CapacityCards.tsx",
+      "target": "file:src/renderer/src/screens/Memory/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Memory/Memory.tsx",
+      "target": "file:src/renderer/src/assets/icons/index.tsx",
+      "type": "imports",
+      "weight": 0.4
+    },
+    {
+      "source": "file:src/renderer/src/screens/Memory/Memory.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Memory/Memory.tsx",
+      "target": "file:src/renderer/src/screens/Soul/Soul.tsx",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Memory/Memory.tsx",
+      "target": "file:src/renderer/src/screens/Memory/CapacityCards.tsx",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/screens/Memory/Memory.tsx",
+      "target": "file:src/renderer/src/screens/Memory/MemoryTabs.tsx",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/screens/Memory/Memory.tsx",
+      "target": "file:src/renderer/src/screens/Memory/MemoryEntries.tsx",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/screens/Memory/Memory.tsx",
+      "target": "file:src/renderer/src/screens/Memory/MemoryProfile.tsx",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/screens/Memory/Memory.tsx",
+      "target": "file:src/renderer/src/screens/Memory/MemoryProviders.tsx",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/screens/Memory/Memory.tsx",
+      "target": "file:src/renderer/src/screens/Memory/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Memory/MemoryEntries.tsx",
+      "target": "file:src/renderer/src/assets/icons/index.tsx",
+      "type": "imports",
+      "weight": 0.4
+    },
+    {
+      "source": "file:src/renderer/src/screens/Memory/MemoryEntries.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Memory/MemoryEntries.tsx",
+      "target": "file:src/renderer/src/screens/Memory/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Memory/MemoryProfile.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Memory/MemoryProviders.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Memory/MemoryProviders.tsx",
+      "target": "file:src/renderer/src/screens/Memory/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Memory/MemoryTabs.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Memory/MemoryTabs.tsx",
+      "target": "file:src/renderer/src/screens/Memory/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Models/Models.tsx",
+      "target": "file:src/renderer/src/assets/icons/index.tsx",
+      "type": "imports",
+      "weight": 0.4
+    },
+    {
+      "source": "file:src/renderer/src/screens/Models/Models.tsx",
+      "target": "file:src/renderer/src/constants.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Models/Models.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Models/Models.tsx",
+      "target": "file:src/renderer/src/components/common/BrandLogo.tsx",
+      "type": "imports",
+      "weight": 0.5
+    },
+    {
+      "source": "file:src/renderer/src/screens/Models/Models.tsx",
+      "target": "file:src/renderer/src/screens/Models/detect-provider.ts",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/screens/Models/Models.tsx",
+      "target": "file:src/renderer/src/hooks/useDiscoveredModels.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Models/Models.tsx",
+      "target": "file:src/shared/url-key-map.ts",
+      "type": "imports",
+      "weight": 0.5
+    },
+    {
+      "source": "file:src/renderer/src/screens/Providers/Providers.tsx",
+      "target": "file:src/renderer/src/constants.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Providers/Providers.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Providers/Providers.tsx",
+      "target": "file:src/renderer/src/components/common/BrandLogo.tsx",
+      "type": "imports",
+      "weight": 0.5
+    },
+    {
+      "source": "file:src/renderer/src/screens/Providers/Providers.tsx",
+      "target": "file:src/renderer/src/hooks/useDiscoveredModels.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Providers/Providers.tsx",
+      "target": "file:src/renderer/src/components/OAuthLoginModal.tsx",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Providers/Providers.tsx",
+      "target": "file:src/renderer/src/assets/icons/index.tsx",
+      "type": "imports",
+      "weight": 0.4
+    },
+    {
+      "source": "file:src/renderer/src/screens/Schedules/Schedules.tsx",
+      "target": "file:src/renderer/src/assets/icons/index.tsx",
+      "type": "imports",
+      "weight": 0.4
+    },
+    {
+      "source": "file:src/renderer/src/screens/Schedules/Schedules.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Sessions/Sessions.tsx",
+      "target": "file:src/renderer/src/assets/icons/index.tsx",
+      "type": "imports",
+      "weight": 0.4
+    },
+    {
+      "source": "file:src/renderer/src/screens/Sessions/Sessions.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Settings/ConfigHealth.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Settings/ConfigHealth.tsx",
+      "target": "file:src/renderer/src/components/ConfigHealthBanner.tsx",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/screens/Settings/Settings.tsx",
+      "target": "file:src/renderer/src/components/ThemeProvider.tsx",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Settings/Settings.tsx",
+      "target": "file:src/renderer/src/components/FontProvider.tsx",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Settings/Settings.tsx",
+      "target": "file:src/renderer/src/constants.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Settings/Settings.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Settings/Settings.tsx",
+      "target": "file:src/shared/i18n/index.ts",
+      "type": "imports",
+      "weight": 0.5
+    },
+    {
+      "source": "file:src/renderer/src/screens/Settings/Settings.tsx",
+      "target": "file:src/renderer/src/utils/analytics.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Settings/Settings.tsx",
+      "target": "file:src/renderer/src/screens/Settings/ConfigHealth.tsx",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/screens/Setup/Setup.tsx",
+      "target": "file:src/renderer/src/assets/icons/index.tsx",
+      "type": "imports",
+      "weight": 0.4
+    },
+    {
+      "source": "file:src/renderer/src/screens/Setup/Setup.tsx",
+      "target": "file:src/renderer/src/constants.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Setup/Setup.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Setup/Setup.tsx",
+      "target": "file:src/renderer/src/components/VerifyWarningBanner.tsx",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Setup/Setup.tsx",
+      "target": "file:src/renderer/src/components/common/BrandLogo.tsx",
+      "type": "imports",
+      "weight": 0.5
+    },
+    {
+      "source": "file:src/renderer/src/screens/Setup/Setup.tsx",
+      "target": "file:src/shared/url-key-map.ts",
+      "type": "imports",
+      "weight": 0.5
+    },
+    {
+      "source": "file:src/renderer/src/screens/Skills/Skills.tsx",
+      "target": "file:src/renderer/src/assets/icons/index.tsx",
+      "type": "imports",
+      "weight": 0.4
+    },
+    {
+      "source": "file:src/renderer/src/screens/Skills/Skills.tsx",
+      "target": "file:src/renderer/src/components/AgentMarkdown.tsx",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Skills/Skills.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Soul/Soul.tsx",
+      "target": "file:src/renderer/src/assets/icons/index.tsx",
+      "type": "imports",
+      "weight": 0.4
+    },
+    {
+      "source": "file:src/renderer/src/screens/Soul/Soul.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Tools/Tools.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Tools/Tools.tsx",
+      "target": "file:src/renderer/src/assets/icons/index.tsx",
+      "type": "imports",
+      "weight": 0.4
+    },
+    {
+      "source": "file:src/renderer/src/screens/Tools/Tools.tsx",
+      "target": "file:src/renderer/src/screens/Skills/Skills.tsx",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Tools/Tools.tsx",
+      "target": "file:src/renderer/src/components/RemoteNotice.tsx",
+      "type": "imports",
+      "weight": 0.5
+    },
+    {
+      "source": "file:src/renderer/src/screens/Welcome/Welcome.tsx",
+      "target": "file:src/renderer/src/components/common/HermesLogo.tsx",
+      "type": "imports",
+      "weight": 0.5
+    },
+    {
+      "source": "file:src/renderer/src/screens/Welcome/Welcome.tsx",
+      "target": "file:src/renderer/src/assets/icons/index.tsx",
+      "type": "imports",
+      "weight": 0.4
+    },
+    {
+      "source": "file:src/renderer/src/screens/Welcome/Welcome.tsx",
+      "target": "file:src/renderer/src/constants.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Welcome/Welcome.tsx",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Models/Models.tsx",
+      "target": "file:src/renderer/src/screens/Models/Models.test.tsx",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/renderer/src/screens/Sessions/Sessions.tsx",
+      "target": "file:src/renderer/src/screens/Sessions/Sessions.test.tsx",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/renderer/src/screens/Skills/Skills.tsx",
+      "target": "file:src/renderer/src/screens/Skills/Skills.test.tsx",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/renderer/src/constants.ts",
+      "target": "file:tests/constants.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/renderer/src/screens/Models/detect-provider.ts",
+      "target": "file:tests/detect-provider.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/renderer/src/screens/Models/Models.test.tsx",
+      "target": "file:src/renderer/src/screens/Models/Models.tsx",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/renderer/src/screens/Sessions/Sessions.test.tsx",
+      "target": "file:src/renderer/src/screens/Sessions/Sessions.tsx",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/renderer/src/screens/Skills/Skills.test.tsx",
+      "target": "file:src/renderer/src/screens/Skills/Skills.tsx",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/constants.test.ts",
+      "target": "file:src/renderer/src/constants.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/detect-provider.test.ts",
+      "target": "file:src/renderer/src/screens/Models/detect-provider.ts",
+      "type": "imports",
+      "weight": 0.9
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "batchIndex": 17,
+  "nodes": [
+    {
+      "id": "file:src/main/askpass.ts",
+      "type": "file",
+      "name": "askpass.ts",
+      "filePath": "src/main/askpass.ts",
+      "summary": "Bridges sudo's password prompt to a GUI dialog for the Electron main process. Creates a temp directory with: (1) askpass.sh - a Unix socket client (via embedded Python) that sudo -A invokes to get the password, and (2) a PATH shim that forces plain sudo calls to use -A. Listens on a Unix domain socket, spawns a sandboxed BrowserWindow password dialog, and returns the password via the socket. The dialog HTML uses strict CSP (script-src 'none') with DOM wiring handled entirely by the preload script.",
+      "tags": ["electron-main", "sudo", "askpass", "security", "unix-socket", "password-dialog"],
+      "language": "typescript",
+      "complexity": "high"
+    },
+    {
+      "id": "file:src/main/sudoCreds.ts",
+      "type": "file",
+      "name": "sudoCreds.ts",
+      "filePath": "src/main/sudoCreds.ts",
+      "summary": "Pre-caches sudo credentials before install operations (Linux only) to prevent subprocess deadlocks. Flow: (1) try non-interactive sudo -n -v, (2) if needed, show a sandboxed password dialog, (3) validate via sudo -S -v, (4) start a 60s keepalive refreshing the sudo cache, (5) caller invokes stop() to clear with sudo -k. Skips on non-Linux platforms. Dialog uses same hardened BrowserWindow settings as askpass.",
+      "tags": ["electron-main", "sudo", "credentials", "linux", "security", "keepalive"],
+      "language": "typescript",
+      "complexity": "medium"
+    },
+    {
+      "id": "file:src/preload/askpass.ts",
+      "type": "file",
+      "name": "askpass.ts (preload)",
+      "filePath": "src/preload/askpass.ts",
+      "summary": "Preload script for the askpass/sudo password dialog BrowserWindow. On DOMContentLoaded, wires up the OK/Cancel buttons and Enter/Escape keys to send the password (or null) via ipcRenderer.send on the ASKPASS_SUBMIT_CHANNEL. Minimal 27-line bridge between the sandboxed renderer and main process.",
+      "tags": ["electron-preload", "ipc", "password-dialog", "dom-wiring"],
+      "language": "typescript",
+      "complexity": "low"
+    },
+    {
+      "id": "file:src/shared/askpass.ts",
+      "type": "file",
+      "name": "askpass.ts (shared)",
+      "filePath": "src/shared/askpass.ts",
+      "summary": "Exports the IPC channel name constant ASKPASS_SUBMIT_CHANNEL ('askpass-submit') shared between main, preload, and test code for the password dialog system.",
+      "tags": ["shared", "constants", "ipc-channel"],
+      "language": "typescript",
+      "complexity": "trivial"
+    },
+    {
+      "id": "file:tests/askpass-security.test.ts",
+      "type": "file",
+      "name": "askpass-security.test.ts",
+      "filePath": "tests/askpass-security.test.ts",
+      "summary": "Security regression tests for the askpass/sudo dialog system. Verifies via source-code inspection that: (1) password dialogs have nodeIntegration:false, contextIsolation:true, sandbox:true, (2) IPC submissions are bound to the correct webContents, (3) navigation/popups/webviews are blocked, (4) CSP with script-src 'none' is present with no inline scripts, (5) the dedicated askpass preload entry is built by electron-vite.",
+      "tags": ["test", "security", "vitest", "askpass", "regression"],
+      "language": "typescript",
+      "complexity": "medium"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/main/askpass.ts",
+      "target": "file:src/shared/askpass.ts",
+      "relation": "imports"
+    },
+    {
+      "source": "file:src/main/sudoCreds.ts",
+      "target": "file:src/shared/askpass.ts",
+      "relation": "imports"
+    },
+    {
+      "source": "file:src/preload/askpass.ts",
+      "target": "file:src/shared/askpass.ts",
+      "relation": "imports"
+    },
+    {
+      "source": "file:tests/askpass-security.test.ts",
+      "target": "file:src/shared/askpass.ts",
+      "relation": "imports"
+    },
+    {
+      "source": "file:tests/askpass-security.test.ts",
+      "target": "file:src/main/askpass.ts",
+      "relation": "tests"
+    },
+    {
+      "source": "file:tests/askpass-security.test.ts",
+      "target": "file:src/main/sudoCreds.ts",
+      "relation": "tests"
+    },
+    {
+      "source": "file:tests/askpass-security.test.ts",
+      "target": "file:src/preload/askpass.ts",
+      "relation": "tests"
+    },
+    {
+      "source": "file:src/main/askpass.ts",
+      "target": "file:src/preload/askpass.ts",
+      "relation": "references"
+    },
+    {
+      "source": "file:src/main/sudoCreds.ts",
+      "target": "file:src/preload/askpass.ts",
+      "relation": "references"
+    }
+  ]
+}

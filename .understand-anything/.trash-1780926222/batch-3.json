@@ -1,0 +1,471 @@
+{
+  "batchIndex": 3,
+  "nodes": [
+    {
+      "id": "file:src/shared/i18n/locales/id/setup.ts",
+      "type": "file",
+      "name": "setup.ts",
+      "filePath": "src/shared/i18n/locales/id/setup.ts",
+      "summary": "Indonesian (id) locale strings for the setup namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "id",
+        "setup"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/id/skills.ts",
+      "type": "file",
+      "name": "skills.ts",
+      "filePath": "src/shared/i18n/locales/id/skills.ts",
+      "summary": "Indonesian (id) locale strings for the skills namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "id",
+        "skills"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/id/soul.ts",
+      "type": "file",
+      "name": "soul.ts",
+      "filePath": "src/shared/i18n/locales/id/soul.ts",
+      "summary": "Indonesian (id) locale strings for the soul namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "id",
+        "soul"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/id/tools.ts",
+      "type": "file",
+      "name": "tools.ts",
+      "filePath": "src/shared/i18n/locales/id/tools.ts",
+      "summary": "Indonesian (id) locale strings for the tools namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "id",
+        "tools"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/id/welcome.ts",
+      "type": "file",
+      "name": "welcome.ts",
+      "filePath": "src/shared/i18n/locales/id/welcome.ts",
+      "summary": "Indonesian (id) locale strings for the welcome namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "id",
+        "welcome"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/ja/agents.ts",
+      "type": "file",
+      "name": "agents.ts",
+      "filePath": "src/shared/i18n/locales/ja/agents.ts",
+      "summary": "Japanese (ja) locale strings for the agents namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "ja",
+        "agents"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/ja/chat.ts",
+      "type": "file",
+      "name": "chat.ts",
+      "filePath": "src/shared/i18n/locales/ja/chat.ts",
+      "summary": "Japanese (ja) locale strings for the chat namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "ja",
+        "chat"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/ja/common.ts",
+      "type": "file",
+      "name": "common.ts",
+      "filePath": "src/shared/i18n/locales/ja/common.ts",
+      "summary": "Japanese (ja) locale strings for the common namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "ja",
+        "common"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/ja/constants.ts",
+      "type": "file",
+      "name": "constants.ts",
+      "filePath": "src/shared/i18n/locales/ja/constants.ts",
+      "summary": "Japanese (ja) locale strings for the constants namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "ja",
+        "constants"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/ja/errors.ts",
+      "type": "file",
+      "name": "errors.ts",
+      "filePath": "src/shared/i18n/locales/ja/errors.ts",
+      "summary": "Japanese (ja) locale strings for the errors namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "ja",
+        "errors"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/ja/gateway.ts",
+      "type": "file",
+      "name": "gateway.ts",
+      "filePath": "src/shared/i18n/locales/ja/gateway.ts",
+      "summary": "Japanese (ja) locale strings for the gateway namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "ja",
+        "gateway"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/ja/install.ts",
+      "type": "file",
+      "name": "install.ts",
+      "filePath": "src/shared/i18n/locales/ja/install.ts",
+      "summary": "Japanese (ja) locale strings for the install namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "ja",
+        "install"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/ja/memory.ts",
+      "type": "file",
+      "name": "memory.ts",
+      "filePath": "src/shared/i18n/locales/ja/memory.ts",
+      "summary": "Japanese (ja) locale strings for the memory namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "ja",
+        "memory"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/ja/models.ts",
+      "type": "file",
+      "name": "models.ts",
+      "filePath": "src/shared/i18n/locales/ja/models.ts",
+      "summary": "Japanese (ja) locale strings for the models namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "ja",
+        "models"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/ja/navigation.ts",
+      "type": "file",
+      "name": "navigation.ts",
+      "filePath": "src/shared/i18n/locales/ja/navigation.ts",
+      "summary": "Japanese (ja) locale strings for the navigation namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "ja",
+        "navigation"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/ja/office.ts",
+      "type": "file",
+      "name": "office.ts",
+      "filePath": "src/shared/i18n/locales/ja/office.ts",
+      "summary": "Japanese (ja) locale strings for the office namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "ja",
+        "office"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/ja/providers.ts",
+      "type": "file",
+      "name": "providers.ts",
+      "filePath": "src/shared/i18n/locales/ja/providers.ts",
+      "summary": "Japanese (ja) locale strings for the providers namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "ja",
+        "providers"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/ja/schedules.ts",
+      "type": "file",
+      "name": "schedules.ts",
+      "filePath": "src/shared/i18n/locales/ja/schedules.ts",
+      "summary": "Japanese (ja) locale strings for the schedules namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "ja",
+        "schedules"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/ja/sessions.ts",
+      "type": "file",
+      "name": "sessions.ts",
+      "filePath": "src/shared/i18n/locales/ja/sessions.ts",
+      "summary": "Japanese (ja) locale strings for the sessions namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "ja",
+        "sessions"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/ja/settings.ts",
+      "type": "file",
+      "name": "settings.ts",
+      "filePath": "src/shared/i18n/locales/ja/settings.ts",
+      "summary": "Japanese (ja) locale strings for the settings namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "ja",
+        "settings"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/ja/setup.ts",
+      "type": "file",
+      "name": "setup.ts",
+      "filePath": "src/shared/i18n/locales/ja/setup.ts",
+      "summary": "Japanese (ja) locale strings for the setup namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "ja",
+        "setup"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/ja/skills.ts",
+      "type": "file",
+      "name": "skills.ts",
+      "filePath": "src/shared/i18n/locales/ja/skills.ts",
+      "summary": "Japanese (ja) locale strings for the skills namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "ja",
+        "skills"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/ja/soul.ts",
+      "type": "file",
+      "name": "soul.ts",
+      "filePath": "src/shared/i18n/locales/ja/soul.ts",
+      "summary": "Japanese (ja) locale strings for the soul namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "ja",
+        "soul"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/ja/tools.ts",
+      "type": "file",
+      "name": "tools.ts",
+      "filePath": "src/shared/i18n/locales/ja/tools.ts",
+      "summary": "Japanese (ja) locale strings for the tools namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "ja",
+        "tools"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/ja/welcome.ts",
+      "type": "file",
+      "name": "welcome.ts",
+      "filePath": "src/shared/i18n/locales/ja/welcome.ts",
+      "summary": "Japanese (ja) locale strings for the welcome namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "ja",
+        "welcome"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pl/agents.ts",
+      "type": "file",
+      "name": "agents.ts",
+      "filePath": "src/shared/i18n/locales/pl/agents.ts",
+      "summary": "Polish (pl) locale strings for the agents namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pl",
+        "agents"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pl/chat.ts",
+      "type": "file",
+      "name": "chat.ts",
+      "filePath": "src/shared/i18n/locales/pl/chat.ts",
+      "summary": "Polish (pl) locale strings for the chat namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pl",
+        "chat"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pl/common.ts",
+      "type": "file",
+      "name": "common.ts",
+      "filePath": "src/shared/i18n/locales/pl/common.ts",
+      "summary": "Polish (pl) locale strings for the common namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pl",
+        "common"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pl/constants.ts",
+      "type": "file",
+      "name": "constants.ts",
+      "filePath": "src/shared/i18n/locales/pl/constants.ts",
+      "summary": "Polish (pl) locale strings for the constants namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pl",
+        "constants"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pl/errors.ts",
+      "type": "file",
+      "name": "errors.ts",
+      "filePath": "src/shared/i18n/locales/pl/errors.ts",
+      "summary": "Polish (pl) locale strings for the errors namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pl",
+        "errors"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pl/gateway.ts",
+      "type": "file",
+      "name": "gateway.ts",
+      "filePath": "src/shared/i18n/locales/pl/gateway.ts",
+      "summary": "Polish (pl) locale strings for the gateway namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pl",
+        "gateway"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

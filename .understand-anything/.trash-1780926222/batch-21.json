@@ -1,0 +1,77 @@
+{
+  "batchIndex": 21,
+  "nodes": [
+    {
+      "id": "scripts/verify-369-wsl-drift.js",
+      "type": "file",
+      "label": "verify-369-wsl-drift.js",
+      "filePath": "scripts/verify-369-wsl-drift.js",
+      "language": "javascript",
+      "description": "CDP verifier for SIBLING_HERMES_HOME_DRIFT config-health check: detects drift between Windows and WSL .hermes, tests auto-fix",
+      "tags": [
+        "script"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "scripts/verify-compat-host-derived-key.js",
+      "type": "file",
+      "label": "verify-compat-host-derived-key.js",
+      "filePath": "scripts/verify-compat-host-derived-key.js",
+      "language": "javascript",
+      "description": "CDP verifier for dual-engine compat: confirms seedDefaults writes both CUSTOM_PROVIDER_<NAME>_KEY and <VENDOR>_API_KEY to .env",
+      "tags": [
+        "script"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "scripts/verify-nous-discovery.js",
+      "type": "file",
+      "label": "verify-nous-discovery.js",
+      "filePath": "scripts/verify-nous-discovery.js",
+      "language": "javascript",
+      "description": "CDP verifier for Nous model discovery: checks discoverProviderModels returns ok status, 50+ models, and known free tier entries",
+      "tags": [
+        "script"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "scripts/verify-wsl-detection.js",
+      "type": "file",
+      "label": "verify-wsl-detection.js",
+      "filePath": "scripts/verify-wsl-detection.js",
+      "language": "javascript",
+      "description": "Standalone Node.js verifier that replicates wsl-detection logic to list WSL distros and check for ~/.hermes directories",
+      "tags": [
+        "script"
+      ],
+      "exports": [],
+      "imports": []
+    }
+  ],
+  "edges": [
+    {
+      "source": "scripts/verify-369-wsl-drift.js",
+      "target": "scripts/e2e-attach.js",
+      "type": "imports",
+      "label": "requires ./e2e-attach"
+    },
+    {
+      "source": "scripts/verify-compat-host-derived-key.js",
+      "target": "scripts/e2e-attach.js",
+      "type": "imports",
+      "label": "requires ./e2e-attach"
+    },
+    {
+      "source": "scripts/verify-nous-discovery.js",
+      "target": "scripts/e2e-attach.js",
+      "type": "imports",
+      "label": "requires ./e2e-attach"
+    }
+  ]
+}

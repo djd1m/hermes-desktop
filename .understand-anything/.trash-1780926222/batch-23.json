@@ -1,0 +1,406 @@
+{
+  "batchIndex": 23,
+  "nodes": [
+    {
+      "id": "tests/api-server-key-migration.test.ts",
+      "type": "file",
+      "label": "api-server-key-migration.test.ts",
+      "filePath": "tests/api-server-key-migration.test.ts",
+      "language": "typescript",
+      "description": "API server key migration: verifies getApiServerKey migrates keys from non-canonical sources to .env",
+      "tags": [
+        "test"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "tests/compat-host-derived-key-persistence.test.ts",
+      "type": "file",
+      "label": "compat-host-derived-key-persistence.test.ts",
+      "filePath": "tests/compat-host-derived-key-persistence.test.ts",
+      "language": "typescript",
+      "description": "Dual-engine compat: seedDefaults writes both CUSTOM_PROVIDER_<NAME>_KEY and <VENDOR>_API_KEY to .env",
+      "tags": [
+        "test"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "tests/config-health.test.ts",
+      "type": "file",
+      "label": "config-health.test.ts",
+      "filePath": "tests/config-health.test.ts",
+      "language": "typescript",
+      "description": "Config-health audit: runs checks against on-disk profile, exercises each check and auto-fix",
+      "tags": [
+        "test"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "tests/config-model-block.test.ts",
+      "type": "file",
+      "label": "config-model-block.test.ts",
+      "filePath": "tests/config-model-block.test.ts",
+      "language": "typescript",
+      "description": "Regression for #242: getModelConfig/setModelConfig scope strictly to top-level model: block in config.yaml",
+      "tags": [
+        "test"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "tests/config-value-paths.test.ts",
+      "type": "file",
+      "label": "config-value-paths.test.ts",
+      "filePath": "tests/config-value-paths.test.ts",
+      "language": "typescript",
+      "description": "Regression for #247: dotted-path config navigator correctly scopes to YAML block hierarchy",
+      "tags": [
+        "test"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "tests/connection-config-security.test.ts",
+      "type": "file",
+      "label": "connection-config-security.test.ts",
+      "filePath": "tests/connection-config-security.test.ts",
+      "language": "typescript",
+      "description": "Connection config secret exposure: ensures API keys are not leaked in config responses",
+      "tags": [
+        "test"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "tests/credential-pool-schema.test.ts",
+      "type": "file",
+      "label": "credential-pool-schema.test.ts",
+      "filePath": "tests/credential-pool-schema.test.ts",
+      "language": "typescript",
+      "description": "Issue #367 Bug 3: addCredentialPoolEntry constructs full canonical schema with access_token and auth_type",
+      "tags": [
+        "test"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "tests/cronjobs.test.ts",
+      "type": "file",
+      "label": "cronjobs.test.ts",
+      "filePath": "tests/cronjobs.test.ts",
+      "language": "typescript",
+      "description": "Cron jobs: verifies scheduled task execution with mocked child_process and hermes module",
+      "tags": [
+        "test"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "tests/custom-provider-auto-key.test.ts",
+      "type": "file",
+      "label": "custom-provider-auto-key.test.ts",
+      "filePath": "tests/custom-provider-auto-key.test.ts",
+      "language": "typescript",
+      "description": "Issue #260: setModelConfig auto-populates model.api_key for custom providers pointing at known commercial hosts",
+      "tags": [
+        "test"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "tests/env-validation.test.ts",
+      "type": "file",
+      "label": "env-validation.test.ts",
+      "filePath": "tests/env-validation.test.ts",
+      "language": "typescript",
+      "description": "Environment variable write validation: accepts valid names/values, rejects injection attempts",
+      "tags": [
+        "test"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "tests/installer-utils.test.ts",
+      "type": "file",
+      "label": "installer-utils.test.ts",
+      "filePath": "tests/installer-utils.test.ts",
+      "language": "typescript",
+      "description": "Installer utility functions: tests extracted pure functions from installer.ts with mocked electron",
+      "tags": [
+        "test"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "tests/ipc-handlers.test.ts",
+      "type": "file",
+      "label": "ipc-handlers.test.ts",
+      "filePath": "tests/ipc-handlers.test.ts",
+      "language": "typescript",
+      "description": "IPC handler channel consistency: all ipcMain.handle channels in main/index.ts have matching ipcRenderer.invoke in preload",
+      "tags": [
+        "test"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "tests/locale-persistence.test.ts",
+      "type": "file",
+      "label": "locale-persistence.test.ts",
+      "filePath": "tests/locale-persistence.test.ts",
+      "language": "typescript",
+      "description": "App locale persistence: setAppLocale saves to disk, survives module reload simulating restart",
+      "tags": [
+        "test"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "tests/model-discovery.test.ts",
+      "type": "file",
+      "label": "model-discovery.test.ts",
+      "filePath": "tests/model-discovery.test.ts",
+      "language": "typescript",
+      "description": "Model discovery HTTP client: spins up real loopback server to exercise fetch/parse without network",
+      "tags": [
+        "test"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "tests/office-url.test.ts",
+      "type": "file",
+      "label": "office-url.test.ts",
+      "filePath": "tests/office-url.test.ts",
+      "language": "typescript",
+      "description": "Office webview URL: buildOfficeWebviewUrl and withOfficePath correctly build local/remote URLs with /office path",
+      "tags": [
+        "test"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "tests/preload-api-surface.test.ts",
+      "type": "file",
+      "label": "preload-api-surface.test.ts",
+      "filePath": "tests/preload-api-surface.test.ts",
+      "language": "typescript",
+      "description": "Preload API surface: hermesAPI methods in preload/index.ts match HermesAPI interface in index.d.ts",
+      "tags": [
+        "test"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "tests/remote-history.test.ts",
+      "type": "file",
+      "label": "remote-history.test.ts",
+      "filePath": "tests/remote-history.test.ts",
+      "language": "typescript",
+      "description": "Remote history: verifies history argument passing in remote mode chat functions",
+      "tags": [
+        "test"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "tests/set-model-config-base-url.test.ts",
+      "type": "file",
+      "label": "set-model-config-base-url.test.ts",
+      "filePath": "tests/set-model-config-base-url.test.ts",
+      "language": "typescript",
+      "description": "setModelConfig base_url: substitutes canonical URL for built-in providers when caller supplies empty baseUrl",
+      "tags": [
+        "test"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "tests/sibling-hermes-home-drift.test.ts",
+      "type": "file",
+      "label": "sibling-hermes-home-drift.test.ts",
+      "filePath": "tests/sibling-hermes-home-drift.test.ts",
+      "language": "typescript",
+      "description": "SIBLING_HERMES_HOME_DRIFT: config drift detection between Windows and WSL .hermes directories with auto-fix",
+      "tags": [
+        "test"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "tests/validation.test.ts",
+      "type": "file",
+      "label": "validation.test.ts",
+      "filePath": "tests/validation.test.ts",
+      "language": "typescript",
+      "description": "Pre-send chat readiness: exercises main-process validator against real on-disk profile with fail-open semantics",
+      "tags": [
+        "test"
+      ],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "id": "tests/winget-generator.test.ts",
+      "type": "file",
+      "label": "winget-generator.test.ts",
+      "filePath": "tests/winget-generator.test.ts",
+      "language": "typescript",
+      "description": "Winget manifest generator: template filling, SHA256, installer URL substitution with temp directory fixtures",
+      "tags": [
+        "test"
+      ],
+      "exports": [],
+      "imports": []
+    }
+  ],
+  "edges": [
+    {
+      "source": "src/main/config.ts",
+      "target": "tests/api-server-key-migration.test.ts",
+      "type": "tested_by",
+      "label": "tested by api-server-key-migration.test.ts"
+    },
+    {
+      "source": "src/main/models.ts",
+      "target": "tests/compat-host-derived-key-persistence.test.ts",
+      "type": "tested_by",
+      "label": "tested by compat-host-derived-key-persistence.test.ts"
+    },
+    {
+      "source": "src/main/config-health.ts",
+      "target": "tests/config-health.test.ts",
+      "type": "tested_by",
+      "label": "tested by config-health.test.ts"
+    },
+    {
+      "source": "src/main/config.ts",
+      "target": "tests/config-model-block.test.ts",
+      "type": "tested_by",
+      "label": "tested by config-model-block.test.ts"
+    },
+    {
+      "source": "src/main/config.ts",
+      "target": "tests/config-value-paths.test.ts",
+      "type": "tested_by",
+      "label": "tested by config-value-paths.test.ts"
+    },
+    {
+      "source": "src/main/config.ts",
+      "target": "tests/connection-config-security.test.ts",
+      "type": "tested_by",
+      "label": "tested by connection-config-security.test.ts"
+    },
+    {
+      "source": "src/main/config.ts",
+      "target": "tests/credential-pool-schema.test.ts",
+      "type": "tested_by",
+      "label": "tested by credential-pool-schema.test.ts"
+    },
+    {
+      "source": "src/main/cronjobs.ts",
+      "target": "tests/cronjobs.test.ts",
+      "type": "tested_by",
+      "label": "tested by cronjobs.test.ts"
+    },
+    {
+      "source": "src/main/config.ts",
+      "target": "tests/custom-provider-auto-key.test.ts",
+      "type": "tested_by",
+      "label": "tested by custom-provider-auto-key.test.ts"
+    },
+    {
+      "source": "src/main/config.ts",
+      "target": "tests/env-validation.test.ts",
+      "type": "tested_by",
+      "label": "tested by env-validation.test.ts"
+    },
+    {
+      "source": "src/main/installer.ts",
+      "target": "tests/installer-utils.test.ts",
+      "type": "tested_by",
+      "label": "tested by installer-utils.test.ts"
+    },
+    {
+      "source": "src/main/index.ts",
+      "target": "tests/ipc-handlers.test.ts",
+      "type": "tested_by",
+      "label": "tested by ipc-handlers.test.ts"
+    },
+    {
+      "source": "src/main/locale.ts",
+      "target": "tests/locale-persistence.test.ts",
+      "type": "tested_by",
+      "label": "tested by locale-persistence.test.ts"
+    },
+    {
+      "source": "src/main/model-discovery.ts",
+      "target": "tests/model-discovery.test.ts",
+      "type": "tested_by",
+      "label": "tested by model-discovery.test.ts"
+    },
+    {
+      "source": "src/renderer/src/screens/Office/officeUrl.ts",
+      "target": "tests/office-url.test.ts",
+      "type": "tested_by",
+      "label": "tested by office-url.test.ts"
+    },
+    {
+      "source": "src/preload/index.ts",
+      "target": "tests/preload-api-surface.test.ts",
+      "type": "tested_by",
+      "label": "tested by preload-api-surface.test.ts"
+    },
+    {
+      "source": "src/main/hermes.ts",
+      "target": "tests/remote-history.test.ts",
+      "type": "tested_by",
+      "label": "tested by remote-history.test.ts"
+    },
+    {
+      "source": "src/main/config.ts",
+      "target": "tests/set-model-config-base-url.test.ts",
+      "type": "tested_by",
+      "label": "tested by set-model-config-base-url.test.ts"
+    },
+    {
+      "source": "src/main/config-health.ts",
+      "target": "tests/sibling-hermes-home-drift.test.ts",
+      "type": "tested_by",
+      "label": "tested by sibling-hermes-home-drift.test.ts"
+    },
+    {
+      "source": "src/main/validation.ts",
+      "target": "tests/validation.test.ts",
+      "type": "tested_by",
+      "label": "tested by validation.test.ts"
+    },
+    {
+      "source": "scripts/generate-winget-manifests.mjs",
+      "target": "tests/winget-generator.test.ts",
+      "type": "tested_by",
+      "label": "tested by winget-generator.test.ts"
+    }
+  ]
+}

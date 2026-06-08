@@ -1,0 +1,4260 @@
+{
+  "projectName": "hermes-desktop",
+  "projectDescription": "Native Electron desktop app for Hermes Agent - self-improving AI assistant with tool use",
+  "languages": [
+    "typescript",
+    "javascript",
+    "css",
+    "html"
+  ],
+  "frameworks": [
+    "electron",
+    "react",
+    "vite",
+    "tailwindcss",
+    "vitest"
+  ],
+  "files": [
+    {
+      "path": ".agents/skills/electron-pro/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 163,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/hermes-agent/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 1765,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/typescript-expert/references/tsconfig-strict.json",
+      "language": "json",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/typescript-expert/references/typescript-cheatsheet.md",
+      "language": "markdown",
+      "sizeLines": 393,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/typescript-expert/references/utility-types.ts",
+      "language": "typescript",
+      "sizeLines": 332,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/typescript-expert/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 470,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/bck-workflows/ci.yml",
+      "language": "yaml",
+      "sizeLines": 44,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".github/bck-workflows/release.yml",
+      "language": "yaml",
+      "sizeLines": 374,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "build/afterPack.js",
+      "language": "javascript",
+      "sizeLines": 52,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "build/linux-after-install.sh",
+      "language": "shell",
+      "sizeLines": 29,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "build/winget/Installer.template.yaml",
+      "language": "yaml",
+      "sizeLines": 16,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "build/winget/Locale.en-US.template.yaml",
+      "language": "yaml",
+      "sizeLines": 25,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "build/winget/Version.template.yaml",
+      "language": "yaml",
+      "sizeLines": 6,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "changelogs/0.4.5.md",
+      "language": "markdown",
+      "sizeLines": 69,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "changelogs/0.5.0.md",
+      "language": "markdown",
+      "sizeLines": 64,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "CONTRIBUTING.ja-JP.md",
+      "language": "markdown",
+      "sizeLines": 104,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "language": "markdown",
+      "sizeLines": 104,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "CONTRIBUTING.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 104,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "dev-app-update.yml",
+      "language": "yaml",
+      "sizeLines": 4,
+      "fileCategory": "config"
+    },
+    {
+      "path": "docs/SSH-TUNNEL-VPS.md",
+      "language": "markdown",
+      "sizeLines": 306,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-04-30-windows-winget-fedora-rpm-release.md",
+      "language": "markdown",
+      "sizeLines": 1238,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/superpowers/specs/2026-04-30-windows-winget-fedora-rpm-release-design.md",
+      "language": "markdown",
+      "sizeLines": 235,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "electron-builder.yml",
+      "language": "yaml",
+      "sizeLines": 73,
+      "fileCategory": "config"
+    },
+    {
+      "path": "electron.vite.config.ts",
+      "language": "typescript",
+      "sizeLines": 36,
+      "fileCategory": "config"
+    },
+    {
+      "path": "eslint.config.mjs",
+      "language": "javascript",
+      "sizeLines": 66,
+      "fileCategory": "config"
+    },
+    {
+      "path": "package.json",
+      "language": "json",
+      "sizeLines": 83,
+      "fileCategory": "config"
+    },
+    {
+      "path": "README.es-LATAM.md",
+      "language": "markdown",
+      "sizeLines": 274,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "README.ja-JP.md",
+      "language": "markdown",
+      "sizeLines": 268,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 284,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "README.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 268,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "scripts/drive-nous-chat.js",
+      "language": "javascript",
+      "sizeLines": 133,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/drive-nous-oauth.js",
+      "language": "javascript",
+      "sizeLines": 145,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/e2e-attach.js",
+      "language": "javascript",
+      "sizeLines": 103,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/generate-winget-manifests.mjs",
+      "language": "javascript",
+      "sizeLines": 104,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/probe-chat-state.js",
+      "language": "javascript",
+      "sizeLines": 29,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/probe-models-list.js",
+      "language": "javascript",
+      "sizeLines": 39,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/probe-nous-models.js",
+      "language": "javascript",
+      "sizeLines": 31,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/probe-selectors.js",
+      "language": "javascript",
+      "sizeLines": 96,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/probe-validation-and-banner.js",
+      "language": "javascript",
+      "sizeLines": 116,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/probe-wsl-detection.js",
+      "language": "javascript",
+      "sizeLines": 24,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/README.md",
+      "language": "markdown",
+      "sizeLines": 127,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "scripts/repro-edit-model-emptykey.js",
+      "language": "javascript",
+      "sizeLines": 191,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/repro-gateway-restart-midchat.js",
+      "language": "javascript",
+      "sizeLines": 181,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/repro-gateway-restart-v2.js",
+      "language": "javascript",
+      "sizeLines": 191,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/repro-long-conversation.js",
+      "language": "javascript",
+      "sizeLines": 154,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/repro-nous-cards-schema-367.js",
+      "language": "javascript",
+      "sizeLines": 124,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/repro-nous-detection-367.js",
+      "language": "javascript",
+      "sizeLines": 165,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/repro-session-cont-error.js",
+      "language": "javascript",
+      "sizeLines": 69,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/repro-session-proliferation.js",
+      "language": "javascript",
+      "sizeLines": 160,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/sync-upstream.sh",
+      "language": "shell",
+      "sizeLines": 96,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/verify-369-wsl-drift.js",
+      "language": "javascript",
+      "sizeLines": 139,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/verify-compat-host-derived-key.js",
+      "language": "javascript",
+      "sizeLines": 169,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/verify-nous-discovery.js",
+      "language": "javascript",
+      "sizeLines": 48,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/verify-wsl-detection.js",
+      "language": "javascript",
+      "sizeLines": 50,
+      "fileCategory": "script"
+    },
+    {
+      "path": "src/main/askpass.ts",
+      "language": "typescript",
+      "sizeLines": 214,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/attachment-staging.ts",
+      "language": "typescript",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/claw3d.ts",
+      "language": "typescript",
+      "sizeLines": 1046,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/config-health.ts",
+      "language": "typescript",
+      "sizeLines": 1049,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/config.ts",
+      "language": "typescript",
+      "sizeLines": 1679,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/cronjobs.ts",
+      "language": "typescript",
+      "sizeLines": 329,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/default-models.ts",
+      "language": "typescript",
+      "sizeLines": 99,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/enterprise/cloud-ru-provider.ts",
+      "language": "typescript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/enterprise/index.ts",
+      "language": "typescript",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/enterprise/README.md",
+      "language": "markdown",
+      "sizeLines": 33,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/main/gateway-ports.ts",
+      "language": "typescript",
+      "sizeLines": 105,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/hermes-auth.ts",
+      "language": "typescript",
+      "sizeLines": 173,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/hermes.ts",
+      "language": "typescript",
+      "sizeLines": 3376,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/host-derived-env.ts",
+      "language": "typescript",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/index.ts",
+      "language": "typescript",
+      "sizeLines": 2218,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/installer.ts",
+      "language": "typescript",
+      "sizeLines": 1477,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/kanban.ts",
+      "language": "typescript",
+      "sizeLines": 425,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/locale.ts",
+      "language": "typescript",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/mcp-servers.ts",
+      "language": "typescript",
+      "sizeLines": 851,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/media.ts",
+      "language": "typescript",
+      "sizeLines": 192,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/memory.ts",
+      "language": "typescript",
+      "sizeLines": 206,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/messaging-platforms.ts",
+      "language": "typescript",
+      "sizeLines": 199,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/model-discovery.ts",
+      "language": "typescript",
+      "sizeLines": 520,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/models.ts",
+      "language": "typescript",
+      "sizeLines": 230,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/office-start.ts",
+      "language": "typescript",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/process-options.ts",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/profiles.ts",
+      "language": "typescript",
+      "sizeLines": 295,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/provider-registry.ts",
+      "language": "typescript",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/providers.ts",
+      "language": "typescript",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/registry.ts",
+      "language": "typescript",
+      "sizeLines": 475,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/run-stream.test.ts",
+      "language": "typescript",
+      "sizeLines": 146,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/run-stream.ts",
+      "language": "typescript",
+      "sizeLines": 113,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/security.ts",
+      "language": "typescript",
+      "sizeLines": 77,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/session-attachment-store.ts",
+      "language": "typescript",
+      "sizeLines": 197,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/session-cache.ts",
+      "language": "typescript",
+      "sizeLines": 271,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/sessions.ts",
+      "language": "typescript",
+      "sizeLines": 696,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/skills.ts",
+      "language": "typescript",
+      "sizeLines": 447,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/soul.ts",
+      "language": "typescript",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/sse-parser.ts",
+      "language": "typescript",
+      "sizeLines": 140,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/ssh-options.ts",
+      "language": "typescript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/ssh-remote.ts",
+      "language": "typescript",
+      "sizeLines": 2222,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/ssh-tunnel.ts",
+      "language": "typescript",
+      "sizeLines": 258,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/sudoCreds.ts",
+      "language": "typescript",
+      "sizeLines": 192,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/terminal-launcher.ts",
+      "language": "typescript",
+      "sizeLines": 621,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/tools.ts",
+      "language": "typescript",
+      "sizeLines": 371,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/tui-gateway-stream.test.ts",
+      "language": "typescript",
+      "sizeLines": 131,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/tui-gateway-stream.ts",
+      "language": "typescript",
+      "sizeLines": 135,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/updater-log.ts",
+      "language": "typescript",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/utils.ts",
+      "language": "typescript",
+      "sizeLines": 239,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/validation.ts",
+      "language": "typescript",
+      "sizeLines": 157,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/ws.d.ts",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/wsl-detection.ts",
+      "language": "typescript",
+      "sizeLines": 158,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/yaml-path.ts",
+      "language": "typescript",
+      "sizeLines": 107,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/preload/askpass.ts",
+      "language": "typescript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/preload/index.d.ts",
+      "language": "typescript",
+      "sizeLines": 967,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/preload/index.ts",
+      "language": "typescript",
+      "sizeLines": 1155,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/index.html",
+      "language": "html",
+      "sizeLines": 15,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/renderer/src/App.tsx",
+      "language": "typescript",
+      "sizeLines": 251,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/assets/base.css",
+      "language": "css",
+      "sizeLines": 45,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/renderer/src/assets/icons/index.tsx",
+      "language": "typescript",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/assets/main.css",
+      "language": "css",
+      "sizeLines": 9701,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/renderer/src/components/AgentMarkdown.tsx",
+      "language": "typescript",
+      "sizeLines": 192,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/components/AttachmentChip.tsx",
+      "language": "typescript",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/components/common/BrandLogo.tsx",
+      "language": "typescript",
+      "sizeLines": 217,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/components/common/HermesLogo.tsx",
+      "language": "typescript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/components/ConfigHealthBanner.test.tsx",
+      "language": "typescript",
+      "sizeLines": 104,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/components/ConfigHealthBanner.tsx",
+      "language": "typescript",
+      "sizeLines": 314,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/components/ErrorBoundary.tsx",
+      "language": "typescript",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/components/FontProvider.tsx",
+      "language": "typescript",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/components/I18nContext.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/components/I18nProvider.test.tsx",
+      "language": "typescript",
+      "sizeLines": 114,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/components/I18nProvider.tsx",
+      "language": "typescript",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/components/MediaImage.tsx",
+      "language": "typescript",
+      "sizeLines": 191,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/components/OAuthLoginModal.tsx",
+      "language": "typescript",
+      "sizeLines": 123,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/components/RemoteNotice.tsx",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/components/ThemeProvider.tsx",
+      "language": "typescript",
+      "sizeLines": 110,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/components/useI18n.ts",
+      "language": "typescript",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/components/VerifyWarningBanner.tsx",
+      "language": "typescript",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/components/Versions.tsx",
+      "language": "typescript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/constants.ts",
+      "language": "typescript",
+      "sizeLines": 1043,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/env.d.ts",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/hooks/useDiscoveredModels.ts",
+      "language": "typescript",
+      "sizeLines": 97,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/main.tsx",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Agents/Agents.test.tsx",
+      "language": "typescript",
+      "sizeLines": 185,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Agents/Agents.tsx",
+      "language": "typescript",
+      "sizeLines": 280,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/attachmentUtils.test.ts",
+      "language": "typescript",
+      "sizeLines": 245,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/attachmentUtils.ts",
+      "language": "typescript",
+      "sizeLines": 525,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/Chat.tsx",
+      "language": "typescript",
+      "sizeLines": 463,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/ChatEmptyState.tsx",
+      "language": "typescript",
+      "sizeLines": 75,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/ChatHeader.tsx",
+      "language": "typescript",
+      "sizeLines": 93,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/ChatInput.test.tsx",
+      "language": "typescript",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/ChatInput.tsx",
+      "language": "typescript",
+      "sizeLines": 586,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/ContextFolderChip.tsx",
+      "language": "typescript",
+      "sizeLines": 86,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/ContextGauge.tsx",
+      "language": "typescript",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/contextWindows.test.ts",
+      "language": "typescript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/contextWindows.ts",
+      "language": "typescript",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/FileViewer.tsx",
+      "language": "typescript",
+      "sizeLines": 322,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/HistoryRow.tsx",
+      "language": "typescript",
+      "sizeLines": 256,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/hooks/useChatActions.ts",
+      "language": "typescript",
+      "sizeLines": 161,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/hooks/useChatIPC.ts",
+      "language": "typescript",
+      "sizeLines": 161,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/hooks/useChatScroll.ts",
+      "language": "typescript",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/hooks/useFastMode.ts",
+      "language": "typescript",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/hooks/useInputHistory.ts",
+      "language": "typescript",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/hooks/useLocalCommands.ts",
+      "language": "typescript",
+      "sizeLines": 206,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/hooks/useModelConfig.ts",
+      "language": "typescript",
+      "sizeLines": 163,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/hooks/useReasoningEffort.ts",
+      "language": "typescript",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/hooks/useVoiceInput.ts",
+      "language": "typescript",
+      "sizeLines": 267,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/keyboard.test.ts",
+      "language": "typescript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/keyboard.ts",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/liveReasoningEvents.ts",
+      "language": "typescript",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/liveToolEvents.ts",
+      "language": "typescript",
+      "sizeLines": 267,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/mediaUtils.test.ts",
+      "language": "typescript",
+      "sizeLines": 336,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/mediaUtils.ts",
+      "language": "typescript",
+      "sizeLines": 315,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/MessageList.tsx",
+      "language": "typescript",
+      "sizeLines": 154,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/MessageRow.tsx",
+      "language": "typescript",
+      "sizeLines": 164,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/ModelPicker.tsx",
+      "language": "typescript",
+      "sizeLines": 112,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/ReasoningEffortPicker.tsx",
+      "language": "typescript",
+      "sizeLines": 153,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/sessionHistory.ts",
+      "language": "typescript",
+      "sizeLines": 429,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/slashCommands.ts",
+      "language": "typescript",
+      "sizeLines": 137,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/transcriptUtils.test.ts",
+      "language": "typescript",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/transcriptUtils.ts",
+      "language": "typescript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/types.ts",
+      "language": "typescript",
+      "sizeLines": 81,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Chat/WorktreePanel.tsx",
+      "language": "typescript",
+      "sizeLines": 239,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Discover/Discover.tsx",
+      "language": "typescript",
+      "sizeLines": 657,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Gateway/Gateway.test.tsx",
+      "language": "typescript",
+      "sizeLines": 105,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Gateway/Gateway.tsx",
+      "language": "typescript",
+      "sizeLines": 952,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Install/Install.tsx",
+      "language": "typescript",
+      "sizeLines": 308,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Kanban/Kanban.tsx",
+      "language": "typescript",
+      "sizeLines": 1179,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Layout/Layout.tsx",
+      "language": "typescript",
+      "sizeLines": 526,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Layout/ProfileSwitcher.tsx",
+      "language": "typescript",
+      "sizeLines": 177,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Memory/CapacityBar.tsx",
+      "language": "typescript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Memory/CapacityCards.tsx",
+      "language": "typescript",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Memory/Memory.tsx",
+      "language": "typescript",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Memory/MemoryEntries.tsx",
+      "language": "typescript",
+      "sizeLines": 191,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Memory/MemoryProfile.tsx",
+      "language": "typescript",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Memory/MemoryProviders.tsx",
+      "language": "typescript",
+      "sizeLines": 179,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Memory/MemoryTabs.tsx",
+      "language": "typescript",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Memory/types.ts",
+      "language": "typescript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Models/detect-provider.ts",
+      "language": "typescript",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Models/Models.test.tsx",
+      "language": "typescript",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Models/Models.tsx",
+      "language": "typescript",
+      "sizeLines": 573,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Office/Office.tsx",
+      "language": "typescript",
+      "sizeLines": 422,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Office/office3d/agents.ts",
+      "language": "typescript",
+      "sizeLines": 73,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Office/office3d/avatars/profile.ts",
+      "language": "typescript",
+      "sizeLines": 288,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Office/office3d/core/constants.ts",
+      "language": "typescript",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Office/office3d/core/geometry.ts",
+      "language": "typescript",
+      "sizeLines": 241,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Office/office3d/core/types.ts",
+      "language": "typescript",
+      "sizeLines": 154,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Office/office3d/layout.ts",
+      "language": "typescript",
+      "sizeLines": 264,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Office/office3d/objects/agents.tsx",
+      "language": "typescript",
+      "sizeLines": 1355,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Office/office3d/objects/furniture.tsx",
+      "language": "typescript",
+      "sizeLines": 355,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Office/office3d/objects/RiggedCharacter.tsx",
+      "language": "typescript",
+      "sizeLines": 223,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Office/office3d/objects/types.ts",
+      "language": "typescript",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Office/office3d/Office3D.tsx",
+      "language": "typescript",
+      "sizeLines": 559,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Office/office3d/troika-three-text.d.ts",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Office/officeUrl.ts",
+      "language": "typescript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Office/OneChatModal.tsx",
+      "language": "typescript",
+      "sizeLines": 504,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Providers/Providers.tsx",
+      "language": "typescript",
+      "sizeLines": 608,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Schedules/Schedules.tsx",
+      "language": "typescript",
+      "sizeLines": 661,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Sessions/Sessions.test.tsx",
+      "language": "typescript",
+      "sizeLines": 551,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Sessions/Sessions.tsx",
+      "language": "typescript",
+      "sizeLines": 1025,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Settings/ConfigHealth.tsx",
+      "language": "typescript",
+      "sizeLines": 208,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Settings/Settings.tsx",
+      "language": "typescript",
+      "sizeLines": 1284,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Setup/Setup.tsx",
+      "language": "typescript",
+      "sizeLines": 294,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Skills/Skills.test.tsx",
+      "language": "typescript",
+      "sizeLines": 151,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Skills/Skills.tsx",
+      "language": "typescript",
+      "sizeLines": 404,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Soul/Soul.tsx",
+      "language": "typescript",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/SplashScreen/SplashScreen.tsx",
+      "language": "typescript",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Tools/Tools.tsx",
+      "language": "typescript",
+      "sizeLines": 1012,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/screens/Welcome/Welcome.tsx",
+      "language": "typescript",
+      "sizeLines": 417,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/test/setup.ts",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/renderer/src/utils/analytics.ts",
+      "language": "typescript",
+      "sizeLines": 129,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/askpass.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/attachments.ts",
+      "language": "typescript",
+      "sizeLines": 162,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/chat-stream.ts",
+      "language": "typescript",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/config.ts",
+      "language": "typescript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/index.test.ts",
+      "language": "typescript",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/index.ts",
+      "language": "typescript",
+      "sizeLines": 532,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/en/agents.ts",
+      "language": "typescript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/en/chat.ts",
+      "language": "typescript",
+      "sizeLines": 138,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/en/common.ts",
+      "language": "typescript",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/en/constants.ts",
+      "language": "typescript",
+      "sizeLines": 228,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/en/diagnose.ts",
+      "language": "typescript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/en/discover.ts",
+      "language": "typescript",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/en/errors.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/en/gateway.ts",
+      "language": "typescript",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/en/install.ts",
+      "language": "typescript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/en/kanban.ts",
+      "language": "typescript",
+      "sizeLines": 106,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/en/memory.ts",
+      "language": "typescript",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/en/models.ts",
+      "language": "typescript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/en/navigation.ts",
+      "language": "typescript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/en/office.ts",
+      "language": "typescript",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/en/providers.ts",
+      "language": "typescript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/en/schedules.ts",
+      "language": "typescript",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/en/sessions.ts",
+      "language": "typescript",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/en/settings.ts",
+      "language": "typescript",
+      "sizeLines": 175,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/en/setup.ts",
+      "language": "typescript",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/en/skills.ts",
+      "language": "typescript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/en/soul.ts",
+      "language": "typescript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/en/tools.ts",
+      "language": "typescript",
+      "sizeLines": 127,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/en/welcome.ts",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/es/agents.ts",
+      "language": "typescript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/es/chat.ts",
+      "language": "typescript",
+      "sizeLines": 121,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/es/common.ts",
+      "language": "typescript",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/es/constants.ts",
+      "language": "typescript",
+      "sizeLines": 228,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/es/diagnose.ts",
+      "language": "typescript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/es/errors.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/es/gateway.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/es/install.ts",
+      "language": "typescript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/es/kanban.ts",
+      "language": "typescript",
+      "sizeLines": 101,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/es/memory.ts",
+      "language": "typescript",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/es/models.ts",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/es/navigation.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/es/office.ts",
+      "language": "typescript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/es/providers.ts",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/es/schedules.ts",
+      "language": "typescript",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/es/sessions.ts",
+      "language": "typescript",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/es/settings.ts",
+      "language": "typescript",
+      "sizeLines": 124,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/es/setup.ts",
+      "language": "typescript",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/es/skills.ts",
+      "language": "typescript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/es/soul.ts",
+      "language": "typescript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/es/tools.ts",
+      "language": "typescript",
+      "sizeLines": 75,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/es/welcome.ts",
+      "language": "typescript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/id/agents.ts",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/id/chat.ts",
+      "language": "typescript",
+      "sizeLines": 91,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/id/common.ts",
+      "language": "typescript",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/id/constants.ts",
+      "language": "typescript",
+      "sizeLines": 218,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/id/errors.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/id/gateway.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/id/install.ts",
+      "language": "typescript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/id/memory.ts",
+      "language": "typescript",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/id/models.ts",
+      "language": "typescript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/id/navigation.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/id/office.ts",
+      "language": "typescript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/id/providers.ts",
+      "language": "typescript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/id/schedules.ts",
+      "language": "typescript",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/id/sessions.ts",
+      "language": "typescript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/id/settings.ts",
+      "language": "typescript",
+      "sizeLines": 120,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/id/setup.ts",
+      "language": "typescript",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/id/skills.ts",
+      "language": "typescript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/id/soul.ts",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/id/tools.ts",
+      "language": "typescript",
+      "sizeLines": 72,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/id/welcome.ts",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/ja/agents.ts",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/ja/chat.ts",
+      "language": "typescript",
+      "sizeLines": 90,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/ja/common.ts",
+      "language": "typescript",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/ja/constants.ts",
+      "language": "typescript",
+      "sizeLines": 218,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/ja/errors.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/ja/gateway.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/ja/install.ts",
+      "language": "typescript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/ja/memory.ts",
+      "language": "typescript",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/ja/models.ts",
+      "language": "typescript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/ja/navigation.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/ja/office.ts",
+      "language": "typescript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/ja/providers.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/ja/schedules.ts",
+      "language": "typescript",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/ja/sessions.ts",
+      "language": "typescript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/ja/settings.ts",
+      "language": "typescript",
+      "sizeLines": 118,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/ja/setup.ts",
+      "language": "typescript",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/ja/skills.ts",
+      "language": "typescript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/ja/soul.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/ja/tools.ts",
+      "language": "typescript",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/ja/welcome.ts",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pl/agents.ts",
+      "language": "typescript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pl/chat.ts",
+      "language": "typescript",
+      "sizeLines": 104,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pl/common.ts",
+      "language": "typescript",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pl/constants.ts",
+      "language": "typescript",
+      "sizeLines": 222,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pl/errors.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pl/gateway.ts",
+      "language": "typescript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pl/install.ts",
+      "language": "typescript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pl/kanban.ts",
+      "language": "typescript",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pl/memory.ts",
+      "language": "typescript",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pl/models.ts",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pl/navigation.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pl/office.ts",
+      "language": "typescript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pl/providers.ts",
+      "language": "typescript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pl/schedules.ts",
+      "language": "typescript",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pl/sessions.ts",
+      "language": "typescript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pl/settings.ts",
+      "language": "typescript",
+      "sizeLines": 122,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pl/setup.ts",
+      "language": "typescript",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pl/skills.ts",
+      "language": "typescript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pl/soul.ts",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pl/tools.ts",
+      "language": "typescript",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pl/welcome.ts",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-BR/agents.ts",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-BR/chat.ts",
+      "language": "typescript",
+      "sizeLines": 91,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-BR/common.ts",
+      "language": "typescript",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-BR/constants.ts",
+      "language": "typescript",
+      "sizeLines": 221,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-BR/errors.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-BR/gateway.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-BR/install.ts",
+      "language": "typescript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-BR/memory.ts",
+      "language": "typescript",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-BR/models.ts",
+      "language": "typescript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-BR/navigation.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-BR/office.ts",
+      "language": "typescript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-BR/providers.ts",
+      "language": "typescript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-BR/schedules.ts",
+      "language": "typescript",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-BR/sessions.ts",
+      "language": "typescript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-BR/settings.ts",
+      "language": "typescript",
+      "sizeLines": 123,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-BR/setup.ts",
+      "language": "typescript",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-BR/skills.ts",
+      "language": "typescript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-BR/soul.ts",
+      "language": "typescript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-BR/tools.ts",
+      "language": "typescript",
+      "sizeLines": 72,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-BR/welcome.ts",
+      "language": "typescript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-PT/agents.ts",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-PT/chat.ts",
+      "language": "typescript",
+      "sizeLines": 102,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-PT/common.ts",
+      "language": "typescript",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-PT/constants.ts",
+      "language": "typescript",
+      "sizeLines": 218,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-PT/diagnose.ts",
+      "language": "typescript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-PT/errors.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-PT/gateway.ts",
+      "language": "typescript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-PT/install.ts",
+      "language": "typescript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-PT/kanban.ts",
+      "language": "typescript",
+      "sizeLines": 101,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-PT/memory.ts",
+      "language": "typescript",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-PT/models.ts",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-PT/navigation.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-PT/office.ts",
+      "language": "typescript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-PT/providers.ts",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-PT/schedules.ts",
+      "language": "typescript",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-PT/sessions.ts",
+      "language": "typescript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-PT/settings.ts",
+      "language": "typescript",
+      "sizeLines": 115,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-PT/setup.ts",
+      "language": "typescript",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-PT/skills.ts",
+      "language": "typescript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-PT/soul.ts",
+      "language": "typescript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-PT/tools.ts",
+      "language": "typescript",
+      "sizeLines": 72,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/pt-PT/welcome.ts",
+      "language": "typescript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/tr/agents.ts",
+      "language": "typescript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/tr/chat.ts",
+      "language": "typescript",
+      "sizeLines": 121,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/tr/common.ts",
+      "language": "typescript",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/tr/constants.ts",
+      "language": "typescript",
+      "sizeLines": 224,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/tr/diagnose.ts",
+      "language": "typescript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/tr/discover.ts",
+      "language": "typescript",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/tr/errors.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/tr/gateway.ts",
+      "language": "typescript",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/tr/install.ts",
+      "language": "typescript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/tr/kanban.ts",
+      "language": "typescript",
+      "sizeLines": 106,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/tr/memory.ts",
+      "language": "typescript",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/tr/models.ts",
+      "language": "typescript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/tr/navigation.ts",
+      "language": "typescript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/tr/office.ts",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/tr/providers.ts",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/tr/schedules.ts",
+      "language": "typescript",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/tr/sessions.ts",
+      "language": "typescript",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/tr/settings.ts",
+      "language": "typescript",
+      "sizeLines": 178,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/tr/setup.ts",
+      "language": "typescript",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/tr/skills.ts",
+      "language": "typescript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/tr/soul.ts",
+      "language": "typescript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/tr/tools.ts",
+      "language": "typescript",
+      "sizeLines": 132,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/tr/welcome.ts",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-CN/agents.ts",
+      "language": "typescript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-CN/chat.ts",
+      "language": "typescript",
+      "sizeLines": 87,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-CN/common.ts",
+      "language": "typescript",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-CN/constants.ts",
+      "language": "typescript",
+      "sizeLines": 226,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-CN/errors.ts",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-CN/gateway.ts",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-CN/install.ts",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-CN/kanban.ts",
+      "language": "typescript",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-CN/memory.ts",
+      "language": "typescript",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-CN/models.ts",
+      "language": "typescript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-CN/navigation.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-CN/office.ts",
+      "language": "typescript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-CN/providers.ts",
+      "language": "typescript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-CN/schedules.ts",
+      "language": "typescript",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-CN/sessions.ts",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-CN/settings.ts",
+      "language": "typescript",
+      "sizeLines": 113,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-CN/setup.ts",
+      "language": "typescript",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-CN/skills.ts",
+      "language": "typescript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-CN/soul.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-CN/tools.ts",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-CN/welcome.ts",
+      "language": "typescript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-TW/agents.ts",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-TW/chat.ts",
+      "language": "typescript",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-TW/common.ts",
+      "language": "typescript",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-TW/constants.ts",
+      "language": "typescript",
+      "sizeLines": 217,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-TW/errors.ts",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-TW/gateway.ts",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-TW/install.ts",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-TW/kanban.ts",
+      "language": "typescript",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-TW/memory.ts",
+      "language": "typescript",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-TW/models.ts",
+      "language": "typescript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-TW/navigation.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-TW/office.ts",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-TW/providers.ts",
+      "language": "typescript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-TW/schedules.ts",
+      "language": "typescript",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-TW/sessions.ts",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-TW/settings.ts",
+      "language": "typescript",
+      "sizeLines": 108,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-TW/setup.ts",
+      "language": "typescript",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-TW/skills.ts",
+      "language": "typescript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-TW/soul.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-TW/tools.ts",
+      "language": "typescript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/locales/zh-TW/welcome.ts",
+      "language": "typescript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/i18n/types.ts",
+      "language": "typescript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/messaging-platforms.test.ts",
+      "language": "typescript",
+      "sizeLines": 161,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/messaging-platforms.ts",
+      "language": "typescript",
+      "sizeLines": 1112,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/registry.ts",
+      "language": "typescript",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/url-key-map.ts",
+      "language": "typescript",
+      "sizeLines": 108,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/api-server-key-migration.test.ts",
+      "language": "typescript",
+      "sizeLines": 190,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/api-server-key-resolution.test.ts",
+      "language": "typescript",
+      "sizeLines": 159,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/api-server-key-source.test.ts",
+      "language": "typescript",
+      "sizeLines": 148,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/askpass-security.test.ts",
+      "language": "typescript",
+      "sizeLines": 94,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/buildUserContent.test.ts",
+      "language": "typescript",
+      "sizeLines": 301,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/claw3d-command-resolution.test.ts",
+      "language": "typescript",
+      "sizeLines": 120,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/compat-host-derived-key-persistence.test.ts",
+      "language": "typescript",
+      "sizeLines": 222,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/compat-host-derived-key.test.ts",
+      "language": "typescript",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/config-health.test.ts",
+      "language": "typescript",
+      "sizeLines": 458,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/config-model-block.test.ts",
+      "language": "typescript",
+      "sizeLines": 327,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/config-value-paths.test.ts",
+      "language": "typescript",
+      "sizeLines": 349,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/connection-config-security.test.ts",
+      "language": "typescript",
+      "sizeLines": 134,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/constants.test.ts",
+      "language": "typescript",
+      "sizeLines": 233,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/credential-pool-schema.test.ts",
+      "language": "typescript",
+      "sizeLines": 171,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/cronjobs.test.ts",
+      "language": "typescript",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/custom-provider-auto-key.test.ts",
+      "language": "typescript",
+      "sizeLines": 218,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/detect-provider.test.ts",
+      "language": "typescript",
+      "sizeLines": 97,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/electron-security.test.ts",
+      "language": "typescript",
+      "sizeLines": 205,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/env-validation.test.ts",
+      "language": "typescript",
+      "sizeLines": 87,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/extract-reasoning-delta.test.ts",
+      "language": "typescript",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/gateway-ports.test.ts",
+      "language": "typescript",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/gateway-restart.test.ts",
+      "language": "typescript",
+      "sizeLines": 510,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/hermes-api.test.ts",
+      "language": "typescript",
+      "sizeLines": 278,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/hermes-auth.test.ts",
+      "language": "typescript",
+      "sizeLines": 268,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/hermes-cli-session-id.test.ts",
+      "language": "typescript",
+      "sizeLines": 631,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/install-gate-providers.test.ts",
+      "language": "typescript",
+      "sizeLines": 97,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/installer-import-validation.test.ts",
+      "language": "typescript",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/installer-platform.test.ts",
+      "language": "typescript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/installer-target.test.ts",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/installer-utils.test.ts",
+      "language": "typescript",
+      "sizeLines": 371,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/ipc-handlers.test.ts",
+      "language": "typescript",
+      "sizeLines": 125,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/kanban-unsupported.test.ts",
+      "language": "typescript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/live-reasoning-events.test.ts",
+      "language": "typescript",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/live-tool-events.test.ts",
+      "language": "typescript",
+      "sizeLines": 382,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/locale-persistence.test.ts",
+      "language": "typescript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/mcp-servers.test.ts",
+      "language": "typescript",
+      "sizeLines": 239,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/media.test.ts",
+      "language": "typescript",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/messaging-platform-runtime-state.test.ts",
+      "language": "typescript",
+      "sizeLines": 101,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/model-discovery.test.ts",
+      "language": "typescript",
+      "sizeLines": 466,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/oauth-model-discovery.test.ts",
+      "language": "typescript",
+      "sizeLines": 139,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/office-env.test.ts",
+      "language": "typescript",
+      "sizeLines": 285,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/office-start.test.ts",
+      "language": "typescript",
+      "sizeLines": 192,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/office-url.test.ts",
+      "language": "typescript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/preload-api-surface.test.ts",
+      "language": "typescript",
+      "sizeLines": 231,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/process-options.test.ts",
+      "language": "typescript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/profile-validation.test.ts",
+      "language": "typescript",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/profiles.test.ts",
+      "language": "typescript",
+      "sizeLines": 215,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/provider-registry.test.ts",
+      "language": "typescript",
+      "sizeLines": 107,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/providers.test.ts",
+      "language": "typescript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/reconcile-streamed-with-db.test.ts",
+      "language": "typescript",
+      "sizeLines": 618,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/remote-history.test.ts",
+      "language": "typescript",
+      "sizeLines": 196,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/remote-mode-url-and-spawn.test.ts",
+      "language": "typescript",
+      "sizeLines": 391,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/safe-write-file.test.ts",
+      "language": "typescript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/session-cache-sync.test.ts",
+      "language": "typescript",
+      "sizeLines": 595,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/session-history-mapping.test.ts",
+      "language": "typescript",
+      "sizeLines": 142,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/sessions-decode-content.test.ts",
+      "language": "typescript",
+      "sizeLines": 130,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/sessions-delete-session.test.ts",
+      "language": "typescript",
+      "sizeLines": 568,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/sessions-history-items.test.ts",
+      "language": "typescript",
+      "sizeLines": 359,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/set-model-config-base-url.test.ts",
+      "language": "typescript",
+      "sizeLines": 185,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/sibling-hermes-home-drift.test.ts",
+      "language": "typescript",
+      "sizeLines": 261,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/skills-cli-output.test.ts",
+      "language": "typescript",
+      "sizeLines": 96,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/skills-content-security.test.ts",
+      "language": "typescript",
+      "sizeLines": 87,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/sse-parser.test.ts",
+      "language": "typescript",
+      "sizeLines": 302,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/ssh-options.test.ts",
+      "language": "typescript",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/ssh-remote-paths.test.ts",
+      "language": "typescript",
+      "sizeLines": 168,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/ssh-remote.test.ts",
+      "language": "typescript",
+      "sizeLines": 198,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/terminal-launcher.test.ts",
+      "language": "typescript",
+      "sizeLines": 330,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/tool-activity-group-title.test.ts",
+      "language": "typescript",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/toolset-toggle.test.ts",
+      "language": "typescript",
+      "sizeLines": 322,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/url-key-map.test.ts",
+      "language": "typescript",
+      "sizeLines": 131,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/validation.test.ts",
+      "language": "typescript",
+      "sizeLines": 313,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/winget-generator.test.ts",
+      "language": "typescript",
+      "sizeLines": 180,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/yaml-path.test.ts",
+      "language": "typescript",
+      "sizeLines": 91,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tsconfig.json",
+      "language": "json",
+      "sizeLines": 7,
+      "fileCategory": "config"
+    },
+    {
+      "path": "tsconfig.node.json",
+      "language": "json",
+      "sizeLines": 13,
+      "fileCategory": "config"
+    },
+    {
+      "path": "tsconfig.web.json",
+      "language": "json",
+      "sizeLines": 18,
+      "fileCategory": "config"
+    },
+    {
+      "path": "vitest.config.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "config"
+    }
+  ],
+  "importMap": {
+    "src/main/run-stream.ts": [
+      "src/shared/chat-stream.ts"
+    ],
+    "src/main/hermes-auth.ts": [
+      "src/main/installer.ts",
+      "src/main/process-options.ts",
+      "src/main/utils.ts"
+    ],
+    "src/main/gateway-ports.ts": [
+      "src/main/installer.ts",
+      "src/main/utils.ts",
+      "src/main/config.ts"
+    ],
+    "src/main/ssh-remote.ts": [
+      "src/main/ssh-tunnel.ts",
+      "src/main/kanban.ts",
+      "src/main/ssh-options.ts",
+      "src/main/skills.ts",
+      "src/main/memory.ts",
+      "src/main/sessions.ts",
+      "src/main/session-cache.ts",
+      "src/main/tools.ts",
+      "src/shared/messaging-platforms.ts",
+      "src/main/models.ts",
+      "src/main/installer.ts",
+      "src/shared/i18n/index.ts",
+      "src/main/locale.ts",
+      "src/main/process-options.ts"
+    ],
+    "src/main/kanban.ts": [
+      "src/main/installer.ts",
+      "src/main/hermes.ts",
+      "src/main/config.ts",
+      "src/main/ssh-remote.ts"
+    ],
+    "src/main/ssh-tunnel.ts": [
+      "src/main/ssh-options.ts",
+      "src/main/process-options.ts"
+    ],
+    "src/main/askpass.ts": [
+      "src/shared/askpass.ts"
+    ],
+    "src/main/validation.ts": [
+      "src/main/config.ts",
+      "src/main/installer.ts",
+      "src/shared/url-key-map.ts"
+    ],
+    "src/main/profiles.ts": [
+      "src/main/installer.ts",
+      "src/main/utils.ts",
+      "src/main/process-options.ts"
+    ],
+    "src/main/utils.ts": [
+      "src/main/installer.ts"
+    ],
+    "src/main/enterprise/cloud-ru-provider.ts": [
+      "src/main/provider-registry.ts"
+    ],
+    "src/main/enterprise/index.ts": [
+      "src/main/enterprise/cloud-ru-provider.ts"
+    ],
+    "src/main/run-stream.test.ts": [
+      "src/main/run-stream.ts"
+    ],
+    "src/main/memory.ts": [
+      "src/main/utils.ts"
+    ],
+    "src/main/messaging-platforms.ts": [
+      "src/main/utils.ts",
+      "src/shared/messaging-platforms.ts",
+      "src/main/hermes.ts"
+    ],
+    "src/main/claw3d.ts": [
+      "src/main/installer.ts",
+      "src/main/utils.ts",
+      "src/main/config.ts"
+    ],
+    "src/main/attachment-staging.ts": [
+      "src/main/installer.ts"
+    ],
+    "src/main/host-derived-env.ts": [
+      "src/shared/url-key-map.ts"
+    ],
+    "src/main/model-discovery.ts": [
+      "src/main/config.ts",
+      "src/main/utils.ts",
+      "src/main/installer.ts",
+      "src/main/provider-registry.ts"
+    ],
+    "src/main/sse-parser.ts": [
+      "src/shared/chat-stream.ts"
+    ],
+    "src/main/models.ts": [
+      "src/main/installer.ts",
+      "src/main/utils.ts",
+      "src/main/host-derived-env.ts",
+      "src/main/default-models.ts"
+    ],
+    "src/main/config-health.ts": [
+      "src/main/utils.ts",
+      "src/main/config.ts",
+      "src/main/installer.ts",
+      "src/shared/url-key-map.ts",
+      "src/main/wsl-detection.ts"
+    ],
+    "src/main/hermes.ts": [
+      "src/main/installer.ts",
+      "src/main/config.ts",
+      "src/main/ssh-tunnel.ts",
+      "src/main/utils.ts",
+      "src/main/gateway-ports.ts",
+      "src/main/models.ts",
+      "src/main/process-options.ts",
+      "src/shared/attachments.ts",
+      "src/shared/url-key-map.ts",
+      "src/shared/chat-stream.ts",
+      "src/main/run-stream.ts",
+      "src/main/tui-gateway-stream.ts",
+      "src/main/host-derived-env.ts"
+    ],
+    "src/main/sessions.ts": [
+      "src/main/utils.ts",
+      "src/shared/attachments.ts",
+      "src/main/attachment-staging.ts",
+      "src/main/session-cache.ts",
+      "src/main/session-attachment-store.ts"
+    ],
+    "src/main/tui-gateway-stream.ts": [
+      "src/shared/chat-stream.ts"
+    ],
+    "src/main/soul.ts": [
+      "src/main/utils.ts"
+    ],
+    "src/main/installer.ts": [
+      "src/main/config.ts",
+      "src/main/providers.ts",
+      "src/main/utils.ts",
+      "src/main/askpass.ts",
+      "src/main/sudoCreds.ts",
+      "src/main/process-options.ts"
+    ],
+    "src/main/index.ts": [
+      "src/shared/attachments.ts",
+      "src/main/attachment-staging.ts",
+      "src/main/session-attachment-store.ts",
+      "src/main/model-discovery.ts",
+      "src/main/media.ts",
+      "src/main/terminal-launcher.ts",
+      "src/main/installer.ts",
+      "src/main/mcp-servers.ts",
+      "src/main/updater-log.ts",
+      "src/main/hermes-auth.ts",
+      "src/main/hermes.ts",
+      "src/main/ssh-tunnel.ts",
+      "src/main/claw3d.ts",
+      "src/main/office-start.ts",
+      "src/main/config.ts",
+      "src/main/sessions.ts",
+      "src/main/session-cache.ts",
+      "src/main/models.ts",
+      "src/main/validation.ts",
+      "src/main/config-health.ts",
+      "src/main/profiles.ts",
+      "src/main/memory.ts",
+      "src/main/soul.ts",
+      "src/main/tools.ts",
+      "src/main/registry.ts",
+      "src/main/skills.ts",
+      "src/main/cronjobs.ts",
+      "src/main/messaging-platforms.ts",
+      "src/main/kanban.ts",
+      "src/main/locale.ts",
+      "src/main/security.ts",
+      "src/shared/i18n/types.ts",
+      "src/main/ssh-remote.ts"
+    ],
+    "src/main/cronjobs.ts": [
+      "src/main/installer.ts",
+      "src/main/utils.ts",
+      "src/main/hermes.ts",
+      "src/main/config.ts",
+      "src/main/process-options.ts"
+    ],
+    "src/main/sudoCreds.ts": [
+      "src/shared/askpass.ts"
+    ],
+    "src/main/config.ts": [
+      "src/main/installer.ts",
+      "src/main/utils.ts",
+      "src/main/yaml-path.ts",
+      "src/main/provider-registry.ts",
+      "src/shared/url-key-map.ts"
+    ],
+    "src/main/skills.ts": [
+      "src/main/installer.ts",
+      "src/main/utils.ts",
+      "src/main/process-options.ts"
+    ],
+    "src/main/session-attachment-store.ts": [
+      "src/main/utils.ts",
+      "src/shared/attachments.ts"
+    ],
+    "src/main/locale.ts": [
+      "src/shared/i18n/index.ts",
+      "src/main/config.ts"
+    ],
+    "src/main/tools.ts": [
+      "src/main/utils.ts",
+      "src/shared/i18n/index.ts",
+      "src/main/locale.ts",
+      "src/shared/messaging-platforms.ts"
+    ],
+    "src/main/tui-gateway-stream.test.ts": [
+      "src/main/tui-gateway-stream.ts"
+    ],
+    "src/main/office-start.ts": [
+      "src/main/config.ts"
+    ],
+    "src/main/session-cache.ts": [
+      "src/main/utils.ts",
+      "src/shared/i18n/index.ts",
+      "src/main/locale.ts"
+    ],
+    "src/main/mcp-servers.ts": [
+      "src/main/utils.ts",
+      "src/main/hermes.ts",
+      "src/main/config.ts",
+      "src/main/installer.ts"
+    ],
+    "src/main/registry.ts": [
+      "src/main/utils.ts",
+      "src/main/skills.ts",
+      "src/main/profiles.ts",
+      "src/main/installer.ts",
+      "src/shared/registry.ts"
+    ],
+    "src/preload/askpass.ts": [
+      "src/shared/askpass.ts"
+    ],
+    "src/preload/index.d.ts": [
+      "src/shared/i18n/types.ts",
+      "src/shared/attachments.ts",
+      "src/shared/registry.ts",
+      "src/shared/messaging-platforms.ts",
+      "src/shared/chat-stream.ts"
+    ],
+    "src/preload/index.ts": [
+      "src/shared/i18n/types.ts",
+      "src/shared/attachments.ts",
+      "src/shared/messaging-platforms.ts",
+      "src/shared/chat-stream.ts"
+    ],
+    "src/shared/messaging-platforms.test.ts": [
+      "src/shared/messaging-platforms.ts"
+    ],
+    "src/shared/i18n/index.test.ts": [
+      "src/shared/i18n/index.ts"
+    ],
+    "src/shared/i18n/index.ts": [
+      "src/shared/i18n/config.ts",
+      "src/shared/i18n/types.ts",
+      "src/shared/i18n/locales/en/common.ts",
+      "src/shared/i18n/locales/en/navigation.ts",
+      "src/shared/i18n/locales/en/discover.ts",
+      "src/shared/i18n/locales/en/welcome.ts",
+      "src/shared/i18n/locales/en/setup.ts",
+      "src/shared/i18n/locales/en/chat.ts",
+      "src/shared/i18n/locales/en/settings.ts",
+      "src/shared/i18n/locales/en/tools.ts",
+      "src/shared/i18n/locales/en/sessions.ts",
+      "src/shared/i18n/locales/en/models.ts",
+      "src/shared/i18n/locales/en/providers.ts",
+      "src/shared/i18n/locales/en/office.ts",
+      "src/shared/i18n/locales/en/errors.ts",
+      "src/shared/i18n/locales/en/schedules.ts",
+      "src/shared/i18n/locales/en/skills.ts",
+      "src/shared/i18n/locales/en/gateway.ts",
+      "src/shared/i18n/locales/en/agents.ts",
+      "src/shared/i18n/locales/en/soul.ts",
+      "src/shared/i18n/locales/en/memory.ts",
+      "src/shared/i18n/locales/en/install.ts",
+      "src/shared/i18n/locales/en/constants.ts",
+      "src/shared/i18n/locales/en/kanban.ts",
+      "src/shared/i18n/locales/en/diagnose.ts",
+      "src/shared/i18n/locales/pl/common.ts",
+      "src/shared/i18n/locales/pl/navigation.ts",
+      "src/shared/i18n/locales/pl/welcome.ts",
+      "src/shared/i18n/locales/pl/setup.ts",
+      "src/shared/i18n/locales/pl/chat.ts",
+      "src/shared/i18n/locales/pl/settings.ts",
+      "src/shared/i18n/locales/pl/tools.ts",
+      "src/shared/i18n/locales/pl/sessions.ts",
+      "src/shared/i18n/locales/pl/models.ts",
+      "src/shared/i18n/locales/pl/providers.ts",
+      "src/shared/i18n/locales/pl/office.ts",
+      "src/shared/i18n/locales/pl/errors.ts",
+      "src/shared/i18n/locales/pl/schedules.ts",
+      "src/shared/i18n/locales/pl/skills.ts",
+      "src/shared/i18n/locales/pl/gateway.ts",
+      "src/shared/i18n/locales/pl/agents.ts",
+      "src/shared/i18n/locales/pl/soul.ts",
+      "src/shared/i18n/locales/pl/memory.ts",
+      "src/shared/i18n/locales/pl/install.ts",
+      "src/shared/i18n/locales/pl/constants.ts",
+      "src/shared/i18n/locales/pl/kanban.ts",
+      "src/shared/i18n/locales/es/common.ts",
+      "src/shared/i18n/locales/es/navigation.ts",
+      "src/shared/i18n/locales/es/welcome.ts",
+      "src/shared/i18n/locales/es/setup.ts",
+      "src/shared/i18n/locales/es/chat.ts",
+      "src/shared/i18n/locales/es/settings.ts",
+      "src/shared/i18n/locales/es/tools.ts",
+      "src/shared/i18n/locales/es/sessions.ts",
+      "src/shared/i18n/locales/es/models.ts",
+      "src/shared/i18n/locales/es/providers.ts",
+      "src/shared/i18n/locales/es/office.ts",
+      "src/shared/i18n/locales/es/errors.ts",
+      "src/shared/i18n/locales/es/schedules.ts",
+      "src/shared/i18n/locales/es/skills.ts",
+      "src/shared/i18n/locales/es/gateway.ts",
+      "src/shared/i18n/locales/es/agents.ts",
+      "src/shared/i18n/locales/es/soul.ts",
+      "src/shared/i18n/locales/es/memory.ts",
+      "src/shared/i18n/locales/es/install.ts",
+      "src/shared/i18n/locales/es/constants.ts",
+      "src/shared/i18n/locales/es/kanban.ts",
+      "src/shared/i18n/locales/es/diagnose.ts",
+      "src/shared/i18n/locales/id/common.ts",
+      "src/shared/i18n/locales/id/navigation.ts",
+      "src/shared/i18n/locales/id/welcome.ts",
+      "src/shared/i18n/locales/id/setup.ts",
+      "src/shared/i18n/locales/id/chat.ts",
+      "src/shared/i18n/locales/id/settings.ts",
+      "src/shared/i18n/locales/id/tools.ts",
+      "src/shared/i18n/locales/id/sessions.ts",
+      "src/shared/i18n/locales/id/models.ts",
+      "src/shared/i18n/locales/id/providers.ts",
+      "src/shared/i18n/locales/id/office.ts",
+      "src/shared/i18n/locales/id/errors.ts",
+      "src/shared/i18n/locales/id/schedules.ts",
+      "src/shared/i18n/locales/id/skills.ts",
+      "src/shared/i18n/locales/id/gateway.ts",
+      "src/shared/i18n/locales/id/agents.ts",
+      "src/shared/i18n/locales/id/soul.ts",
+      "src/shared/i18n/locales/id/memory.ts",
+      "src/shared/i18n/locales/id/install.ts",
+      "src/shared/i18n/locales/id/constants.ts",
+      "src/shared/i18n/locales/zh-CN/common.ts",
+      "src/shared/i18n/locales/zh-CN/navigation.ts",
+      "src/shared/i18n/locales/zh-CN/welcome.ts",
+      "src/shared/i18n/locales/zh-CN/setup.ts",
+      "src/shared/i18n/locales/zh-CN/chat.ts",
+      "src/shared/i18n/locales/zh-CN/settings.ts",
+      "src/shared/i18n/locales/zh-CN/tools.ts",
+      "src/shared/i18n/locales/zh-CN/sessions.ts",
+      "src/shared/i18n/locales/zh-CN/models.ts",
+      "src/shared/i18n/locales/zh-CN/providers.ts",
+      "src/shared/i18n/locales/zh-CN/office.ts",
+      "src/shared/i18n/locales/zh-CN/errors.ts",
+      "src/shared/i18n/locales/zh-CN/schedules.ts",
+      "src/shared/i18n/locales/zh-CN/skills.ts",
+      "src/shared/i18n/locales/zh-CN/gateway.ts",
+      "src/shared/i18n/locales/zh-CN/agents.ts",
+      "src/shared/i18n/locales/zh-CN/soul.ts",
+      "src/shared/i18n/locales/zh-CN/memory.ts",
+      "src/shared/i18n/locales/zh-CN/install.ts",
+      "src/shared/i18n/locales/zh-CN/constants.ts",
+      "src/shared/i18n/locales/zh-CN/kanban.ts",
+      "src/shared/i18n/locales/zh-TW/common.ts",
+      "src/shared/i18n/locales/zh-TW/navigation.ts",
+      "src/shared/i18n/locales/zh-TW/welcome.ts",
+      "src/shared/i18n/locales/zh-TW/setup.ts",
+      "src/shared/i18n/locales/zh-TW/chat.ts",
+      "src/shared/i18n/locales/zh-TW/settings.ts",
+      "src/shared/i18n/locales/zh-TW/tools.ts",
+      "src/shared/i18n/locales/zh-TW/sessions.ts",
+      "src/shared/i18n/locales/zh-TW/models.ts",
+      "src/shared/i18n/locales/zh-TW/providers.ts",
+      "src/shared/i18n/locales/zh-TW/office.ts",
+      "src/shared/i18n/locales/zh-TW/errors.ts",
+      "src/shared/i18n/locales/zh-TW/schedules.ts",
+      "src/shared/i18n/locales/zh-TW/skills.ts",
+      "src/shared/i18n/locales/zh-TW/gateway.ts",
+      "src/shared/i18n/locales/zh-TW/agents.ts",
+      "src/shared/i18n/locales/zh-TW/soul.ts",
+      "src/shared/i18n/locales/zh-TW/memory.ts",
+      "src/shared/i18n/locales/zh-TW/install.ts",
+      "src/shared/i18n/locales/zh-TW/constants.ts",
+      "src/shared/i18n/locales/zh-TW/kanban.ts",
+      "src/shared/i18n/locales/ja/common.ts",
+      "src/shared/i18n/locales/ja/navigation.ts",
+      "src/shared/i18n/locales/ja/welcome.ts",
+      "src/shared/i18n/locales/ja/setup.ts",
+      "src/shared/i18n/locales/ja/chat.ts",
+      "src/shared/i18n/locales/ja/settings.ts",
+      "src/shared/i18n/locales/ja/tools.ts",
+      "src/shared/i18n/locales/ja/sessions.ts",
+      "src/shared/i18n/locales/ja/models.ts",
+      "src/shared/i18n/locales/ja/providers.ts",
+      "src/shared/i18n/locales/ja/office.ts",
+      "src/shared/i18n/locales/ja/errors.ts",
+      "src/shared/i18n/locales/ja/schedules.ts",
+      "src/shared/i18n/locales/ja/skills.ts",
+      "src/shared/i18n/locales/ja/gateway.ts",
+      "src/shared/i18n/locales/ja/agents.ts",
+      "src/shared/i18n/locales/ja/soul.ts",
+      "src/shared/i18n/locales/ja/memory.ts",
+      "src/shared/i18n/locales/ja/install.ts",
+      "src/shared/i18n/locales/ja/constants.ts",
+      "src/shared/i18n/locales/pt-BR/common.ts",
+      "src/shared/i18n/locales/pt-BR/navigation.ts",
+      "src/shared/i18n/locales/pt-BR/welcome.ts",
+      "src/shared/i18n/locales/pt-BR/setup.ts",
+      "src/shared/i18n/locales/pt-BR/chat.ts",
+      "src/shared/i18n/locales/pt-BR/settings.ts",
+      "src/shared/i18n/locales/pt-BR/tools.ts",
+      "src/shared/i18n/locales/pt-BR/sessions.ts",
+      "src/shared/i18n/locales/pt-BR/models.ts",
+      "src/shared/i18n/locales/pt-BR/providers.ts",
+      "src/shared/i18n/locales/pt-BR/office.ts",
+      "src/shared/i18n/locales/pt-BR/errors.ts",
+      "src/shared/i18n/locales/pt-BR/schedules.ts",
+      "src/shared/i18n/locales/pt-BR/skills.ts",
+      "src/shared/i18n/locales/pt-BR/gateway.ts",
+      "src/shared/i18n/locales/pt-BR/agents.ts",
+      "src/shared/i18n/locales/pt-BR/soul.ts",
+      "src/shared/i18n/locales/pt-BR/memory.ts",
+      "src/shared/i18n/locales/pt-BR/install.ts",
+      "src/shared/i18n/locales/pt-BR/constants.ts",
+      "src/shared/i18n/locales/pt-PT/common.ts",
+      "src/shared/i18n/locales/pt-PT/navigation.ts",
+      "src/shared/i18n/locales/pt-PT/welcome.ts",
+      "src/shared/i18n/locales/pt-PT/setup.ts",
+      "src/shared/i18n/locales/pt-PT/chat.ts",
+      "src/shared/i18n/locales/pt-PT/settings.ts",
+      "src/shared/i18n/locales/pt-PT/tools.ts",
+      "src/shared/i18n/locales/pt-PT/sessions.ts",
+      "src/shared/i18n/locales/pt-PT/models.ts",
+      "src/shared/i18n/locales/pt-PT/providers.ts",
+      "src/shared/i18n/locales/pt-PT/office.ts",
+      "src/shared/i18n/locales/pt-PT/errors.ts",
+      "src/shared/i18n/locales/pt-PT/schedules.ts",
+      "src/shared/i18n/locales/pt-PT/skills.ts",
+      "src/shared/i18n/locales/pt-PT/gateway.ts",
+      "src/shared/i18n/locales/pt-PT/agents.ts",
+      "src/shared/i18n/locales/pt-PT/soul.ts",
+      "src/shared/i18n/locales/pt-PT/memory.ts",
+      "src/shared/i18n/locales/pt-PT/install.ts",
+      "src/shared/i18n/locales/pt-PT/constants.ts",
+      "src/shared/i18n/locales/pt-PT/kanban.ts",
+      "src/shared/i18n/locales/pt-PT/diagnose.ts",
+      "src/shared/i18n/locales/tr/common.ts",
+      "src/shared/i18n/locales/tr/navigation.ts",
+      "src/shared/i18n/locales/tr/discover.ts",
+      "src/shared/i18n/locales/tr/welcome.ts",
+      "src/shared/i18n/locales/tr/setup.ts",
+      "src/shared/i18n/locales/tr/chat.ts",
+      "src/shared/i18n/locales/tr/settings.ts",
+      "src/shared/i18n/locales/tr/tools.ts",
+      "src/shared/i18n/locales/tr/sessions.ts",
+      "src/shared/i18n/locales/tr/models.ts",
+      "src/shared/i18n/locales/tr/providers.ts",
+      "src/shared/i18n/locales/tr/office.ts",
+      "src/shared/i18n/locales/tr/errors.ts",
+      "src/shared/i18n/locales/tr/schedules.ts",
+      "src/shared/i18n/locales/tr/skills.ts",
+      "src/shared/i18n/locales/tr/gateway.ts",
+      "src/shared/i18n/locales/tr/agents.ts",
+      "src/shared/i18n/locales/tr/soul.ts",
+      "src/shared/i18n/locales/tr/memory.ts",
+      "src/shared/i18n/locales/tr/install.ts",
+      "src/shared/i18n/locales/tr/constants.ts",
+      "src/shared/i18n/locales/tr/kanban.ts",
+      "src/shared/i18n/locales/tr/diagnose.ts"
+    ],
+    "src/shared/i18n/config.ts": [
+      "src/shared/i18n/types.ts"
+    ],
+    "src/renderer/src/screens/Layout/Layout.tsx": [
+      "src/renderer/src/screens/Chat/Chat.tsx",
+      "src/renderer/src/screens/Chat/sessionHistory.ts",
+      "src/renderer/src/screens/Sessions/Sessions.tsx",
+      "src/renderer/src/screens/Agents/Agents.tsx",
+      "src/renderer/src/screens/Discover/Discover.tsx",
+      "src/renderer/src/screens/Layout/ProfileSwitcher.tsx",
+      "src/renderer/src/screens/Settings/Settings.tsx",
+      "src/renderer/src/screens/Skills/Skills.tsx",
+      "src/renderer/src/screens/Memory/Memory.tsx",
+      "src/renderer/src/screens/Tools/Tools.tsx",
+      "src/renderer/src/screens/Gateway/Gateway.tsx",
+      "src/renderer/src/screens/Office/Office.tsx",
+      "src/renderer/src/screens/Models/Models.tsx",
+      "src/renderer/src/screens/Providers/Providers.tsx",
+      "src/renderer/src/screens/Schedules/Schedules.tsx",
+      "src/renderer/src/screens/Kanban/Kanban.tsx",
+      "src/renderer/src/components/RemoteNotice.tsx",
+      "src/renderer/src/components/VerifyWarningBanner.tsx",
+      "src/renderer/src/assets/icons/index.tsx",
+      "src/renderer/src/components/useI18n.ts"
+    ],
+    "src/renderer/src/screens/Layout/ProfileSwitcher.tsx": [
+      "src/renderer/src/assets/icons/index.tsx",
+      "src/renderer/src/components/useI18n.ts"
+    ],
+    "src/renderer/src/screens/Providers/Providers.tsx": [
+      "src/renderer/src/constants.ts",
+      "src/renderer/src/components/useI18n.ts",
+      "src/renderer/src/components/common/BrandLogo.tsx",
+      "src/renderer/src/hooks/useDiscoveredModels.ts",
+      "src/renderer/src/components/OAuthLoginModal.tsx",
+      "src/renderer/src/assets/icons/index.tsx"
+    ],
+    "src/renderer/src/screens/Gateway/Gateway.tsx": [
+      "src/renderer/src/components/useI18n.ts",
+      "src/renderer/src/components/common/BrandLogo.tsx",
+      "src/shared/messaging-platforms.ts"
+    ],
+    "src/renderer/src/screens/Gateway/Gateway.test.tsx": [
+      "src/renderer/src/screens/Gateway/Gateway.tsx"
+    ],
+    "src/renderer/src/screens/Setup/Setup.tsx": [
+      "src/renderer/src/assets/icons/index.tsx",
+      "src/renderer/src/constants.ts",
+      "src/renderer/src/components/useI18n.ts",
+      "src/renderer/src/components/VerifyWarningBanner.tsx",
+      "src/renderer/src/components/common/BrandLogo.tsx",
+      "src/shared/url-key-map.ts"
+    ],
+    "src/renderer/src/screens/Welcome/Welcome.tsx": [
+      "src/renderer/src/components/common/HermesLogo.tsx",
+      "src/renderer/src/assets/icons/index.tsx",
+      "src/renderer/src/constants.ts",
+      "src/renderer/src/components/useI18n.ts"
+    ],
+    "src/renderer/src/screens/Tools/Tools.tsx": [
+      "src/renderer/src/components/useI18n.ts",
+      "src/renderer/src/assets/icons/index.tsx",
+      "src/renderer/src/screens/Skills/Skills.tsx",
+      "src/renderer/src/components/RemoteNotice.tsx"
+    ],
+    "src/renderer/src/screens/Install/Install.tsx": [
+      "src/renderer/src/assets/icons/index.tsx",
+      "src/renderer/src/components/useI18n.ts"
+    ],
+    "src/renderer/src/screens/Discover/Discover.tsx": [
+      "src/renderer/src/assets/icons/index.tsx",
+      "src/renderer/src/components/AgentMarkdown.tsx",
+      "src/renderer/src/components/useI18n.ts",
+      "src/shared/registry.ts"
+    ],
+    "src/renderer/src/screens/Office/office3d/objects/types.ts": [
+      "src/renderer/src/screens/Office/office3d/avatars/profile.ts",
+      "src/renderer/src/screens/Office/office3d/core/types.ts"
+    ],
+    "src/renderer/src/screens/Office/office3d/objects/furniture.tsx": [
+      "src/renderer/src/screens/Office/office3d/core/constants.ts",
+      "src/renderer/src/screens/Office/office3d/core/geometry.ts",
+      "src/renderer/src/screens/Office/office3d/layout.ts"
+    ],
+    "src/renderer/src/screens/Office/office3d/objects/RiggedCharacter.tsx": [
+      "src/renderer/src/screens/Office/office3d/core/types.ts"
+    ],
+    "src/renderer/src/screens/Office/office3d/objects/agents.tsx": [
+      "src/renderer/src/screens/Office/office3d/avatars/profile.ts",
+      "src/renderer/src/screens/Office/office3d/core/constants.ts",
+      "src/renderer/src/screens/Office/office3d/core/geometry.ts",
+      "src/renderer/src/screens/Office/office3d/layout.ts",
+      "src/renderer/src/screens/Office/office3d/core/types.ts",
+      "src/renderer/src/screens/Office/office3d/objects/types.ts",
+      "src/renderer/src/screens/Office/office3d/objects/RiggedCharacter.tsx"
+    ],
+    "src/renderer/src/screens/Office/office3d/core/types.ts": [
+      "src/renderer/src/screens/Office/office3d/avatars/profile.ts"
+    ],
+    "src/renderer/src/screens/Office/office3d/core/geometry.ts": [
+      "src/renderer/src/screens/Office/office3d/core/constants.ts",
+      "src/renderer/src/screens/Office/office3d/core/types.ts"
+    ],
+    "src/renderer/src/screens/Office/office3d/agents.ts": [
+      "src/renderer/src/screens/Office/office3d/avatars/profile.ts",
+      "src/renderer/src/screens/Office/office3d/core/types.ts"
+    ],
+    "src/renderer/src/screens/Office/office3d/Office3D.tsx": [
+      "src/renderer/src/screens/Office/office3d/objects/agents.tsx",
+      "src/renderer/src/screens/Office/office3d/objects/RiggedCharacter.tsx",
+      "src/renderer/src/screens/Office/office3d/objects/furniture.tsx",
+      "src/renderer/src/screens/Office/office3d/layout.ts",
+      "src/renderer/src/screens/Office/office3d/core/constants.ts",
+      "src/renderer/src/screens/Office/office3d/core/geometry.ts",
+      "src/renderer/src/screens/Office/office3d/core/types.ts",
+      "src/renderer/src/components/ThemeProvider.tsx",
+      "src/renderer/src/constants.ts"
+    ],
+    "src/renderer/src/screens/Office/OneChatModal.tsx": [
+      "src/renderer/src/screens/Office/office3d/core/types.ts"
+    ],
+    "src/renderer/src/screens/Office/Office.tsx": [
+      "src/renderer/src/components/useI18n.ts",
+      "src/renderer/src/screens/Office/OneChatModal.tsx",
+      "src/renderer/src/screens/Office/office3d/Office3D.tsx",
+      "src/renderer/src/screens/Office/office3d/agents.ts",
+      "src/renderer/src/screens/Office/office3d/core/types.ts"
+    ],
+    "src/renderer/src/screens/Agents/Agents.test.tsx": [
+      "src/renderer/src/screens/Agents/Agents.tsx"
+    ],
+    "src/renderer/src/screens/Agents/Agents.tsx": [
+      "src/renderer/src/assets/icons/index.tsx",
+      "src/renderer/src/components/common/HermesLogo.tsx",
+      "src/renderer/src/components/useI18n.ts"
+    ],
+    "src/renderer/src/screens/Skills/Skills.test.tsx": [
+      "src/renderer/src/screens/Skills/Skills.tsx"
+    ],
+    "src/renderer/src/screens/Skills/Skills.tsx": [
+      "src/renderer/src/assets/icons/index.tsx",
+      "src/renderer/src/components/AgentMarkdown.tsx",
+      "src/renderer/src/components/useI18n.ts"
+    ],
+    "src/renderer/src/screens/Soul/Soul.tsx": [
+      "src/renderer/src/assets/icons/index.tsx",
+      "src/renderer/src/components/useI18n.ts"
+    ],
+    "src/renderer/src/screens/Settings/Settings.tsx": [
+      "src/renderer/src/components/ThemeProvider.tsx",
+      "src/renderer/src/components/FontProvider.tsx",
+      "src/renderer/src/constants.ts",
+      "src/renderer/src/components/useI18n.ts",
+      "src/shared/i18n/index.ts",
+      "src/renderer/src/utils/analytics.ts",
+      "src/renderer/src/screens/Settings/ConfigHealth.tsx"
+    ],
+    "src/renderer/src/screens/Settings/ConfigHealth.tsx": [
+      "src/renderer/src/components/useI18n.ts",
+      "src/renderer/src/components/ConfigHealthBanner.tsx"
+    ],
+    "src/renderer/src/screens/Schedules/Schedules.tsx": [
+      "src/renderer/src/assets/icons/index.tsx",
+      "src/renderer/src/components/useI18n.ts"
+    ],
+    "src/renderer/src/screens/Models/Models.test.tsx": [
+      "src/renderer/src/screens/Models/Models.tsx"
+    ],
+    "src/renderer/src/screens/Models/Models.tsx": [
+      "src/renderer/src/assets/icons/index.tsx",
+      "src/renderer/src/constants.ts",
+      "src/renderer/src/components/useI18n.ts",
+      "src/renderer/src/components/common/BrandLogo.tsx",
+      "src/renderer/src/screens/Models/detect-provider.ts",
+      "src/renderer/src/hooks/useDiscoveredModels.ts",
+      "src/shared/url-key-map.ts"
+    ],
+    "src/renderer/src/screens/Memory/CapacityCards.tsx": [
+      "src/renderer/src/components/useI18n.ts",
+      "src/renderer/src/screens/Memory/CapacityBar.tsx",
+      "src/renderer/src/screens/Memory/types.ts"
+    ],
+    "src/renderer/src/screens/Memory/MemoryTabs.tsx": [
+      "src/renderer/src/components/useI18n.ts",
+      "src/renderer/src/screens/Memory/types.ts"
+    ],
+    "src/renderer/src/screens/Memory/MemoryProfile.tsx": [
+      "src/renderer/src/components/useI18n.ts"
+    ],
+    "src/renderer/src/screens/Memory/Memory.tsx": [
+      "src/renderer/src/assets/icons/index.tsx",
+      "src/renderer/src/components/useI18n.ts",
+      "src/renderer/src/screens/Soul/Soul.tsx",
+      "src/renderer/src/screens/Memory/CapacityCards.tsx",
+      "src/renderer/src/screens/Memory/MemoryTabs.tsx",
+      "src/renderer/src/screens/Memory/MemoryEntries.tsx",
+      "src/renderer/src/screens/Memory/MemoryProfile.tsx",
+      "src/renderer/src/screens/Memory/MemoryProviders.tsx",
+      "src/renderer/src/screens/Memory/types.ts"
+    ],
+    "src/renderer/src/screens/Memory/MemoryEntries.tsx": [
+      "src/renderer/src/assets/icons/index.tsx",
+      "src/renderer/src/components/useI18n.ts",
+      "src/renderer/src/screens/Memory/types.ts"
+    ],
+    "src/renderer/src/screens/Memory/MemoryProviders.tsx": [
+      "src/renderer/src/components/useI18n.ts",
+      "src/renderer/src/screens/Memory/types.ts"
+    ],
+    "src/renderer/src/screens/Chat/ReasoningEffortPicker.tsx": [
+      "src/renderer/src/components/useI18n.ts",
+      "src/renderer/src/screens/Chat/hooks/useReasoningEffort.ts"
+    ],
+    "src/renderer/src/screens/Chat/transcriptUtils.ts": [
+      "src/renderer/src/screens/Chat/types.ts"
+    ],
+    "src/renderer/src/screens/Chat/MessageRow.tsx": [
+      "src/renderer/src/components/AgentMarkdown.tsx",
+      "src/renderer/src/components/AttachmentChip.tsx",
+      "src/renderer/src/components/MediaImage.tsx",
+      "src/renderer/src/components/useI18n.ts",
+      "src/renderer/src/screens/Chat/mediaUtils.ts",
+      "src/renderer/src/screens/Chat/types.ts"
+    ],
+    "src/renderer/src/screens/Chat/FileViewer.tsx": [
+      "src/renderer/src/components/useI18n.ts"
+    ],
+    "src/renderer/src/screens/Chat/types.ts": [
+      "src/shared/attachments.ts"
+    ],
+    "src/renderer/src/screens/Chat/ContextFolderChip.tsx": [
+      "src/renderer/src/components/useI18n.ts"
+    ],
+    "src/renderer/src/screens/Chat/sessionHistory.ts": [
+      "src/shared/attachments.ts",
+      "src/renderer/src/screens/Chat/types.ts"
+    ],
+    "src/renderer/src/screens/Chat/contextWindows.test.ts": [
+      "src/renderer/src/screens/Chat/contextWindows.ts"
+    ],
+    "src/renderer/src/screens/Chat/mediaUtils.test.ts": [
+      "src/renderer/src/screens/Chat/mediaUtils.ts"
+    ],
+    "src/renderer/src/screens/Chat/MessageList.tsx": [
+      "src/renderer/src/screens/Chat/MessageRow.tsx",
+      "src/renderer/src/screens/Chat/HistoryRow.tsx",
+      "src/renderer/src/screens/Chat/types.ts"
+    ],
+    "src/renderer/src/screens/Chat/WorktreePanel.tsx": [
+      "src/renderer/src/screens/Chat/FileViewer.tsx",
+      "src/renderer/src/components/useI18n.ts"
+    ],
+    "src/renderer/src/screens/Chat/ChatInput.tsx": [
+      "src/renderer/src/screens/Chat/keyboard.ts",
+      "src/renderer/src/components/useI18n.ts",
+      "src/renderer/src/screens/Chat/slashCommands.ts",
+      "src/renderer/src/screens/Chat/hooks/useInputHistory.ts",
+      "src/renderer/src/screens/Chat/hooks/useVoiceInput.ts",
+      "src/renderer/src/screens/Chat/attachmentUtils.ts",
+      "src/renderer/src/components/AttachmentChip.tsx",
+      "src/renderer/src/screens/Chat/ContextGauge.tsx",
+      "src/shared/attachments.ts"
+    ],
+    "src/renderer/src/screens/Chat/transcriptUtils.test.ts": [
+      "src/renderer/src/screens/Chat/transcriptUtils.ts",
+      "src/renderer/src/screens/Chat/types.ts"
+    ],
+    "src/renderer/src/screens/Chat/ChatHeader.tsx": [
+      "src/renderer/src/components/useI18n.ts",
+      "src/renderer/src/screens/Chat/types.ts"
+    ],
+    "src/renderer/src/screens/Chat/Chat.tsx": [
+      "src/renderer/src/screens/Chat/ChatInput.tsx",
+      "src/renderer/src/screens/Chat/ChatHeader.tsx",
+      "src/renderer/src/screens/Chat/ChatEmptyState.tsx",
+      "src/renderer/src/screens/Chat/MessageList.tsx",
+      "src/renderer/src/screens/Chat/ModelPicker.tsx",
+      "src/renderer/src/screens/Chat/ReasoningEffortPicker.tsx",
+      "src/renderer/src/screens/Chat/ContextFolderChip.tsx",
+      "src/renderer/src/screens/Chat/WorktreePanel.tsx",
+      "src/renderer/src/screens/Chat/hooks/useChatScroll.ts",
+      "src/renderer/src/screens/Chat/hooks/useChatIPC.ts",
+      "src/renderer/src/screens/Chat/hooks/useChatActions.ts",
+      "src/renderer/src/screens/Chat/hooks/useModelConfig.ts",
+      "src/renderer/src/screens/Chat/hooks/useFastMode.ts",
+      "src/renderer/src/screens/Chat/hooks/useReasoningEffort.ts",
+      "src/renderer/src/screens/Chat/hooks/useLocalCommands.ts",
+      "src/renderer/src/components/useI18n.ts",
+      "src/renderer/src/screens/Chat/transcriptUtils.ts",
+      "src/renderer/src/components/ConfigHealthBanner.tsx",
+      "src/shared/attachments.ts",
+      "src/renderer/src/screens/Chat/types.ts",
+      "src/renderer/src/screens/Chat/ContextGauge.tsx",
+      "src/renderer/src/screens/Chat/contextWindows.ts"
+    ],
+    "src/renderer/src/screens/Chat/HistoryRow.tsx": [
+      "src/renderer/src/assets/icons/index.tsx",
+      "src/renderer/src/components/useI18n.ts",
+      "src/renderer/src/components/AttachmentChip.tsx",
+      "src/renderer/src/screens/Chat/MessageRow.tsx",
+      "src/renderer/src/screens/Chat/types.ts"
+    ],
+    "src/renderer/src/screens/Chat/keyboard.test.ts": [
+      "src/renderer/src/screens/Chat/keyboard.ts"
+    ],
+    "src/renderer/src/screens/Chat/attachmentUtils.test.ts": [
+      "src/renderer/src/screens/Chat/attachmentUtils.ts"
+    ],
+    "src/renderer/src/screens/Chat/hooks/useModelConfig.ts": [
+      "src/renderer/src/constants.ts",
+      "src/renderer/src/hooks/useDiscoveredModels.ts",
+      "src/renderer/src/components/useI18n.ts",
+      "src/renderer/src/screens/Chat/types.ts"
+    ],
+    "src/renderer/src/screens/Chat/hooks/useChatIPC.ts": [
+      "src/renderer/src/screens/Chat/types.ts",
+      "src/renderer/src/screens/Chat/sessionHistory.ts",
+      "src/renderer/src/screens/Chat/liveToolEvents.ts",
+      "src/renderer/src/screens/Chat/liveReasoningEvents.ts"
+    ],
+    "src/renderer/src/screens/Chat/hooks/useLocalCommands.ts": [
+      "src/renderer/src/components/useI18n.ts",
+      "src/renderer/src/screens/Chat/slashCommands.ts",
+      "src/renderer/src/screens/Chat/types.ts"
+    ],
+    "src/renderer/src/screens/Chat/hooks/useChatScroll.ts": [
+      "src/renderer/src/screens/Chat/types.ts"
+    ],
+    "src/renderer/src/screens/Chat/hooks/useChatActions.ts": [
+      "src/renderer/src/screens/Chat/ChatInput.tsx",
+      "src/renderer/src/screens/Chat/types.ts"
+    ],
+    "src/renderer/src/screens/Chat/ModelPicker.tsx": [
+      "src/renderer/src/components/useI18n.ts",
+      "src/renderer/src/screens/Chat/types.ts"
+    ],
+    "src/renderer/src/screens/Chat/liveReasoningEvents.ts": [
+      "src/renderer/src/screens/Chat/types.ts"
+    ],
+    "src/renderer/src/screens/Chat/attachmentUtils.ts": [
+      "src/shared/attachments.ts"
+    ],
+    "src/renderer/src/screens/Chat/liveToolEvents.ts": [
+      "src/shared/chat-stream.ts",
+      "src/renderer/src/screens/Chat/types.ts"
+    ],
+    "src/renderer/src/screens/Chat/ContextGauge.tsx": [
+      "src/renderer/src/components/useI18n.ts"
+    ],
+    "src/renderer/src/screens/Chat/ChatInput.test.tsx": [
+      "src/renderer/src/screens/Chat/ChatInput.tsx"
+    ],
+    "src/renderer/src/screens/Chat/ChatEmptyState.tsx": [
+      "src/renderer/src/components/useI18n.ts"
+    ],
+    "src/renderer/src/screens/Sessions/Sessions.tsx": [
+      "src/renderer/src/assets/icons/index.tsx",
+      "src/renderer/src/components/useI18n.ts"
+    ],
+    "src/renderer/src/screens/Sessions/Sessions.test.tsx": [
+      "src/renderer/src/screens/Sessions/Sessions.tsx"
+    ],
+    "src/renderer/src/screens/Kanban/Kanban.tsx": [
+      "src/renderer/src/assets/icons/index.tsx",
+      "src/renderer/src/components/useI18n.ts"
+    ],
+    "src/renderer/src/components/useI18n.ts": [
+      "src/shared/i18n/index.ts",
+      "src/renderer/src/components/I18nContext.ts"
+    ],
+    "src/renderer/src/components/AgentMarkdown.tsx": [
+      "src/renderer/src/components/useI18n.ts",
+      "src/renderer/src/components/MediaImage.tsx",
+      "src/renderer/src/screens/Chat/mediaUtils.ts"
+    ],
+    "src/renderer/src/components/I18nProvider.test.tsx": [
+      "src/shared/i18n/index.ts",
+      "src/renderer/src/components/I18nProvider.tsx",
+      "src/renderer/src/components/useI18n.ts"
+    ],
+    "src/renderer/src/components/ConfigHealthBanner.tsx": [
+      "src/renderer/src/components/useI18n.ts"
+    ],
+    "src/renderer/src/components/I18nProvider.tsx": [
+      "src/shared/i18n/index.ts",
+      "src/renderer/src/components/I18nContext.ts"
+    ],
+    "src/renderer/src/components/AttachmentChip.tsx": [
+      "src/shared/attachments.ts",
+      "src/renderer/src/components/useI18n.ts"
+    ],
+    "src/renderer/src/components/ThemeProvider.tsx": [
+      "src/renderer/src/constants.ts"
+    ],
+    "src/renderer/src/components/common/BrandLogo.tsx": [
+      "src/renderer/src/assets/icons/index.tsx"
+    ],
+    "src/renderer/src/components/MediaImage.tsx": [
+      "src/renderer/src/screens/Chat/mediaUtils.ts",
+      "src/renderer/src/components/useI18n.ts"
+    ],
+    "src/renderer/src/components/ConfigHealthBanner.test.tsx": [
+      "src/renderer/src/components/ConfigHealthBanner.tsx"
+    ],
+    "src/renderer/src/components/FontProvider.tsx": [
+      "src/renderer/src/constants.ts"
+    ],
+    "src/renderer/src/components/OAuthLoginModal.tsx": [
+      "src/renderer/src/assets/icons/index.tsx",
+      "src/renderer/src/components/useI18n.ts"
+    ],
+    "src/renderer/src/components/VerifyWarningBanner.tsx": [
+      "src/renderer/src/components/useI18n.ts"
+    ],
+    "src/renderer/src/components/RemoteNotice.tsx": [
+      "src/renderer/src/assets/icons/index.tsx"
+    ],
+    "src/renderer/src/components/I18nContext.ts": [
+      "src/shared/i18n/index.ts"
+    ],
+    "src/renderer/src/main.tsx": [
+      "src/renderer/src/assets/main.css",
+      "src/renderer/src/App.tsx",
+      "src/renderer/src/components/I18nProvider.tsx",
+      "src/renderer/src/utils/analytics.ts"
+    ],
+    "src/renderer/src/App.tsx": [
+      "src/renderer/src/components/ThemeProvider.tsx",
+      "src/renderer/src/components/FontProvider.tsx",
+      "src/renderer/src/components/ErrorBoundary.tsx",
+      "src/renderer/src/screens/Welcome/Welcome.tsx",
+      "src/renderer/src/screens/Install/Install.tsx",
+      "src/renderer/src/screens/Setup/Setup.tsx",
+      "src/renderer/src/screens/Layout/Layout.tsx",
+      "src/renderer/src/screens/SplashScreen/SplashScreen.tsx",
+      "src/renderer/src/utils/analytics.ts"
+    ],
+    "tests/ssh-remote-paths.test.ts": [
+      "src/main/ssh-remote.ts"
+    ],
+    "tests/oauth-model-discovery.test.ts": [
+      "src/main/model-discovery.ts"
+    ],
+    "tests/winget-generator.test.ts": [
+      "scripts/generate-winget-manifests.mjs"
+    ],
+    "tests/process-options.test.ts": [
+      "src/main/process-options.ts"
+    ],
+    "tests/terminal-launcher.test.ts": [
+      "src/main/terminal-launcher.ts"
+    ],
+    "tests/hermes-cli-session-id.test.ts": [
+      "src/main/hermes.ts"
+    ],
+    "tests/api-server-key-source.test.ts": [
+      "src/main/config.ts"
+    ],
+    "tests/provider-registry.test.ts": [
+      "src/main/provider-registry.ts"
+    ],
+    "tests/providers.test.ts": [
+      "src/main/providers.ts"
+    ],
+    "tests/install-gate-providers.test.ts": [
+      "src/main/installer.ts"
+    ],
+    "tests/gateway-ports.test.ts": [
+      "src/main/gateway-ports.ts"
+    ],
+    "tests/ssh-remote.test.ts": [
+      "src/main/ssh-remote.ts",
+      "src/main/ssh-tunnel.ts"
+    ],
+    "tests/installer-platform.test.ts": [
+      "src/main/installer.ts"
+    ],
+    "tests/media.test.ts": [
+      "src/main/media.ts"
+    ],
+    "tests/ssh-options.test.ts": [
+      "src/main/ssh-options.ts"
+    ],
+    "tests/sessions-delete-session.test.ts": [
+      "src/main/sessions.ts"
+    ],
+    "tests/session-history-mapping.test.ts": [
+      "src/renderer/src/screens/Chat/sessionHistory.ts"
+    ],
+    "tests/reconcile-streamed-with-db.test.ts": [
+      "src/renderer/src/screens/Chat/sessionHistory.ts",
+      "src/renderer/src/screens/Chat/types.ts"
+    ],
+    "tests/installer-target.test.ts": [
+      "src/main/installer.ts"
+    ],
+    "tests/safe-write-file.test.ts": [
+      "src/main/utils.ts"
+    ],
+    "tests/installer-import-validation.test.ts": [
+      "src/main/installer.ts"
+    ],
+    "tests/skills-cli-output.test.ts": [
+      "src/main/skills.ts"
+    ],
+    "tests/gateway-restart.test.ts": [
+      "src/main/hermes.ts"
+    ],
+    "tests/sse-parser.test.ts": [
+      "src/main/sse-parser.ts"
+    ],
+    "tests/sessions-decode-content.test.ts": [
+      "src/main/sessions.ts"
+    ],
+    "tests/api-server-key-resolution.test.ts": [
+      "src/main/config.ts"
+    ],
+    "tests/askpass-security.test.ts": [
+      "src/shared/askpass.ts"
+    ],
+    "tests/messaging-platform-runtime-state.test.ts": [
+      "src/main/messaging-platforms.ts"
+    ],
+    "tests/buildUserContent.test.ts": [
+      "src/main/hermes.ts",
+      "src/shared/attachments.ts"
+    ],
+    "tests/compat-host-derived-key.test.ts": [
+      "src/main/host-derived-env.ts"
+    ],
+    "tests/kanban-unsupported.test.ts": [
+      "src/main/kanban.ts"
+    ],
+    "tests/live-reasoning-events.test.ts": [
+      "src/renderer/src/screens/Chat/liveReasoningEvents.ts",
+      "src/renderer/src/screens/Chat/types.ts"
+    ],
+    "tests/profiles.test.ts": [
+      "src/main/profiles.ts"
+    ],
+    "tests/extract-reasoning-delta.test.ts": [
+      "src/main/hermes.ts"
+    ],
+    "tests/constants.test.ts": [
+      "src/renderer/src/constants.ts"
+    ],
+    "tests/toolset-toggle.test.ts": [
+      "src/main/tools.ts"
+    ],
+    "tests/yaml-path.test.ts": [
+      "src/main/yaml-path.ts"
+    ],
+    "tests/office-env.test.ts": [
+      "src/main/claw3d.ts"
+    ],
+    "tests/tool-activity-group-title.test.ts": [
+      "src/renderer/src/screens/Chat/HistoryRow.tsx",
+      "src/renderer/src/screens/Chat/types.ts"
+    ],
+    "tests/sessions-history-items.test.ts": [
+      "src/main/sessions.ts"
+    ],
+    "tests/electron-security.test.ts": [
+      "src/main/security.ts"
+    ],
+    "tests/detect-provider.test.ts": [
+      "src/renderer/src/screens/Models/detect-provider.ts"
+    ],
+    "tests/mcp-servers.test.ts": [
+      "src/main/mcp-servers.ts"
+    ],
+    "tests/session-cache-sync.test.ts": [
+      "src/main/session-cache.ts"
+    ],
+    "tests/remote-mode-url-and-spawn.test.ts": [
+      "src/main/hermes.ts"
+    ],
+    "tests/profile-validation.test.ts": [
+      "src/main/utils.ts"
+    ],
+    "tests/url-key-map.test.ts": [
+      "src/shared/url-key-map.ts"
+    ],
+    "tests/live-tool-events.test.ts": [
+      "src/renderer/src/screens/Chat/liveToolEvents.ts",
+      "src/renderer/src/screens/Chat/types.ts"
+    ],
+    "tests/office-url.test.ts": [
+      "src/renderer/src/screens/Office/officeUrl.ts"
+    ],
+    "tests/office-start.test.ts": [
+      "src/main/office-start.ts",
+      "src/main/config.ts"
+    ],
+    "tests/skills-content-security.test.ts": [
+      "src/main/skills.ts"
+    ],
+    "tests/hermes-auth.test.ts": [
+      "src/main/hermes-auth.ts"
+    ],
+    "tests/claw3d-command-resolution.test.ts": [
+      "src/main/claw3d.ts"
+    ],
+    "tests/hermes-api.test.ts": [
+      "src/main/hermes.ts"
+    ]
+  },
+  "complexity": "high",
+  "filteredByIgnore": 0
+}

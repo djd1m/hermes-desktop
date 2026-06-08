@@ -1,0 +1,551 @@
+{
+  "batchIndex": 14,
+  "nodes": [
+    {
+      "id": "file:src/renderer/src/screens/Chat/hooks/useInputHistory.ts",
+      "type": "file",
+      "name": "useInputHistory.ts",
+      "filePath": "src/renderer/src/screens/Chat/hooks/useInputHistory.ts",
+      "summary": "Hook providing input history navigation (up/down arrow) for recalling previous chat messages",
+      "tags": ["renderer", "hook", "chat", "input-history"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/hooks/useLocalCommands.ts",
+      "type": "file",
+      "name": "useLocalCommands.ts",
+      "filePath": "src/renderer/src/screens/Chat/hooks/useLocalCommands.ts",
+      "summary": "Hook handling locally-executed slash commands (/new, /clear, /export, /theme, etc.) without sending to the backend",
+      "tags": ["renderer", "hook", "chat", "commands"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/hooks/useModelConfig.ts",
+      "type": "file",
+      "name": "useModelConfig.ts",
+      "filePath": "src/renderer/src/screens/Chat/hooks/useModelConfig.ts",
+      "summary": "Hook managing active model selection, provider grouping, and model persistence across sessions",
+      "tags": ["renderer", "hook", "chat", "model-config"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/hooks/useReasoningEffort.ts",
+      "type": "file",
+      "name": "useReasoningEffort.ts",
+      "filePath": "src/renderer/src/screens/Chat/hooks/useReasoningEffort.ts",
+      "summary": "Hook managing reasoning effort level state with localStorage persistence and normalization",
+      "tags": ["renderer", "hook", "chat", "reasoning"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "function:useReasoningEffort",
+      "type": "function",
+      "name": "useReasoningEffort",
+      "filePath": "src/renderer/src/screens/Chat/hooks/useReasoningEffort.ts",
+      "summary": "Returns reasoning effort state (low/medium/high) with setter and localStorage persistence",
+      "tags": ["hook", "reasoning"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/hooks/useVoiceInput.ts",
+      "type": "file",
+      "name": "useVoiceInput.ts",
+      "filePath": "src/renderer/src/screens/Chat/hooks/useVoiceInput.ts",
+      "summary": "Hook for voice input: uses SpeechRecognition API with MediaRecorder fallback, live transcription via Groq/OpenAI Whisper",
+      "tags": ["renderer", "hook", "chat", "voice", "speech"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/keyboard.test.ts",
+      "type": "file",
+      "name": "keyboard.test.ts",
+      "filePath": "src/renderer/src/screens/Chat/keyboard.test.ts",
+      "summary": "Tests for IME composing detection helper",
+      "tags": ["test", "renderer", "chat", "keyboard"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/keyboard.ts",
+      "type": "file",
+      "name": "keyboard.ts",
+      "filePath": "src/renderer/src/screens/Chat/keyboard.ts",
+      "summary": "IME composition detection utility to prevent Enter key submission during CJK input",
+      "tags": ["renderer", "chat", "keyboard", "ime"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "function:isImeComposing",
+      "type": "function",
+      "name": "isImeComposing",
+      "filePath": "src/renderer/src/screens/Chat/keyboard.ts",
+      "summary": "Detects if a keyboard event is part of an IME composition sequence (CJK input methods)",
+      "tags": ["keyboard", "ime"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/liveReasoningEvents.ts",
+      "type": "file",
+      "name": "liveReasoningEvents.ts",
+      "filePath": "src/renderer/src/screens/Chat/liveReasoningEvents.ts",
+      "summary": "Processes live-streamed reasoning chunks: appends to existing reasoning messages or creates new reasoning segments in the chat",
+      "tags": ["renderer", "chat", "reasoning", "streaming"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:upsertLiveReasoningChunk",
+      "type": "function",
+      "name": "upsertLiveReasoningChunk",
+      "filePath": "src/renderer/src/screens/Chat/liveReasoningEvents.ts",
+      "summary": "Appends a reasoning text chunk to the latest reasoning message or inserts a new one before the assistant bubble",
+      "tags": ["reasoning", "streaming"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/liveToolEvents.ts",
+      "type": "file",
+      "name": "liveToolEvents.ts",
+      "filePath": "src/renderer/src/screens/Chat/liveToolEvents.ts",
+      "summary": "Processes live tool progress events into chat messages: creates/updates tool_call and tool_result messages from streaming tool events",
+      "tags": ["renderer", "chat", "tools", "streaming"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "function:liveToolEventFromProgress",
+      "type": "function",
+      "name": "liveToolEventFromProgress",
+      "filePath": "src/renderer/src/screens/Chat/liveToolEvents.ts",
+      "summary": "Converts a legacy tool progress string (emoji + name) into a structured ChatToolEvent",
+      "tags": ["tools", "streaming"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:upsertLiveToolEvent",
+      "type": "function",
+      "name": "upsertLiveToolEvent",
+      "filePath": "src/renderer/src/screens/Chat/liveToolEvents.ts",
+      "summary": "Inserts or updates tool call/result messages in the chat message array from a ChatToolEvent",
+      "tags": ["tools", "streaming"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/mediaUtils.test.ts",
+      "type": "file",
+      "name": "mediaUtils.test.ts",
+      "filePath": "src/renderer/src/screens/Chat/mediaUtils.test.ts",
+      "summary": "Tests media token parsing: MEDIA: tags, inline paths, code block exclusion, and image source description",
+      "tags": ["test", "renderer", "chat", "media"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/mediaUtils.ts",
+      "type": "file",
+      "name": "mediaUtils.ts",
+      "filePath": "src/renderer/src/screens/Chat/mediaUtils.ts",
+      "summary": "Parses agent-delivered media tokens (MEDIA: tags, inline paths) from response text for image/file rendering; handles code block exclusion",
+      "tags": ["renderer", "chat", "media", "parsing"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "function:parseMediaTokens",
+      "type": "function",
+      "name": "parseMediaTokens",
+      "filePath": "src/renderer/src/screens/Chat/mediaUtils.ts",
+      "summary": "Extracts MEDIA: tokens and inline file paths from agent response text, splitting into text and media segments",
+      "tags": ["media", "parsing"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/sessionHistory.ts",
+      "type": "file",
+      "name": "sessionHistory.ts",
+      "filePath": "src/renderer/src/screens/Chat/sessionHistory.ts",
+      "summary": "Converts DB history items to renderer ChatMessage array; handles reconciliation of streamed messages with persisted state",
+      "tags": ["renderer", "chat", "session", "history"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "function:dbItemsToChatMessages",
+      "type": "function",
+      "name": "dbItemsToChatMessages",
+      "filePath": "src/renderer/src/screens/Chat/sessionHistory.ts",
+      "summary": "Maps database HistoryItem rows to renderer-ready ChatMessage objects (user/assistant/reasoning/tool variants)",
+      "tags": ["session", "mapping"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/slashCommands.ts",
+      "type": "file",
+      "name": "slashCommands.ts",
+      "filePath": "src/renderer/src/screens/Chat/slashCommands.ts",
+      "summary": "Defines slash command registry: /new, /clear, /btw, /approve, /tools, /skills, etc. with categories and local/remote flags",
+      "tags": ["renderer", "chat", "commands", "registry"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/transcriptUtils.test.ts",
+      "type": "file",
+      "name": "transcriptUtils.test.ts",
+      "filePath": "src/renderer/src/screens/Chat/transcriptUtils.test.ts",
+      "summary": "Tests transcript serialization to text and markdown formats",
+      "tags": ["test", "renderer", "chat", "transcript"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/transcriptUtils.ts",
+      "type": "file",
+      "name": "transcriptUtils.ts",
+      "filePath": "src/renderer/src/screens/Chat/transcriptUtils.ts",
+      "summary": "Serializes chat conversation to clipboard-ready transcript in plain text or markdown format",
+      "tags": ["renderer", "chat", "transcript", "clipboard"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "function:buildChatTranscript",
+      "type": "function",
+      "name": "buildChatTranscript",
+      "filePath": "src/renderer/src/screens/Chat/transcriptUtils.ts",
+      "summary": "Converts ChatMessage array to a formatted string ('You: ...' / 'Hermes: ...') for clipboard export",
+      "tags": ["transcript", "export"],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/renderer/src/screens/Chat/types.ts",
+      "type": "file",
+      "name": "types.ts",
+      "filePath": "src/renderer/src/screens/Chat/types.ts",
+      "summary": "Core chat type definitions: ChatBubbleMessage, ReasoningMessage, ToolCallMessage, ToolResultMessage, ChatMessage union, ModelGroup, UsageState",
+      "tags": ["renderer", "chat", "types"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/shared/attachments.ts",
+      "type": "file",
+      "name": "attachments.ts",
+      "filePath": "src/shared/attachments.ts",
+      "summary": "Shared attachment types and constants: Attachment interface, size limits (50MB input, 5MB target), MIME validation, file extension helpers",
+      "tags": ["shared", "attachments", "types", "validation"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/buildUserContent.test.ts",
+      "type": "file",
+      "name": "buildUserContent.test.ts",
+      "filePath": "tests/buildUserContent.test.ts",
+      "summary": "Tests buildUserContent: constructs OpenAI-format user message content from text and attachments",
+      "tags": ["test", "hermes", "user-content"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tests/live-reasoning-events.test.ts",
+      "type": "file",
+      "name": "live-reasoning-events.test.ts",
+      "filePath": "tests/live-reasoning-events.test.ts",
+      "summary": "Tests live reasoning event processing: chunk appending, segment creation, insertion ordering",
+      "tags": ["test", "chat", "reasoning", "streaming"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/live-tool-events.test.ts",
+      "type": "file",
+      "name": "live-tool-events.test.ts",
+      "filePath": "tests/live-tool-events.test.ts",
+      "summary": "Tests live tool event processing: tool progress parsing, message upsert, status transitions",
+      "tags": ["test", "chat", "tools", "streaming"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tests/reconcile-streamed-with-db.test.ts",
+      "type": "file",
+      "name": "reconcile-streamed-with-db.test.ts",
+      "filePath": "tests/reconcile-streamed-with-db.test.ts",
+      "summary": "Tests reconciliation of streamed chat messages with database-persisted history after stream ends",
+      "tags": ["test", "chat", "session", "reconciliation"],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tests/session-history-mapping.test.ts",
+      "type": "file",
+      "name": "session-history-mapping.test.ts",
+      "filePath": "tests/session-history-mapping.test.ts",
+      "summary": "Tests dbItemsToChatMessages mapping from database rows to renderer ChatMessage objects",
+      "tags": ["test", "chat", "session", "mapping"],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/tool-activity-group-title.test.ts",
+      "type": "file",
+      "name": "tool-activity-group-title.test.ts",
+      "filePath": "tests/tool-activity-group-title.test.ts",
+      "summary": "Tests toolActivityGroupTitle function for generating human-readable tool activity descriptions",
+      "tags": ["test", "chat", "tools", "display"],
+      "language": "typescript",
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/renderer/src/screens/Chat/hooks/useLocalCommands.ts",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/hooks/useLocalCommands.ts",
+      "target": "file:src/renderer/src/screens/Chat/slashCommands.ts",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/hooks/useLocalCommands.ts",
+      "target": "file:src/renderer/src/screens/Chat/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/hooks/useModelConfig.ts",
+      "target": "file:src/renderer/src/constants.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/hooks/useModelConfig.ts",
+      "target": "file:src/renderer/src/hooks/useDiscoveredModels.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/hooks/useModelConfig.ts",
+      "target": "file:src/renderer/src/components/useI18n.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/hooks/useModelConfig.ts",
+      "target": "file:src/renderer/src/screens/Chat/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/liveReasoningEvents.ts",
+      "target": "file:src/renderer/src/screens/Chat/types.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/liveToolEvents.ts",
+      "target": "file:src/shared/chat-stream.ts",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/liveToolEvents.ts",
+      "target": "file:src/renderer/src/screens/Chat/types.ts",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/sessionHistory.ts",
+      "target": "file:src/shared/attachments.ts",
+      "type": "imports",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/sessionHistory.ts",
+      "target": "file:src/renderer/src/screens/Chat/types.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/transcriptUtils.ts",
+      "target": "file:src/renderer/src/screens/Chat/types.ts",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/types.ts",
+      "target": "file:src/shared/attachments.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/keyboard.ts",
+      "target": "file:src/renderer/src/screens/Chat/keyboard.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/mediaUtils.ts",
+      "target": "file:src/renderer/src/screens/Chat/mediaUtils.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/transcriptUtils.ts",
+      "target": "file:src/renderer/src/screens/Chat/transcriptUtils.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/liveReasoningEvents.ts",
+      "target": "file:tests/live-reasoning-events.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/liveToolEvents.ts",
+      "target": "file:tests/live-tool-events.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/sessionHistory.ts",
+      "target": "file:tests/reconcile-streamed-with-db.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/sessionHistory.ts",
+      "target": "file:tests/session-history-mapping.test.ts",
+      "type": "tested_by",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/HistoryRow.tsx",
+      "target": "file:tests/tool-activity-group-title.test.ts",
+      "type": "tested_by",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/hermes.ts",
+      "target": "file:tests/buildUserContent.test.ts",
+      "type": "tested_by",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/shared/attachments.ts",
+      "target": "file:tests/buildUserContent.test.ts",
+      "type": "tested_by",
+      "weight": 0.5
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/keyboard.test.ts",
+      "target": "file:src/renderer/src/screens/Chat/keyboard.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/mediaUtils.test.ts",
+      "target": "file:src/renderer/src/screens/Chat/mediaUtils.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/transcriptUtils.test.ts",
+      "target": "file:src/renderer/src/screens/Chat/transcriptUtils.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:src/renderer/src/screens/Chat/transcriptUtils.test.ts",
+      "target": "file:src/renderer/src/screens/Chat/types.ts",
+      "type": "imports",
+      "weight": 0.5
+    },
+    {
+      "source": "file:tests/buildUserContent.test.ts",
+      "target": "file:src/main/hermes.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/buildUserContent.test.ts",
+      "target": "file:src/shared/attachments.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/live-reasoning-events.test.ts",
+      "target": "file:src/renderer/src/screens/Chat/liveReasoningEvents.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/live-reasoning-events.test.ts",
+      "target": "file:src/renderer/src/screens/Chat/types.ts",
+      "type": "imports",
+      "weight": 0.5
+    },
+    {
+      "source": "file:tests/live-tool-events.test.ts",
+      "target": "file:src/renderer/src/screens/Chat/liveToolEvents.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/live-tool-events.test.ts",
+      "target": "file:src/renderer/src/screens/Chat/types.ts",
+      "type": "imports",
+      "weight": 0.5
+    },
+    {
+      "source": "file:tests/reconcile-streamed-with-db.test.ts",
+      "target": "file:src/renderer/src/screens/Chat/sessionHistory.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/reconcile-streamed-with-db.test.ts",
+      "target": "file:src/renderer/src/screens/Chat/types.ts",
+      "type": "imports",
+      "weight": 0.5
+    },
+    {
+      "source": "file:tests/session-history-mapping.test.ts",
+      "target": "file:src/renderer/src/screens/Chat/sessionHistory.ts",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/tool-activity-group-title.test.ts",
+      "target": "file:src/renderer/src/screens/Chat/HistoryRow.tsx",
+      "type": "imports",
+      "weight": 0.9
+    },
+    {
+      "source": "file:tests/tool-activity-group-title.test.ts",
+      "target": "file:src/renderer/src/screens/Chat/types.ts",
+      "type": "imports",
+      "weight": 0.5
+    }
+  ]
+}

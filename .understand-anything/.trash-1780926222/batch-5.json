@@ -1,0 +1,471 @@
+{
+  "batchIndex": 5,
+  "nodes": [
+    {
+      "id": "file:src/shared/i18n/locales/pt-BR/skills.ts",
+      "type": "file",
+      "name": "skills.ts",
+      "filePath": "src/shared/i18n/locales/pt-BR/skills.ts",
+      "summary": "Portuguese (Brazil) (pt-BR) locale strings for the skills namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pt-BR",
+        "skills"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pt-BR/soul.ts",
+      "type": "file",
+      "name": "soul.ts",
+      "filePath": "src/shared/i18n/locales/pt-BR/soul.ts",
+      "summary": "Portuguese (Brazil) (pt-BR) locale strings for the soul namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pt-BR",
+        "soul"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pt-BR/tools.ts",
+      "type": "file",
+      "name": "tools.ts",
+      "filePath": "src/shared/i18n/locales/pt-BR/tools.ts",
+      "summary": "Portuguese (Brazil) (pt-BR) locale strings for the tools namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pt-BR",
+        "tools"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pt-BR/welcome.ts",
+      "type": "file",
+      "name": "welcome.ts",
+      "filePath": "src/shared/i18n/locales/pt-BR/welcome.ts",
+      "summary": "Portuguese (Brazil) (pt-BR) locale strings for the welcome namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pt-BR",
+        "welcome"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pt-PT/agents.ts",
+      "type": "file",
+      "name": "agents.ts",
+      "filePath": "src/shared/i18n/locales/pt-PT/agents.ts",
+      "summary": "Portuguese (Portugal) (pt-PT) locale strings for the agents namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pt-PT",
+        "agents"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pt-PT/chat.ts",
+      "type": "file",
+      "name": "chat.ts",
+      "filePath": "src/shared/i18n/locales/pt-PT/chat.ts",
+      "summary": "Portuguese (Portugal) (pt-PT) locale strings for the chat namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pt-PT",
+        "chat"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pt-PT/common.ts",
+      "type": "file",
+      "name": "common.ts",
+      "filePath": "src/shared/i18n/locales/pt-PT/common.ts",
+      "summary": "Portuguese (Portugal) (pt-PT) locale strings for the common namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pt-PT",
+        "common"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pt-PT/constants.ts",
+      "type": "file",
+      "name": "constants.ts",
+      "filePath": "src/shared/i18n/locales/pt-PT/constants.ts",
+      "summary": "Portuguese (Portugal) (pt-PT) locale strings for the constants namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pt-PT",
+        "constants"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pt-PT/diagnose.ts",
+      "type": "file",
+      "name": "diagnose.ts",
+      "filePath": "src/shared/i18n/locales/pt-PT/diagnose.ts",
+      "summary": "Portuguese (Portugal) (pt-PT) locale strings for the diagnose namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pt-PT",
+        "diagnose"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pt-PT/errors.ts",
+      "type": "file",
+      "name": "errors.ts",
+      "filePath": "src/shared/i18n/locales/pt-PT/errors.ts",
+      "summary": "Portuguese (Portugal) (pt-PT) locale strings for the errors namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pt-PT",
+        "errors"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pt-PT/gateway.ts",
+      "type": "file",
+      "name": "gateway.ts",
+      "filePath": "src/shared/i18n/locales/pt-PT/gateway.ts",
+      "summary": "Portuguese (Portugal) (pt-PT) locale strings for the gateway namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pt-PT",
+        "gateway"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pt-PT/install.ts",
+      "type": "file",
+      "name": "install.ts",
+      "filePath": "src/shared/i18n/locales/pt-PT/install.ts",
+      "summary": "Portuguese (Portugal) (pt-PT) locale strings for the install namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pt-PT",
+        "install"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pt-PT/kanban.ts",
+      "type": "file",
+      "name": "kanban.ts",
+      "filePath": "src/shared/i18n/locales/pt-PT/kanban.ts",
+      "summary": "Portuguese (Portugal) (pt-PT) locale strings for the kanban namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pt-PT",
+        "kanban"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pt-PT/memory.ts",
+      "type": "file",
+      "name": "memory.ts",
+      "filePath": "src/shared/i18n/locales/pt-PT/memory.ts",
+      "summary": "Portuguese (Portugal) (pt-PT) locale strings for the memory namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pt-PT",
+        "memory"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pt-PT/models.ts",
+      "type": "file",
+      "name": "models.ts",
+      "filePath": "src/shared/i18n/locales/pt-PT/models.ts",
+      "summary": "Portuguese (Portugal) (pt-PT) locale strings for the models namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pt-PT",
+        "models"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pt-PT/navigation.ts",
+      "type": "file",
+      "name": "navigation.ts",
+      "filePath": "src/shared/i18n/locales/pt-PT/navigation.ts",
+      "summary": "Portuguese (Portugal) (pt-PT) locale strings for the navigation namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pt-PT",
+        "navigation"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pt-PT/office.ts",
+      "type": "file",
+      "name": "office.ts",
+      "filePath": "src/shared/i18n/locales/pt-PT/office.ts",
+      "summary": "Portuguese (Portugal) (pt-PT) locale strings for the office namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pt-PT",
+        "office"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pt-PT/providers.ts",
+      "type": "file",
+      "name": "providers.ts",
+      "filePath": "src/shared/i18n/locales/pt-PT/providers.ts",
+      "summary": "Portuguese (Portugal) (pt-PT) locale strings for the providers namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pt-PT",
+        "providers"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pt-PT/schedules.ts",
+      "type": "file",
+      "name": "schedules.ts",
+      "filePath": "src/shared/i18n/locales/pt-PT/schedules.ts",
+      "summary": "Portuguese (Portugal) (pt-PT) locale strings for the schedules namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pt-PT",
+        "schedules"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pt-PT/sessions.ts",
+      "type": "file",
+      "name": "sessions.ts",
+      "filePath": "src/shared/i18n/locales/pt-PT/sessions.ts",
+      "summary": "Portuguese (Portugal) (pt-PT) locale strings for the sessions namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pt-PT",
+        "sessions"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pt-PT/settings.ts",
+      "type": "file",
+      "name": "settings.ts",
+      "filePath": "src/shared/i18n/locales/pt-PT/settings.ts",
+      "summary": "Portuguese (Portugal) (pt-PT) locale strings for the settings namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pt-PT",
+        "settings"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pt-PT/setup.ts",
+      "type": "file",
+      "name": "setup.ts",
+      "filePath": "src/shared/i18n/locales/pt-PT/setup.ts",
+      "summary": "Portuguese (Portugal) (pt-PT) locale strings for the setup namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pt-PT",
+        "setup"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pt-PT/skills.ts",
+      "type": "file",
+      "name": "skills.ts",
+      "filePath": "src/shared/i18n/locales/pt-PT/skills.ts",
+      "summary": "Portuguese (Portugal) (pt-PT) locale strings for the skills namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pt-PT",
+        "skills"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pt-PT/soul.ts",
+      "type": "file",
+      "name": "soul.ts",
+      "filePath": "src/shared/i18n/locales/pt-PT/soul.ts",
+      "summary": "Portuguese (Portugal) (pt-PT) locale strings for the soul namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pt-PT",
+        "soul"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pt-PT/tools.ts",
+      "type": "file",
+      "name": "tools.ts",
+      "filePath": "src/shared/i18n/locales/pt-PT/tools.ts",
+      "summary": "Portuguese (Portugal) (pt-PT) locale strings for the tools namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pt-PT",
+        "tools"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/pt-PT/welcome.ts",
+      "type": "file",
+      "name": "welcome.ts",
+      "filePath": "src/shared/i18n/locales/pt-PT/welcome.ts",
+      "summary": "Portuguese (Portugal) (pt-PT) locale strings for the welcome namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "pt-PT",
+        "welcome"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/tr/agents.ts",
+      "type": "file",
+      "name": "agents.ts",
+      "filePath": "src/shared/i18n/locales/tr/agents.ts",
+      "summary": "Turkish (tr) locale strings for the agents namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "tr",
+        "agents"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/tr/chat.ts",
+      "type": "file",
+      "name": "chat.ts",
+      "filePath": "src/shared/i18n/locales/tr/chat.ts",
+      "summary": "Turkish (tr) locale strings for the chat namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "tr",
+        "chat"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/tr/common.ts",
+      "type": "file",
+      "name": "common.ts",
+      "filePath": "src/shared/i18n/locales/tr/common.ts",
+      "summary": "Turkish (tr) locale strings for the common namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "tr",
+        "common"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/tr/constants.ts",
+      "type": "file",
+      "name": "constants.ts",
+      "filePath": "src/shared/i18n/locales/tr/constants.ts",
+      "summary": "Turkish (tr) locale strings for the constants namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "tr",
+        "constants"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/i18n/locales/tr/diagnose.ts",
+      "type": "file",
+      "name": "diagnose.ts",
+      "filePath": "src/shared/i18n/locales/tr/diagnose.ts",
+      "summary": "Turkish (tr) locale strings for the diagnose namespace",
+      "tags": [
+        "i18n",
+        "locale",
+        "tr",
+        "diagnose"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

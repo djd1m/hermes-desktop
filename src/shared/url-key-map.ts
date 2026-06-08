@@ -36,6 +36,8 @@ export const URL_KEY_MAP: ReadonlyArray<UrlKeyMapping> = [
   { pattern: /api\.mistral\.ai/i, envKey: "MISTRAL_API_KEY" },
   { pattern: /api\.perplexity\.ai/i, envKey: "PERPLEXITY_API_KEY" },
   { pattern: /api\.xiaomimimo\.com/i, envKey: "XIAOMI_API_KEY" },
+  // Enterprise (Cloud.ru Foundation Models)
+  { pattern: /foundation-models\.api\.cloud\.ru/i, envKey: "CLOUD_RU_API_KEY" },
 ];
 
 export const CUSTOM_API_KEY_ENV = "CUSTOM_API_KEY";
@@ -105,4 +107,6 @@ export const OPENAI_COMPAT_PROVIDERS: ReadonlySet<string> = new Set([
   "fireworks",
   "cerebras",
   "mistral",
+  // Enterprise
+  "cloud-ru",
 ]);

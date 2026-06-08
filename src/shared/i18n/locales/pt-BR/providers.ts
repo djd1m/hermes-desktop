@@ -16,4 +16,6 @@ export default {
     geminiDesc: "Use seu plano Google AI Pro / Gemini",
     minimaxDesc: "Use sua assinatura do MiniMax",
   },
+  cloudRuDesc: "Cloud.ru Foundation Models — endpoint compatível com OpenAI",
+  cloudRuTag: "RU",
 } as const;

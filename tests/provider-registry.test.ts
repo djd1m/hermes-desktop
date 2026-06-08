@@ -98,10 +98,17 @@ describe("provider-registry", () => {
         "mistral",
         "xiaomi",
         "ollama-cloud",
+        "cloud-ru",
       ];
       for (const provider of requiredBuiltins) {
         expect(PROVIDER_BASE_URLS[provider]).toBeTruthy();
       }
+    });
+
+    it("returns the canonical URL for Cloud.ru Foundation Models", () => {
+      expect(canonicalProviderBaseUrl("cloud-ru")).toBe(
+        "https://foundation-models.api.cloud.ru/v1",
+      );
     });
   });
 });

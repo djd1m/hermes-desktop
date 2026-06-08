@@ -44,6 +44,8 @@ export const PROVIDERS = {
     { value: "zai", label: "Z.ai / GLM" },
     { value: "qwen", label: "Qwen" },
     { value: "minimax", label: "MiniMax" },
+    // Enterprise (RU providers)
+    { value: "cloud-ru", label: "Cloud.ru Foundation Models" },
     { value: "nous", label: "constants.nousName" },
     // Local OpenAI-compatible servers. Keep these explicit so users
     // looking for "Ollama" or "LM Studio" do not have to discover the
@@ -86,6 +88,7 @@ export const PROVIDERS = {
     zai: "Z.ai / GLM",
     qwen: "Qwen",
     minimax: "MiniMax",
+    "cloud-ru": "Cloud.ru Foundation Models",
     nous: "constants.nousName",
     lmstudio: "constants.lmstudio",
     atomicchat: "constants.atomicchat",
@@ -200,6 +203,18 @@ export const PROVIDERS = {
       placeholder: "sk-...",
       configProvider: "xiaomi",
       baseUrl: "https://api.xiaomimimo.com/v1",
+      needsKey: true,
+    },
+    {
+      id: "cloud-ru",
+      name: "Cloud.ru Foundation Models",
+      desc: "providers.cloudRuDesc",
+      tag: "providers.cloudRuTag",
+      envKey: "CLOUD_RU_API_KEY",
+      url: "https://console.cloud.ru",
+      placeholder: "sk-...",
+      configProvider: "cloud-ru",
+      baseUrl: "https://foundation-models.api.cloud.ru/v1",
       needsKey: true,
     },
     {
@@ -353,6 +368,14 @@ export const LOCAL_PRESETS: LocalPreset[] = [
     group: "remote",
     envKey: "MISTRAL_API_KEY",
   },
+  // Enterprise (RU providers)
+  {
+    id: "cloud-ru",
+    name: "Cloud.ru",
+    baseUrl: "https://foundation-models.api.cloud.ru/v1",
+    group: "remote",
+    envKey: "CLOUD_RU_API_KEY",
+  },
 ];
 
 // ── Theme ───────────────────────────────────────────────
@@ -481,6 +504,13 @@ export const SETTINGS_SECTIONS: SectionDef[] = [
         label: "constants.kimiApiKey",
         type: "password",
         hint: "constants.kimiHint",
+      },
+      // Enterprise (Cloud.ru Foundation Models)
+      {
+        key: "CLOUD_RU_API_KEY",
+        label: "constants.cloudRuApiKey",
+        type: "password",
+        hint: "constants.cloudRuHint",
       },
       {
         key: "MINIMAX_API_KEY",

@@ -14,4 +14,6 @@ export default {
     geminiDesc: "使用您的 Google AI Pro / Gemini 方案",
     minimaxDesc: "使用您的 MiniMax 訂閱",
   },
+  cloudRuDesc: "Cloud.ru Foundation Models — 相容 OpenAI 的端點",
+  cloudRuTag: "RU",
 } as const;

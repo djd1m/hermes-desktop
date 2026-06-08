@@ -16,4 +16,6 @@ export default {
     geminiDesc: "Gunakan paket Google AI Pro / Gemini Anda",
     minimaxDesc: "Gunakan langganan MiniMax Anda",
   },
+  cloudRuDesc: "Cloud.ru Foundation Models — endpoint kompatibel OpenAI",
+  cloudRuTag: "RU",
 } as const;

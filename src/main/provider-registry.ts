@@ -33,6 +33,8 @@ export const PROVIDER_BASE_URLS: Record<string, string> = {
   ollama: "http://localhost:11434/v1",
   vllm: "http://localhost:8000/v1",
   llamacpp: "http://localhost:8080/v1",
+  // ── Enterprise (Cloud.ru Foundation Models) ─────────────────────────
+  "cloud-ru": "https://foundation-models.api.cloud.ru/v1",
 };
 
 /**

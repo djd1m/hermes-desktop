@@ -94,6 +94,19 @@ const DEFAULT_MODELS: DefaultModel[] = [
     baseUrl: "",
   },
 
+  // ── Cloud.ru Foundation Models ───────────────────────────────────────
+  {
+    name: "GigaChat3-10B (Cloud.ru)",
+    provider: "cloud-ru",
+    model: "ai-sage/GigaChat3-10B-A1.8B",
+    baseUrl: "",
+  },
+  {
+    name: "GigaChat3-1.7B (Cloud.ru)",
+    provider: "cloud-ru",
+    model: "ai-sage/GigaChat3-1.7B",
+    baseUrl: "",
+  },
 ];
 
 export default DEFAULT_MODELS;

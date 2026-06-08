@@ -157,6 +157,7 @@ import {
   writeUserProfile,
 } from "./memory";
 import { readSoul, writeSoul, resetSoul } from "./soul";
+import { initEnterprise } from "./enterprise";
 import {
   getPlatformToolsets,
   getToolsets,
@@ -2167,6 +2168,7 @@ app.whenReady().then(() => {
     }
   });
 
+  initEnterprise();
   buildMenu();
   setupIPC();
   createWindow();

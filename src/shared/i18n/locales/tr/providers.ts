@@ -18,4 +18,6 @@ export default {
     minimaxDesc: "MiniMax aboneliğinizi kullanın",
     nousDesc: "Nous Portal aboneliğinizle oturum açın",
   },
+  cloudRuDesc: "Cloud.ru Foundation Models — OpenAI uyumlu uç nokta",
+  cloudRuTag: "RU",
 } as const;

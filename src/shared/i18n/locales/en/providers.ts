@@ -16,4 +16,7 @@ export default {
     minimaxDesc: "Use your MiniMax subscription",
     nousDesc: "Sign in with your Nous Portal subscription",
   },
+  // Enterprise (Cloud.ru Foundation Models)
+  cloudRuDesc: "Cloud.ru Foundation Models — OpenAI-compatible endpoint",
+  cloudRuTag: "RU",
 } as const;

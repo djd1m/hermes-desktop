@@ -15,4 +15,6 @@ export default {
     geminiDesc: "Google AI Pro / Gemini プランを使用",
     minimaxDesc: "MiniMax のサブスクリプションを使用",
   },
+  cloudRuDesc: "Cloud.ru Foundation Models — OpenAI 互換エンドポイント",
+  cloudRuTag: "RU",
 } as const;

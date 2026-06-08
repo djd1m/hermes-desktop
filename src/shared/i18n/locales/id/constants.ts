@@ -87,6 +87,8 @@ export default {
   xaiHint: "Akses langsung ke model Grok",
   xiaomiApiKey: "Xiaomi MiMo API Key",
   xiaomiHint: "Akses langsung ke model MiMo",
+  cloudRuApiKey: "Cloud.ru API Key",
+  cloudRuHint: "Kunci akun layanan dari konsol cloud.ru",
   exaApiKey: "Exa Search API Key",
   exaHint: "Pencarian web AI-native",
   parallelApiKey: "Parallel API Key",

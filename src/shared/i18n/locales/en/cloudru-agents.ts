@@ -1,0 +1,33 @@
+export default {
+  signInTitle: "Cloud.ru AI Agents",
+  signInDesc:
+    "Sign in with your cloud.ru account to browse and use AI Agents deployed in your project.",
+  signIn: "Sign in with cloud.ru",
+  signInHint:
+    "Uses OIDC + PKCE for secure authentication. Your browser will open the cloud.ru login page.",
+  authenticating: "Authenticating...",
+  signOut: "Sign out",
+  sync: "Sync",
+  agents: "agents",
+  healthy: "healthy",
+  noAgents: "No AI Agents found",
+  noAgentsHint:
+    "Deploy AI Agents in your cloud.ru project to see them here.",
+  refresh: "Refresh",
+  runningAgents: "Running Agents",
+  allAgents: "All Agents",
+  useAgent: "Use Agent",
+  agentNotRunning: "Agent is not running",
+  delegateTo: "Delegate to",
+  delegationResult: "Delegation Result",
+  taskLabel: "Task description",
+  taskPlaceholder: "Describe the task you want to delegate...",
+  contextLabel: "Additional context (optional)",
+  contextPlaceholder: "Provide any additional context...",
+  cancel: "Cancel",
+  delegate: "Delegate Task",
+  delegating: "Delegating...",
+  delegationSuccess: "Task completed successfully",
+  responseTruncated: "Response was truncated to 32K characters",
+  close: "Close",
+} as const;

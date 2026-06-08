@@ -7,6 +7,7 @@ export default {
     mcps: "MCPs",
     agents: "Agents",
     workflows: "Workflows",
+    "cloud-ru-agents": "Cloud.ru Agents",
   },
   searchPlaceholder: "Search {{kind}}...",
   refresh: "Refresh",

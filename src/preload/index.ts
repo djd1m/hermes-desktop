@@ -1138,6 +1138,78 @@ const hermesAPI = {
     lines?: number,
   ): Promise<{ content: string; path: string }> =>
     ipcRenderer.invoke("read-logs", logFile, lines),
+
+  // ─── Cloud.ru AI Agents (enterprise) ────────────────────────────
+
+  /** Initiate OIDC login (opens browser to cloud.ru IAM) */
+  cloudRuAuthLogin: (): Promise<{ success: boolean; error?: string }> =>
+    ipcRenderer.invoke("cloud-ru:auth:login"),
+
+  /** Handle OIDC callback URL */
+  cloudRuAuthCallback: (callbackUrl: string): Promise<Record<string, unknown>> =>
+    ipcRenderer.invoke("cloud-ru:auth:callback", callbackUrl),
+
+  /** Logout from cloud.ru */
+  cloudRuAuthLogout: (): Promise<{ success: boolean }> =>
+    ipcRenderer.invoke("cloud-ru:auth:logout"),
+
+  /** Get current auth state */
+  cloudRuAuthStatus: (): Promise<unknown> =>
+    ipcRenderer.invoke("cloud-ru:auth:status"),
+
+  /** Force token refresh */
+  cloudRuAuthRefresh: (): Promise<unknown> =>
+    ipcRenderer.invoke("cloud-ru:auth:refresh"),
+
+  /** Get all agents from catalog */
+  cloudRuAgentsCatalog: (): Promise<unknown[]> =>
+    ipcRenderer.invoke("cloud-ru:agents:catalog"),
+
+  /** Get only healthy (running) agents */
+  cloudRuAgentsHealthy: (): Promise<unknown[]> =>
+    ipcRenderer.invoke("cloud-ru:agents:healthy"),
+
+  /** Get catalog sync status */
+  cloudRuAgentsSyncStatus: (): Promise<unknown> =>
+    ipcRenderer.invoke("cloud-ru:agents:sync-status"),
+
+  /** Force catalog re-sync */
+  cloudRuAgentsForceSync: (): Promise<unknown[]> =>
+    ipcRenderer.invoke("cloud-ru:agents:force-sync"),
+
+  /** Delegate a task to a cloud agent */
+  cloudRuAgentsDelegate: (
+    request: unknown,
+  ): Promise<unknown> =>
+    ipcRenderer.invoke("cloud-ru:agents:delegate", request),
+
+  /** Cancel an in-flight delegation */
+  cloudRuAgentsCancel: (agentId: string): Promise<boolean> =>
+    ipcRenderer.invoke("cloud-ru:agents:cancel", agentId),
+
+  /** Listen for auth state changes */
+  onCloudRuAuthStateChanged: (
+    callback: (state: unknown) => void,
+  ): (() => void) => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const handler = (_e: any, state: unknown): void => callback(state);
+    ipcRenderer.on("cloud-ru:auth:state-changed", handler);
+    return () => ipcRenderer.removeListener("cloud-ru:auth:state-changed", handler);
+  },
+
+  /** Listen for delegation progress events */
+  onCloudRuDelegationProgress: (
+    callback: (event: unknown) => void,
+  ): (() => void) => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const handler = (_e: any, event: unknown): void => callback(event);
+    ipcRenderer.on("cloud-ru:agents:delegation-progress", handler);
+    return () =>
+      ipcRenderer.removeListener(
+        "cloud-ru:agents:delegation-progress",
+        handler,
+      );
+  },
 };
 
 if (process.contextIsolated) {

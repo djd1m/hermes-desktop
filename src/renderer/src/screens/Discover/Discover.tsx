@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useMemo } from "react";
+import { useState, useEffect, useCallback, useMemo, lazy, Suspense } from "react";
 import {
   Search,
   Refresh,
@@ -11,6 +11,7 @@ import {
   Puzzle,
   Plug,
   Bot,
+  Cloud,
   Workflow as WorkflowIcon,
 } from "../../assets/icons";
 import type { LucideIcon } from "lucide-react";
@@ -23,6 +24,8 @@ import type {
   RegistryDetail,
 } from "../../../../shared/registry";
 
+const CloudRuAgents = lazy(() => import("./CloudRuAgents"));
+
 interface DiscoverProps {
   profile?: string;
   visible?: boolean;
@@ -32,11 +35,15 @@ interface DiscoverProps {
   focusKind?: { kind: RegistryKind; nonce: number };
 }
 
-const KINDS: { key: RegistryKind; icon: LucideIcon }[] = [
+/** Tab type including enterprise Cloud.ru Agents tab */
+type DiscoverTab = RegistryKind | "cloud-ru-agents";
+
+const KINDS: { key: DiscoverTab; icon: LucideIcon }[] = [
   { key: "skills", icon: Puzzle },
   { key: "mcps", icon: Plug },
   { key: "agents", icon: Bot },
   { key: "workflows", icon: WorkflowIcon },
+  { key: "cloud-ru-agents", icon: Cloud },
 ];
 
 // Per-kind setup action: distinct icon + i18n group so each card reads clearly
@@ -63,7 +70,7 @@ export default function Discover({
   focusKind,
 }: DiscoverProps): React.JSX.Element {
   const { t } = useI18n();
-  const [tab, setTab] = useState<RegistryKind>("skills");
+  const [tab, setTab] = useState<DiscoverTab>("skills");
 
   // "Browse" from the Capabilities screen focuses the matching Discover tab.
   // Guarded so normal mounts (no focus request) aren't forced.
@@ -243,9 +250,10 @@ export default function Discover({
     return list.length + extra.length;
   }, [catalog, bundledSkills]);
 
-  function tabCount(key: RegistryKind): number {
+  function tabCount(key: DiscoverTab): number {
     if (key === "skills") return skillsTotal;
-    return (catalog[key] ?? []).length;
+    if (key === "cloud-ru-agents") return -1; // special — no count badge
+    return (catalog[key as RegistryKind] ?? []).length;
   }
 
   async function handleInstall(
@@ -512,19 +520,31 @@ export default function Discover({
       </div>
 
       <div className="discover-tabs">
-        {KINDS.map(({ key, icon: Icon }) => (
-          <button
-            key={key}
-            className={`discover-tab ${tab === key ? "active" : ""}`}
-            onClick={() => setTab(key)}
-          >
-            <Icon size={15} />
-            {t(`discover.tabs.${key}`)}
-            <span className="discover-tab-count">{tabCount(key)}</span>
-          </button>
-        ))}
+        {KINDS.map(({ key, icon: Icon }) => {
+          const count = tabCount(key);
+          return (
+            <button
+              key={key}
+              className={`discover-tab ${tab === key ? "active" : ""}`}
+              onClick={() => setTab(key)}
+            >
+              <Icon size={15} />
+              {t(`discover.tabs.${key}`) || (key === "cloud-ru-agents" ? "Cloud.ru Agents" : key)}
+              {count >= 0 && (
+                <span className="discover-tab-count">{count}</span>
+              )}
+            </button>
+          );
+        })}
       </div>
 
+      {/* Cloud.ru Agents tab — fully custom component */}
+      {tab === "cloud-ru-agents" ? (
+        <Suspense fallback={<div className="discover-state"><div className="loading-spinner" /></div>}>
+          <CloudRuAgents />
+        </Suspense>
+      ) : (
+      <>
       <div className="discover-toolbar">
         <div className="discover-search">
           <Search size={15} />
@@ -651,6 +671,8 @@ export default function Discover({
             );
           })}
         </div>
+      )}
+      </>
       )}
     </div>
   );

@@ -44,3 +44,4 @@ export { Ban } from "lucide-react";
 export { RotateCcw } from "lucide-react";
 export { Loader2 as Spinner } from "lucide-react";
 export { Columns3 as Kanban } from "lucide-react";
+export { Cloud, LogIn, LogOut, Activity, Server } from "lucide-react";

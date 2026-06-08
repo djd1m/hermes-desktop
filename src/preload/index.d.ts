@@ -183,6 +183,58 @@ interface KanbanCreateTaskInput {
   maxRetries?: number;
 }
 
+// ─── Cloud.ru AI Agents Types ─────────────────────────────────────
+
+interface CloudRuAuthState {
+  isAuthenticated: boolean;
+  isLoading: boolean;
+  projectId: string | null;
+  displayName: string | null;
+  expiresAt: number | null;
+  error: string | null;
+}
+
+interface CloudRuAgentInfo {
+  id: string;
+  name: string;
+  description?: string;
+  status: "running" | "stopped" | "error" | "deploying";
+  publicUrl: string;
+  model?: string;
+  createdAt: string;
+  tags?: string[];
+}
+
+interface CloudRuSyncStatus {
+  agentCount: number;
+  healthyCount: number;
+  lastSyncAt: number | null;
+  lastSyncError: string | null;
+}
+
+interface CloudRuDelegationRequest {
+  agentId: string;
+  task: string;
+  context?: string;
+  timeoutMs?: number;
+}
+
+interface CloudRuDelegationResult {
+  success: boolean;
+  content?: string;
+  truncated?: boolean;
+  error?: string;
+  message?: string;
+  durationMs?: number;
+}
+
+interface CloudRuDelegationProgress {
+  type: "progress" | "chunk" | "done" | "error";
+  content?: string;
+  progress?: number;
+  error?: string;
+}
+
 interface HermesAPI {
   // Installation
   checkInstall: () => Promise<InstallStatus>;
@@ -957,6 +1009,21 @@ interface HermesAPI {
     logFile?: string,
     lines?: number,
   ) => Promise<{ content: string; path: string }>;
+
+  // ─── Cloud.ru AI Agents (enterprise) ────────────────────────────
+  cloudRuAuthLogin: () => Promise<{ success: boolean; error?: string }>;
+  cloudRuAuthCallback: (callbackUrl: string) => Promise<CloudRuAuthState>;
+  cloudRuAuthLogout: () => Promise<{ success: boolean }>;
+  cloudRuAuthStatus: () => Promise<CloudRuAuthState>;
+  cloudRuAuthRefresh: () => Promise<CloudRuAuthState>;
+  cloudRuAgentsCatalog: () => Promise<CloudRuAgentInfo[]>;
+  cloudRuAgentsHealthy: () => Promise<CloudRuAgentInfo[]>;
+  cloudRuAgentsSyncStatus: () => Promise<CloudRuSyncStatus>;
+  cloudRuAgentsForceSync: () => Promise<CloudRuAgentInfo[]>;
+  cloudRuAgentsDelegate: (request: CloudRuDelegationRequest) => Promise<CloudRuDelegationResult>;
+  cloudRuAgentsCancel: (agentId: string) => Promise<boolean>;
+  onCloudRuAuthStateChanged: (callback: (state: CloudRuAuthState) => void) => () => void;
+  onCloudRuDelegationProgress: (callback: (event: CloudRuDelegationProgress) => void) => () => void;
 }
 
 declare global {
